@@ -69,6 +69,7 @@ const Navbar = () => {
                     <NavLink className='py-2 pl-6 border' to='/messagerie'>MESSAGERIE</NavLink>
                     <NavLink className='py-2 pl-6 border' to='/actualites'>ACTUALITÉS</NavLink>
                     <NavLink className='py-2 pl-6 border' to='/cartographie'>CARTOGRAPHIE</NavLink>
+                    <NavLink className='py-2 pl-6 border' to='/donation'>FAIRE UN DON</NavLink>
                 </div>
             </div>
 
