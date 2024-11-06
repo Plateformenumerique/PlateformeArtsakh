@@ -10,11 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "leaflet": "^1.9.4",
-    "lucide-react": "^0.454.0",
-    "react": "^19.0.0-rc-4d577fd2-20241104",
-    "react-dom": "^19.0.0-rc-4d577fd2-20241104",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^6.27.0",
+    "lucide-react": "^0.454.0",
     "react-toastify": "^10.0.6"
   },
   "devDependencies": {
