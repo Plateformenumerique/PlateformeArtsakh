@@ -1,10 +1,10 @@
-#Création d'u site pour la solidarité avec l'Artsakh# 
+# Création d'u site pour la solidarité avec l'Artsakh# 
 
 
 
-###Côté technique : 
+### Côté technique : 
 
-####React + Vite
+#### React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
