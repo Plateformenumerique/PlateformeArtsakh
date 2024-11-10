@@ -26,6 +26,7 @@ import soutiens_refugies_karabaghiotes from './soutiens_refugies_karabaghiotes.j
 import soutiens_developpement_communautaire from './soutiens_developpement_communautaire.jpeg'
 import secours_urgence_victime_guerre from './secours_urgence_victime_guerre.jpg'
 import soutiens_personnes_deplacees from './soutiens_personnes_deplacees.jpg'
+import carte_3d_armenie_2 from './carte_3d_armenie_2.png'
 
 export const assets = {
     logo,
@@ -55,7 +56,8 @@ export const assets = {
     soutiens_refugies_karabaghiotes,
     soutiens_developpement_communautaire,
     secours_urgence_victime_guerre,
-    soutiens_personnes_deplacees
+    soutiens_personnes_deplacees,
+    carte_3d_armenie_2
 }
 
 export const acteurs = [
