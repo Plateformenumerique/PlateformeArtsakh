@@ -21,9 +21,9 @@ const Cartography = () => {
     <div className='flex flex-col gap-1 sm:gap-10 pt-10 border-t sm:text-2xl'>
       <div className='flex flex-col sm:flex-row w-full'>
         <div className='flex flex-col sm:w-1/4 border-r border-gray-300 p-4'>
+          <Title text1={'La'} text2={"cartographie"} />
           {selectedRegion ? (
             <div>
-              <Title text1={'La'} text2={"cartographie"} />
               <h2 className='text-lg font-semibold mb-4 mt-8'>Information de l'action menée dans cette région</h2>
               <p className='text-base mb-2'>Nom: {selectedRegion.name}</p>
               <p className='text-base'>Détails: {selectedRegion.details}</p>
