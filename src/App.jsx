@@ -38,7 +38,7 @@ const App = () => {
         <Route path='/actualites/:actualityId' element={<Actuality />} />
         <Route path='/messagerie' element={<Message />} />
         <Route path='/donation' element={<Donation />} />
-        <Route path='/private-policy' element={<PrivatePolicy />} />
+        <Route path='/confidentialite' element={<PrivatePolicy />} />
       </Routes>
 
       <Footer />

@@ -9,33 +9,32 @@ const Footer = () => {
                 <div>
                     <img src={assets.logo} alt="" className='mb-5 w-32' />
                     <p className='w-full md:w-2/3 text-gray-600'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore commodi illo sunt, natus eum doloribus eos perferendis mollitia beatae esse veritatis itaque voluptas, fuga iusto. Delectus omnis minima commodi!
+                        Cette application vise à connecter les Organisations autour de projets communs, permettant non seulement de collaborer efficacement, mais aussi de visualiser et de suivre les différents projets en cours. Notre objectif est de faciliter les synergies et de maximiser l'impact des initiatives humanitaires.
                     </p>
                 </div>
 
                 <div>
-                    <p className='font-medium text-xl mb-5'>ABOUT US</p>
+                    <p className='font-medium text-xl mb-5'>À PROPOS</p>
                     <ul className='flex flex-col gap-1 text-gray-600'>
                         <Link to="/">
-                            <li>Home</li>
+                            <li>ACCUEIL</li>
                         </Link>
                         <Link to="/acteurs">
-                            <li>Acteurs</li>
+                            <li>ACTEURS</li>
                         </Link>
                         <Link to="/projets">
-                            <li>Projets</li>
+                            <li>PROJETS</li>
                         </Link>
-                        <Link to="/private-policy">
-                            <li>Privacy policy</li>
+                        <Link to="/confidentialite">
+                            <li>POLITIQUE DE CONFIDENTIALITÉ</li>
                         </Link>
                     </ul>
                 </div>
 
                 <div>
-                    <p className='font-medium text-xl mb-5'>GET IN TOUCH</p>
+                    <p className='font-medium text-xl mb-5'>RESTER EN CONTACT</p>
                     <ul className='flex flex-col gap-1 text-gray-600'>
-                        <li>+33 05 .. .. .. ..</li>
-                        <li>cotact@contact.fr</li>
+                        <li>contact.artsakh@connect.fr</li>
                     </ul>
                 </div>
 

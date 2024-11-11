@@ -9,9 +9,9 @@ const NewsLetterBox = () => {
 
     return (
         <div className='text-center'>
-            <p className='text-2xl font-medium text-gray-800'>Abonnez-vous maintenant et obtenez toutes les actualités en 1er !</p>
+            <p className='text-2xl font-medium text-gray-800'>Inscrivez-vous à notre newsletter mensuelle et ne manquez rien de l'actualité de notre plateforme !</p>
             <p className='text-gray-400 mt-3'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, consequatur vel iste maxime qui placeat illo sint eos numquam corrupti recusandae ipsa dolores illum ab unde doloribus blanditiis dicta itaque.
+                Recevez un récapitulatif complet de tout ce qui s'est passé sur notre plateforme chaque mois. Ne manquez aucune mise à jour, nouveauté ou événement important !
             </p>
             <form onSubmit={onSubmitHandler} className='w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3'>
                 <input type="email" className='w-full sm:flex-1 outline-none' placeholder='Entrez votre email' required />
