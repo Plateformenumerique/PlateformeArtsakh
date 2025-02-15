@@ -1,6 +1,6 @@
-# Création d'u site pour la solidarité avec l'Artsakh# 
+# Création d'u site pour la solidarité avec l'Artsakh : ArtsakhConnect
 
-
+ArtsakhConnect est une plateforme visant à mettre en relation des associations (acteurs) et leurs projets afin d'aider la population karabaghiote. Elle facilite la mise en contact entre les organisations humanitaires et les initiatives locales pour maximiser l'impact des actions solidaires.
 
 ### Côté technique : 
 
