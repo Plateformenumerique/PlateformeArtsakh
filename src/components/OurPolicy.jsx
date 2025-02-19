@@ -15,8 +15,8 @@ const OurPolicy = () => {
             <p className='text-gray-400'>Nous fournissons une aide aux communautés touchées par les conflits</p>
         </div>
         <div>
-            <img src={assets.forma} alt="" className='w-12 m-auto mb-5' />
-            <p className='font-semibold'>Programmes formation</p>
+            <img src={assets.support_img} alt="" className='w-12 m-auto mb-5' />
+            <p className='font-semibold'>Programmes éducatifs</p>
             <p className='text-gray-400'>Nous soutenons des programmes éducatifs pour la paix et la résolution des conflits</p>
         </div>
     </div>
