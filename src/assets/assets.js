@@ -27,6 +27,7 @@ import soutiens_developpement_communautaire from './soutiens_developpement_commu
 import secours_urgence_victime_guerre from './secours_urgence_victime_guerre.jpg'
 import soutiens_personnes_deplacees from './soutiens_personnes_deplacees.jpg'
 import carte_3d_armenie_2 from './carte_3d_armenie_2.png'
+import forma from './forma.jpg'
 
 export const assets = {
     logo,
@@ -57,7 +58,8 @@ export const assets = {
     soutiens_developpement_communautaire,
     secours_urgence_victime_guerre,
     soutiens_personnes_deplacees,
-    carte_3d_armenie_2
+    carte_3d_armenie_2,
+    forma
 }
 
 export const acteurs = [
@@ -171,6 +173,17 @@ export const acteurs = [
         logo: fondation_aznavour,
         status: "Terminé"
     },
+    {
+        _id: "11",
+        name: "Formation",
+        description: "Fondation visant à promouvoir la culture arménienne et à soutenir le développement socio-économique en Arménie.",
+        country: "Arménie",
+        type: "Non-governmental Organization",
+        establishedDate: 2025,
+        website: "https://www.aznavourfoundation.org",
+        logo: forma,
+        status: "En cours"
+    }
 ];
 
 export const projets = [
