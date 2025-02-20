@@ -175,7 +175,7 @@ export const acteurs = [
     },
     {
         _id: "11",
-        name: "Formation",
+        name: "Formation 2.0",
         description: "Fondation visant à promouvoir la culture arménienne et à soutenir le développement socio-économique en Arménie.",
         country: "Arménie",
         type: "Non-governmental Organization",
