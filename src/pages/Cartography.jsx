@@ -3,10 +3,10 @@ import { assets } from '../assets/assets'
 import Title from '../components/Title'
 
 const regions = [
-  { id: 'region1', name: 'Dzorashen', details: 'Distribution de nourriture et de vêtements pour les réfugiés du Haut-Karabagh.', cx: '400', cy: '150', r: '20' },
-  { id: 'region2', name: 'Achtarak', details: 'Fourniture de soins médicaux et de soutien psychologique aux familles déplacées.', cx: '450', cy: '300', r: '10' },
-  { id: 'region3', name: 'Gosh', details: 'Construction de logements temporaires pour les réfugiés.', cx: '600', cy: '200', r: '15' },
-  { id: 'region4', name: 'Martouni', details: 'Programmes éducatifs pour les enfants déplacés.', cx: '650', cy: '350', r: '30' },
+  { id: 'region1', name: 'Dzorashen', details: 'Distribution de nourriture et de vêtements pour les réfugiés du Haut-Karabagh.', cx: '200', cy: '150', r: '20' },
+  { id: 'region2', name: 'Achtarak', details: 'Fourniture de soins médicaux et de soutien psychologique aux familles déplacées.', cx: '250', cy: '100', r: '10' },
+  { id: 'region3', name: 'Gosh', details: 'Construction de logements temporaires pour les réfugiés.', cx: '400', cy: '200', r: '15' },
+  { id: 'region4', name: 'Martouni', details: 'Programmes éducatifs pour les enfants déplacés.', cx: '350', cy: '150', r: '30' },
 ]
 
 const Cartography = () => {
@@ -24,7 +24,7 @@ const Cartography = () => {
           <Title text1={'La'} text2={"cartographie"} />
           {selectedRegion ? (
             <div>
-              <h2 className='text-lg font-semibold mb-4 mt-8'>Information de l'action menée dans cette région</h2>
+              <h2 className='text-lg font-semibold mb-4'>Information de l'action menée dans cette région</h2>
               <p className='text-base mb-2'>Nom: {selectedRegion.name}</p>
               <p className='text-base'>Détails: {selectedRegion.details}</p>
               <p className='text-base mt-4'>Textes de lois qui ont suivis :</p>
@@ -64,6 +64,17 @@ const Cartography = () => {
               )
             ))}
           </svg>
+        </div>
+        <div className='flex flex-col sm:w-1/4 border-l border-gray-300 p-4'>
+          {selectedRegion ? (
+            <div>
+              <h2 className='text-lg font-semibold mb-4 mt-8'>Information sur le nombre de régufiés</h2>
+              <p className='text-base mb-2'>Région: {selectedRegion.name}</p>
+              <p className='text-base'>Nombre : 400</p>
+            </div>
+          ) : (
+            <p className='text-base'>Cliquez sur une région pour voir les détails</p>
+          )}
         </div>
       </div>
     </div>

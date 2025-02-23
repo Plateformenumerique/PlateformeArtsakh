@@ -67,182 +67,159 @@ export const acteurs = [
         _id: "1",
         name: "Croix-Rouge Française",
         description: "Association humanitaire qui offre des secours d'urgence, actions sociales, santé, et formation aux premiers secours en France.",
-        country: "France",
-        type: "Non-governmental Organization",
+        domain: "Logement",
+        type: ["Non-governmental Organization"],
         establishedDate: 1864,
         website: "https://www.croix-rouge.fr",
-        logo: logo_Croix_Rouge_Française,
-        status: "En cours"
+        logo: logo_Croix_Rouge_Française
     },
     {
         _id: "2",
         name: "Association Solidarité Arménie",
         description: "Organisation de soutien pour le développement et la protection des droits en Arménie, axée sur l'aide aux réfugiés et les projets éducatifs.",
-        country: "Arménie",
-        type: "Non-governmental Organization",
+        domain: "Emploi - Formation",
+        type: ["Non-governmental Organization"],
         establishedDate: 1990,
         website: "https://www.solidaritearmenie.org",
-        logo: logo_solidarite_armenie,
-        status: "En cours"
+        logo: logo_solidarite_armenie
     },
     {
         _id: "3",
         name: "Médecins Sans Frontières",
         description: "Organisation médicale et humanitaire qui intervient en urgence dans les pays en crise pour apporter des soins de santé.",
-        country: "Monde",
-        type: "Non-governmental Organization",
+        domain: "Agriculture",
+        type: ["Non-governmental Organization"],
         establishedDate: 1971,
         website: "https://www.msf.fr",
-        logo: logo_medecin_sans_frontieres,
-        status: "En cours"
+        logo: logo_medecin_sans_frontieres
     },
     {
         _id: "4",
         name: "Fonds Arménien de France",
         description: "Organisation qui soutient les infrastructures et les programmes de développement en Arménie.",
-        country: "Arménie",
-        type: "Governmental Association",
+        domain: "Santé",
+        type: ["Governmental Association"],
         establishedDate: 1994,
         website: "https://www.fondsarmenien.org",
-        logo: fonds_armeniens_de_france,
-        status: "Terminé"
+        logo: fonds_armeniens_de_france
     },
     {
         _id: "5",
         name: "Secours Populaire Français",
         description: "Organisation qui lutte contre la pauvreté et l'exclusion sociale, fournissant des aides alimentaires, vestimentaires et des loisirs en France.",
-        country: "France",
-        type: "Non-governmental Organization",
+        domain: "Patrimoine",
+        type: ["Association", "Collectivité territoriale"],
         establishedDate: 1945,
         website: "https://www.secourspopulaire.fr",
-        logo: secours_populaire_logo,
-        status: "Terminé"
+        logo: secours_populaire_logo
     },
     {
         _id: "6",
         name: "Caritas Arménie",
         description: "Organisation caritative en Arménie qui se concentre sur les secours d'urgence, l'éducation et le développement communautaire.",
-        country: "Arménie",
-        type: "Non-governmental Organization",
+        domain: "Patrimoine",
+        type: ["Collectivité territoriale"],
         establishedDate: 1994,
         website: "https://www.caritas.am",
-        logo: caritas_armenie,
-        status: "En cours"
+        logo: caritas_armenie
     },
     {
         _id: "7",
         name: "Emmaüs France",
         description: "Mouvement solidaire en France qui lutte contre l'exclusion et aide les personnes en difficulté via des initiatives de recyclage et de réinsertion.",
-        country: "France",
-        type: "Non-governmental Organization",
+        domain: "Santé",
+        type: ["Collectivité territoriale"],
         establishedDate: 1949,
         website: "https://www.emmaus-france.org",
-        logo: emmaus_france,
-        status: "Terminé"
+        logo: emmaus_france
     },
     {
         _id: "8",
         name: "Association Franco-Arménienne",
         description: "Association qui promeut les relations culturelles et économiques entre la France et l'Arménie.",
-        country: "Arménie",
-        type: "Non-governmental Organization",
+        domain: "Emploi - Formation",
+        type: ["Non-governmental Organization"],
         establishedDate: 1989,
         website: "https://www.franco-armenie.org",
-        logo: asso_franco_armenienne,
-        status: "Terminé"
+        logo: asso_franco_armenienne
     },
     {
         _id: "9",
         name: "Secours Catholique",
         description: "Organisation qui apporte un soutien social et humanitaire aux personnes en situation de précarité, en France et à l'étranger.",
-        country: "France",
-        type: "Non-governmental Organization",
+        domain: "Santé",
+        type: ["Non-governmental Organization"],
         establishedDate: 1946,
         website: "https://www.secours-catholique.org",
-        logo: secours_catholique,
-        status: "Terminé"
+        logo: secours_catholique
     },
     {
         _id: "10",
         name: "Fondation Aznavour",
         description: "Fondation visant à promouvoir la culture arménienne et à soutenir le développement socio-économique en Arménie.",
-        country: "Arménie",
-        type: "Non-governmental Organization",
+        domain: "Agriculture",
+        type: ["Collectivité territoriale"],
         establishedDate: 2017,
         website: "https://www.aznavourfoundation.org",
-        logo: fondation_aznavour,
-        status: "Terminé"
-    },
-    {
-        _id: "11",
-        name: "Formation 2.0",
-        description: "Fondation visant à promouvoir la culture arménienne et à soutenir le développement socio-économique en Arménie.",
-        country: "Arménie",
-        type: "Non-governmental Organization",
-        establishedDate: 2025,
-        website: "https://www.aznavourfoundation.org",
-        logo: forma,
-        status: "En cours"
+        logo: fondation_aznavour
     }
 ];
 
 export const projets = [
     {
         _id: "1",
-        name: "Projet d'urgence pour les réfugiés karabaghiotes en Arménie.",
-        description: "Projet d'urgence pour les réfugiés karabaghiotes en Arménie, pour fournir des abris, de la nourriture et des soins médicaux. Ce projet vise à répondre aux besoins immédiats des réfugiés en leur offrant un soutien essentiel pour survivre et se rétablir. En collaboration avec des partenaires locaux, nous nous efforçons de créer un environnement sûr et stable pour les familles déplacées, en leur fournissant des ressources vitales et un accès à des services de santé de qualité.",
+        name: "Projet de spectacle en soutiens aux réfugiées karabaghiotes",
+        description: "Besoin de 3 musiciens pour le spectacle aux réfugiées karabaghiotes",
         association: "Association Solidarité Arménie",
-        country: "Arménie",
         type: "Urgence",
         startDate: "2020-01-01",
         endDate: "2020-12-31",
-        budget: '100,000',
+        budget: '100',
         currency: "EUR",
         image: soutiens_refugies_karabaghiotes,
-        status: "En cours"
-    },
+        domain: ["Santé", "Formation"]
+    }
+    /*
+    }
     {
         _id: "2",
         name: "Projet de développement communautaire",
         description: "Projet de développement communautaire en Arménie, pour construire des écoles et des centres de santé. Ce projet a pour objectif de renforcer les infrastructures locales et d'améliorer l'accès à l'éducation et aux soins de santé pour les communautés défavorisées. En construisant de nouvelles écoles et centres de santé, nous espérons offrir de meilleures opportunités d'apprentissage et de soins médicaux, contribuant ainsi à un développement durable et à une amélioration de la qualité de vie des habitants.",
         association: "Caritas Arménie",
-        country: "Arménie",
         type: "Développement",
         startDate: "2020-01-01",
         endDate: "2020-12-31",
-        budget: '200,000',
+        budget: '200',
         currency: "EUR",
         image: soutiens_developpement_communautaire,
-        status: "Terminé"
+        domain: "Santé",
     },
     {
         _id: "3",
         name: "Projet de secours d'urgence pour les victimes de guerre",
         description: "Projet de secours d'urgence pour les victimes de guerre au Haut-Karabagh, pour fournir des soins médicaux et des abris. Ce projet est crucial pour apporter une aide immédiate aux personnes touchées par le conflit, en leur offrant des soins médicaux d'urgence et des abris temporaires. En travaillant avec des organisations humanitaires locales et internationales, nous visons à atténuer les souffrances des victimes de guerre et à leur fournir un soutien essentiel pour reconstruire leur vie.",
         association: "Croix-Rouge Française",
-        country: "Arménie",
         type: "Urgence",
         startDate: "2020-01-01",
         endDate: "2020-12-31",
-        budget: '150,000',
+        budget: '150',
         currency: "EUR",
         image: secours_urgence_victime_guerre,
-        status: "En cours"
+        domain: "Patrimoine",
     },
     {
         _id: "4",
         name: "Projet de réhabilitation post-conflit",
         description: "Projet de réhabilitation post-conflit en Arménie, visant à reconstruire les infrastructures détruites et à fournir un soutien psychosocial aux victimes. Ce projet se concentre sur la reconstruction des maisons, des écoles et des hôpitaux endommagés par le conflit, ainsi que sur l'offre de services de soutien psychosocial pour aider les victimes à surmonter les traumatismes. En collaborant avec des experts en reconstruction et en santé mentale, nous espérons créer un environnement propice à la guérison et à la reprise d'une vie normale pour les communautés affectées.",
         association: "Fondation Arménienne de Reconstruction",
-        country: "Arménie",
         type: "Réhabilitation",
         startDate: "2020-01-01",
         endDate: "2020-12-31",
-        budget: '250,000',
+        budget: '250',
         currency: "EUR",
         image: soutiens_personnes_deplacees,
-        status: "En cours"
-    }
+        domain: "Emploi - Formation"
+    }*/
 ];
 
 export const actualites = [

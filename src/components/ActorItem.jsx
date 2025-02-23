@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const ActorItem = ({ id, name, description, country, type, establishedDate, website, logo, status }) => {
+const ActorItem = ({ id, name, description, domain, type, establishedDate, website, logo }) => {
     return (
         <div>
             <Link className='text-gray-700 cursor-pointer' to={`/acteurs/${id}`}>
@@ -12,17 +12,11 @@ const ActorItem = ({ id, name, description, country, type, establishedDate, webs
                         <h2 className='ml-2 text-lg font-semibold'>{name}</h2>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='text-sm text-gray-500 font-semibold'>{country}</p>
+                        <p className='text-sm text-gray-500 font-semibold'>{domain}</p>
                         <p className='text-sm text-gray-500'>{type}</p>
                         <p className='text-sm text-gray-500 mt-2'>{description}</p>
                         {establishedDate && <p className='text-sm text-gray-500 mt-2 font-semibold'>Depuis: {establishedDate}</p>}
                         <p className='text-sm text-gray-500 mt-2'>{website}</p>
-                        {status && (
-                            <p className='text-sm text-gray-500 mt-2'>Statut de la mission : <span className={`text-sm font-semibold mt-2 ${status === 'En cours' ? 'text-yellow-500' : 'text-green-500'}`}>
-                                    {status}
-                                </span>
-                            </p>
-                        )}
                     </div>
                 </div>
             </Link>

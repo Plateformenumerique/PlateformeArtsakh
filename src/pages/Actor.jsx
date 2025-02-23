@@ -43,16 +43,13 @@ const Actor = () => {
             Site Web de {actorData.name}
           </a>
           <p className="mt-5 text-gray-500 md:w-4/5">
-            Pays: {actorData.country}
+            Domaine: {actorData.domain}
           </p>
           <p className="mt-5 text-3xl font-medium">
             {actorData.type} depuis {actorData.establishedDate}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
             {actorData.description}
-          </p>
-          <p className="mt-5 text-gray-500 md:w-4/5">
-            Statut de la mission : {actorData.status}
           </p>
           <hr className="mt-8 sm:w-4/5" />
         </div>
