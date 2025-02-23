@@ -1,16 +1,28 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Context } from '../context/Context'
 import Title from './Title';
-import ActorItem from './ActorItem';
 
 const LatestActor = () => {
-
     const { acteurs } = useContext(Context);
-    const [latestActeurs, setlatestActeurs] = useState([]);
+    const navigate = useNavigate();
 
-    useEffect(() => {
-        setlatestActeurs(acteurs.slice(0, 4));
-    }, [])
+    // Get unique domains
+    const uniqueDomains = [...new Set(acteurs.map(actor => actor.domain))];
+
+    // Domain descriptions
+    const domainDescriptions = {
+        "Logement": "Projets visant à fournir des logements sûrs et abordables pour les populations déplacées.",
+        "Emploi - Formation": "Initiatives pour améliorer l'accès à l'emploi et offrir des formations professionnelles.",
+        "Agriculture": "Projets agricoles pour soutenir la sécurité alimentaire et le développement rural.",
+        "Santé": "Programmes de santé pour améliorer l'accès aux soins médicaux et promouvoir la santé publique.",
+        "Patrimoine": "Actions pour préserver et valoriser le patrimoine culturel et historique."
+    };
+
+    // Handle click to navigate to CollectionActor with filter
+    const handleDomainClick = (domain) => {
+        navigate(`/acteurs?domain=${domain}`);
+    }
 
     return (
         <div className='my-10'>
@@ -20,11 +32,18 @@ const LatestActor = () => {
                 compétences sur différents projets menés en faveur des populations déplacées du Haut-Karabagh.</p>
             </div>
 
-            {/* Rendering Actors Item */}
+            {/* Rendering Domain Cards */}
             <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6'>
                 {
-                    latestActeurs.map((item, index) => (
-                        <ActorItem key={index} id={item._id} name={item.name} country={item.country} type={item.type} description={item.description} logo={item.logo} />
+                    uniqueDomains.map((domain, index) => (
+                        <div 
+                            key={index} 
+                            className='cursor-pointer p-4 border rounded-lg shadow-md hover:shadow-lg'
+                            onClick={() => handleDomainClick(domain)}
+                        >
+                            <h3 className='text-xl font-semibold'>{domain}</h3>
+                            <p className='text-sm text-gray-700'>{domainDescriptions[domain]}</p>
+                        </div>
                     ))
                 }
             </div>

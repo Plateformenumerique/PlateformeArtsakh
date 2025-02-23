@@ -22,6 +22,10 @@ const Project = () => {
     fetchProjectData();
   }, [projectId, projets])
   
+  const handleContributeClick = () => {
+    window.location.href = '/messagerie';
+  };
+
   return projectData ? (
     <div className="border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100">
       <div className="flex justify-between items-center pb-4">
@@ -38,9 +42,6 @@ const Project = () => {
           <p className="mt-5 text-gray-500 md:w-4/5">
             Association: {projectData.association}
           </p>
-          <p className="mt-5 text-gray-500 md:w-4/5">
-            Pays: {projectData.country}
-          </p>
           <p className="mt-5 text-xl font-medium">
             {projectData.type} depuis le {new Date(projectData.startDate).toLocaleDateString()} jusqu'à {new Date(projectData.endDate).toLocaleDateString()}.
           </p>
@@ -48,12 +49,15 @@ const Project = () => {
             {projectData.description}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
-            Statut de la mission : {projectData.status}
+            Domaine de la mission : {projectData.domain}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
             Budget: {projectData.budget} {projectData.currency}
           </p>
           <hr className="mt-8 sm:w-4/5" />
+          <button onClick={handleContributeClick} className="mt-5 border px-4 py-2 rounded transition duration-300">
+            Contribuer
+          </button>
         </div>
       </div>
     </div>

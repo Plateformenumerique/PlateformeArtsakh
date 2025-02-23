@@ -1,17 +1,26 @@
 import React, { useContext, useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import { Context } from '../context/Context'
 import { assets } from '../assets/assets';
 import Title from '../components/Title';
 import ActorItem from '../components/ActorItem';
 
 const CollectionActor = () => {
-
   const { acteurs, search, showSearch } = useContext(Context);
+  const location = useLocation();
   const [showFilter, setShowFilter] = useState(false)
   const [filterActors, setFilterActors] = useState(acteurs)
   const [sortTypeActor, setSortTypeActor] = useState([])
-  const [sortPays, setSortPays] = useState([])
-  const [sortStatus, setsortStatus] = useState('')
+  const [sortDomaine, setSortDomaine] = useState([])
+  const [sortOrder, setSortOrder] = useState('asc') // 'asc' for ascending, 'desc' for descending
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const domain = params.get('domain');
+    if (domain) {
+      setSortDomaine([domain]);
+    }
+  }, [location]);
 
   const toggleType = (e) => {
     if (sortTypeActor.includes(e.target.value)) {
@@ -21,11 +30,11 @@ const CollectionActor = () => {
     }
   }
 
-  const togglePays = (e) => {
-    if (sortPays.includes(e.target.value)) {
-      setSortPays(prev => prev.filter(item => item !== e.target.value))
+  const toggleDomaine = (e) => {
+    if (sortDomaine.includes(e.target.value)) {
+      setSortDomaine(prev => prev.filter(item => item !== e.target.value))
     } else {
-      setSortPays(prev => [...prev, e.target.value])
+      setSortDomaine(prev => [...prev, e.target.value])
     }
   }
 
@@ -38,31 +47,36 @@ const CollectionActor = () => {
 
   const applyFilter = () => {
     let actorsCopy = acteurs.slice();
-
+  
     if (sortTypeActor.length > 0) {
-      actorsCopy = actorsCopy.filter(item => sortTypeActor.includes(item.type))
+      actorsCopy = actorsCopy.filter(item => 
+        item.type.some(type => sortTypeActor.includes(type))
+      );
     }
-
-    if (sortPays.length > 0) {
-      actorsCopy = actorsCopy.filter(item => sortPays.includes(item.country))
+  
+    if (sortDomaine.length > 0) {
+      actorsCopy = actorsCopy.filter(item => sortDomaine.includes(item.domain));
     }
-
-    if (sortStatus === 'en-cours') {
-      actorsCopy = actorsCopy.filter(item => item.status === 'En cours');
-    } else if (sortStatus === 'termine') {
-      actorsCopy = actorsCopy.filter(item => item.status === 'Terminé');
-    }
-
+  
     if (showSearch && search) {
-      actorsCopy = actorsCopy.filter(item => item.name.toLowerCase().includes(search.toLowerCase()))
+      actorsCopy = actorsCopy.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
     }
 
-    setFilterActors(actorsCopy)
-  }
+    // Sort actors by name
+    actorsCopy.sort((a, b) => {
+      if (sortOrder === 'asc') {
+        return a.name.localeCompare(b.name);
+      } else {
+        return b.name.localeCompare(a.name);
+      }
+    });
+  
+    setFilterActors(actorsCopy);
+  };
 
   useEffect(() => {
     applyFilter();
-  }, [sortTypeActor, sortPays, sortStatus, search, showSearch])
+  }, [sortTypeActor, sortDomaine, sortOrder, search, showSearch])
 
   return (
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>
@@ -73,16 +87,22 @@ const CollectionActor = () => {
         </p>
         {/** Filtre par Pays */}
         <div className={`border border-gray-300 pl-5 py-3 mt-6 ${showFilter ? '' : 'hidden'} sm:block`}>
-          <p className='mb-3 text-sm font-medium'>PAYS</p>
+          <p className='mb-3 text-sm font-medium'>DOMAINE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'France'} onChange={togglePays} /> France
+              <input className='w-3' type='checkbox' value={'Logement'} onChange={toggleDomaine} checked={sortDomaine.includes('Logement')} /> Logement
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Arménie'} onChange={togglePays} /> Arménie
+              <input className='w-3' type='checkbox' value={'Emploi - Formation'} onChange={toggleDomaine} checked={sortDomaine.includes('Emploi - Formation')} /> Emploi - Formation
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Monde'} onChange={togglePays} /> Monde
+              <input className='w-3' type='checkbox' value={'Agriculture'} onChange={toggleDomaine} checked={sortDomaine.includes('Agriculture')} /> Agriculture
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type='checkbox' value={'Santé'} onChange={toggleDomaine} checked={sortDomaine.includes('Santé')} /> Santé
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type='checkbox' value={'Patrimoine'} onChange={toggleDomaine} checked={sortDomaine.includes('Patrimoine')} /> Patrimoine
             </p>
           </div>
         </div>
@@ -94,7 +114,7 @@ const CollectionActor = () => {
               <input className='w-3' type='checkbox' value={'Non-governmental Organization'} onChange={toggleType} /> Non Gouvernementale
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Governmental Association'} onChange={toggleType} /> Gouvernementale
+              <input className='w-3' type='checkbox' value={'Collectivité territoriale'} onChange={toggleType} /> Collectivité territoriale
             </p>
             <p className='flex gap-2'>
               <input className='w-3' type='checkbox' value={'Association'} onChange={toggleType} /> Association
@@ -106,12 +126,11 @@ const CollectionActor = () => {
       {/** Filtre droite */}
       <div className='flex-1 '>
         <div className='flex justify-between text-base sm:text-2xl mb-4'>
-          <Title text1='Tous nos ' text2='Acteurs Humanitaires' />
-          {/** Trier par année */}
-          <select onChange={(e) => setsortStatus(e.target.value)} className='border-2 border-gray-300 text-sm px-2'>
-            <option value=''>Trier par : Tous</option>
-            <option value='en-cours'>Trier par : En cours</option>
-            <option value='termine'>Trier par : Terminé</option>
+          <Title text1='Tous nos ' text2='Acteurs' />
+          {/** Trier par ordre alphabétique */}
+          <select onChange={(e) => setSortOrder(e.target.value)} className='border-2 border-gray-300 text-sm px-2'>
+            <option value='asc'>Trier par : A-Z</option>
+            <option value='desc'>Trier par : Z-A</option>
           </select>
         </div>
 
@@ -123,12 +142,11 @@ const CollectionActor = () => {
                 key={index} 
                 id={item._id} 
                 name={item.name} 
-                country={item.country} 
+                domain={item.domain} 
                 type={item.type} 
                 description={truncateDescription(item.description, 115)} 
                 logo={item.logo} 
-                establishedDate={item.establishedDate} 
-                status={item.status} 
+                establishedDate={item.establishedDate}
               />
             ))
           }
