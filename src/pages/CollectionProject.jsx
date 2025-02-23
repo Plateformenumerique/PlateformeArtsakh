@@ -116,13 +116,16 @@ const CollectionProject = () => {
       {/** Filtre droite */}
       <div className='flex-1 '>
         <div className='flex justify-between text-base sm:text-2xl mb-4'>
-        <Title text1='Tous nos ' text2='Projets / Annonces' />
-        <button onClick={() => setIsModalOpen(true)} className='blue-gradient_bg text-white text-xs px-10 py-4'>Vous avez un projet ?</button>
-          {/** Trier par ordre alphabétique */}
-          <select onChange={(e) => setSortOrder(e.target.value)} className='border-2 border-gray-300 text-sm px-2'>
-            <option value='asc'>Trier par : A-Z</option>
-            <option value='desc'>Trier par : Z-A</option>
-          </select>
+          <Title text1='Tous nos ' text2='Projets / Annonces' />
+          <div className='flex gap-4 items-center'>
+            <button className='blue-gradient_bg text-white text-xs px-10 py-4 rounded-sm'>Vous avez un projet ?</button>
+            {/*<button onClick={() => setIsModalOpen(true)} className='blue-gradient_bg text-white text-xs px-10 py-4'>Vous avez un projet ?</button>*/}
+            {/** Trier par ordre alphabétique */}
+            <select onChange={(e) => setSortOrder(e.target.value)} className='border-2 border-gray-300 text-sm px-2 h-12'>
+              <option value='asc'>Trier par : A-Z</option>
+              <option value='desc'>Trier par : Z-A</option>
+            </select>
+          </div>
         </div>
 
         {/** Liste des projets */}

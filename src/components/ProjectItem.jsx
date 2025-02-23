@@ -11,17 +11,20 @@ const ProjectItem = ({ id, name, description, association, type, startDate, endD
                             <img src={image} alt={`${name} image`} className='w-full h-full object-cover object-center' />
                         </div>
                     )}
-                    <div className='flex flex-col sm:flex-row items-center my-4'>
+                    <div className='flex flex-col sm:flex-row items-center my-2'>
                         <h2 className='text-lg font-semibold'>{name}</h2>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='text-sm text-gray-500'>Type de mission : <span className='font-semibold'>{type}</span></p>
-                        <p className='text-sm text-gray-500 mt-2'>{description}</p>
                         {association && <p className='text-sm text-gray-500 mt-2 font-semibold'>Association: {association}</p>}
-                        {startDate && <p className='text-sm text-gray-500 mt-2'>Début: {startDate}</p>}
-                        {endDate && <p className='text-sm text-gray-500 mt-2'>Fin: {endDate}</p>}
+                        {domain && <p className='text-sm text-gray-500'>Domaine de la mission: <span className='font-bold'>{domain}</span></p>}
+                        <p className='text-sm text-gray-500 mt-2'>{description}</p>
+                        {(startDate || endDate) && (
+                            <p className='text-sm text-gray-500 mt-2'>
+                                {startDate && `Début: ${startDate}`} {endDate && `- Fin: ${endDate}`}
+                            </p>
+                        )}
                         {budget && <p className='text-sm text-gray-500 mt-2'>Budget: {budget} {currency}</p>}
-                        {domain && <p className='text-sm text-gray-500 mt-2'>Domaine de la mission: <span className='font-bold'>{domain}</span></p>}
+                        <p className='text-sm text-gray-500 mt-2'>Type de mission : <span className='font-semibold'>{type}</span></p>
                     </div>
                 </div>
             </Link>
