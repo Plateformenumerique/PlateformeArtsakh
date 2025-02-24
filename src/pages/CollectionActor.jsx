@@ -16,9 +16,9 @@ const CollectionActor = () => {
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
-    const domain = params.get('domain');
-    if (domain) {
-      setSortDomaine([domain]);
+    const type = params.get('type');
+    if (type) {
+      setSortTypeActor([type]);
     }
   }, [location]);
 
@@ -53,7 +53,7 @@ const CollectionActor = () => {
         item.type.some(type => sortTypeActor.includes(type))
       );
     }
-  
+
     if (sortDomaine.length > 0) {
       actorsCopy = actorsCopy.filter(item => sortDomaine.includes(item.domain));
     }
@@ -111,13 +111,13 @@ const CollectionActor = () => {
           <p className='mb-3 text-sm font-medium'>TYPE D'ORGANISATION</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Non-governmental Organization'} onChange={toggleType} /> Non Gouvernementale
+              <input className='w-3' type='checkbox' value={'Organisation non gouvernementale'} onChange={toggleType} checked={sortTypeActor.includes('Organisation non gouvernementale')} /> Non Gouvernementale
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Collectivité territoriale'} onChange={toggleType} /> Collectivité territoriale
+              <input className='w-3' type='checkbox' value={'Collectivité territoriale'} onChange={toggleType} checked={sortTypeActor.includes('Collectivité territoriale')} /> Collectivité territoriale
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Association'} onChange={toggleType} /> Association
+              <input className='w-3' type='checkbox' value={'Association'} onChange={toggleType} checked={sortTypeActor.includes('Association')} /> Association
             </p>
           </div>
         </div>

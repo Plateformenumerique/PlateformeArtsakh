@@ -68,7 +68,7 @@ export const acteurs = [
         name: "Croix-Rouge Française",
         description: "Association humanitaire qui offre des secours d'urgence, actions sociales, santé, et formation aux premiers secours en France.",
         domain: "Logement",
-        type: ["Non-governmental Organization"],
+        type: ["Organisation non gouvernementale"],
         establishedDate: 1864,
         website: "https://www.croix-rouge.fr",
         logo: logo_Croix_Rouge_Française
@@ -78,7 +78,7 @@ export const acteurs = [
         name: "Association Solidarité Arménie",
         description: "Organisation de soutien pour le développement et la protection des droits en Arménie, axée sur l'aide aux réfugiés et les projets éducatifs.",
         domain: "Emploi - Formation",
-        type: ["Non-governmental Organization"],
+        type: ["Organisation non gouvernementale"],
         establishedDate: 1990,
         website: "https://www.solidaritearmenie.org",
         logo: logo_solidarite_armenie
@@ -88,7 +88,7 @@ export const acteurs = [
         name: "Médecins Sans Frontières",
         description: "Organisation médicale et humanitaire qui intervient en urgence dans les pays en crise pour apporter des soins de santé.",
         domain: "Agriculture",
-        type: ["Non-governmental Organization"],
+        type: ["Organisation non gouvernementale"],
         establishedDate: 1971,
         website: "https://www.msf.fr",
         logo: logo_medecin_sans_frontieres
@@ -98,7 +98,7 @@ export const acteurs = [
         name: "Fonds Arménien de France",
         description: "Organisation qui soutient les infrastructures et les programmes de développement en Arménie.",
         domain: "Santé",
-        type: ["Governmental Association"],
+        type: ["Association"],
         establishedDate: 1994,
         website: "https://www.fondsarmenien.org",
         logo: fonds_armeniens_de_france
@@ -138,7 +138,7 @@ export const acteurs = [
         name: "Association Franco-Arménienne",
         description: "Association qui promeut les relations culturelles et économiques entre la France et l'Arménie.",
         domain: "Emploi - Formation",
-        type: ["Non-governmental Organization"],
+        type: ["Organisation non gouvernementale"],
         establishedDate: 1989,
         website: "https://www.franco-armenie.org",
         logo: asso_franco_armenienne
@@ -148,7 +148,7 @@ export const acteurs = [
         name: "Secours Catholique",
         description: "Organisation qui apporte un soutien social et humanitaire aux personnes en situation de précarité, en France et à l'étranger.",
         domain: "Santé",
-        type: ["Non-governmental Organization"],
+        type: ["Organisation non gouvernementale"],
         establishedDate: 1946,
         website: "https://www.secours-catholique.org",
         logo: secours_catholique
