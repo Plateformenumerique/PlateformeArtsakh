@@ -5,7 +5,7 @@ const ProjectItem = ({ id, name, description, association, type, startDate, endD
         <div>
             <Link className='text-gray-700 cursor-pointer' to={`/projets/${id}`}>
                 {/* Card to present Projects */}
-                <div className='flex flex-col bg-white py-6 px-3 rounded-lg shadow-lg h-auto'>
+                <div className='flex flex-col bg-white py-6 px-3 p-4 border rounded-lg shadow-md hover:shadow-lg h-auto'>
                     {image && (
                         <div className='w-full h-56 overflow-hidden rounded-t-lg'>
                             <img src={image} alt={`${name} image`} className='w-full h-full object-cover object-center' />

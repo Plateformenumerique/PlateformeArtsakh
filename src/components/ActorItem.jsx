@@ -6,7 +6,7 @@ const ActorItem = ({ id, name, description, domain, type, establishedDate, websi
         <div>
             <Link className='text-gray-700 cursor-pointer' to={`/acteurs/${id}`}>
                 {/* Card to present actors */}
-                <div className='flex flex-col bg-white py-6 px-3 rounded-lg shadow-lg h-auto'>
+                <div className='flex flex-col bg-white py-6 px-3 border rounded-lg shadow-md hover:shadow-lg h-auto'>
                     <div className='flex flex-col sm:flex-row items-center mb-4'>
                         {logo && <img src={logo} alt={`${name} logo`} className='w-16 h-auto mb-4 sm:mb-0' />}
                         <h2 className='ml-2 text-lg font-semibold'>{name}</h2>

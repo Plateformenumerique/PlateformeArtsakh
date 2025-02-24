@@ -5,7 +5,7 @@ const ActualiteItem = ({ id, title, subtitle, content, detailedContent, date, au
     return (
         <div>
             {/* Card to present Actualites */}
-            <div className='flex flex-col bg-white rounded-lg shadow-lg h-auto'>
+            <div className='flex flex-col bg-white border rounded-lg shadow-md hover:shadow-lg h-auto'>
                 {image && (
                     <div className='w-full h-56 overflow-hidden rounded-t-lg'>
                         <img src={image} alt={`${title} image`} className='w-full h-full object-cover object-center' />

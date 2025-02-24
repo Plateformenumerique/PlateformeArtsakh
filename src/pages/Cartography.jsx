@@ -68,7 +68,7 @@ const Cartography = () => {
         <div className='flex flex-col sm:w-1/4 border-l border-gray-300 p-4'>
           {selectedRegion ? (
             <div>
-              <h2 className='text-lg font-semibold mb-4 mt-8'>Information sur le nombre de régufiés</h2>
+              <h2 className='text-lg font-semibold mb-4 mt-8'>Information sur le nombre de réfugiés</h2>
               <p className='text-base mb-2'>Région: {selectedRegion.name}</p>
               <p className='text-base'>Nombre : 400</p>
             </div>

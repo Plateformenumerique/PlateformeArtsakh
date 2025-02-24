@@ -75,9 +75,9 @@ const CollectionProject = () => {
         <p onClick={() => setShowFilter(!showFilter)} className='my-2 text-xl flex items-center cursor-pointer gap-2'>Filtres
           <img className={`h-3 sm:hidden ${showFilter ? 'rotate-90' : ''}`} src={assets.dropdown_icon} alt="" />
         </p>
-        {/** Filtre par Pays */}
+        {/** Filtre par Domaine */}
         <div className={`border border-gray-300 pl-5 py-3 mt-6 ${showFilter ? '' : 'hidden'} sm:block`}>
-          <p className='mb-3 text-sm font-medium'>PAYS</p>
+          <p className='mb-3 text-sm font-medium'>DOMAINE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
               <input className='w-3' type='checkbox' value={'Logement'} onChange={toggleDomaine} checked={sortDomaine.includes('Logement')} /> Logement
