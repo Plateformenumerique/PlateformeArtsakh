@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <div className='flex items-center justify-between py-5 font-medium'>
             <Link to='/'>
-                <img src={assets.logo} className='w-36' alt="" />
+                <img src={assets.LogoCADA} className='w-36' alt="" />
             </Link>
 
             <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
@@ -31,10 +31,12 @@ const Navbar = () => {
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
 
+                {/*
                 <NavLink to='/messagerie' className='flex flex-col items-center gap-1'>
                     <p>MESSAGERIE</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
+                */}
 
                 <NavLink to='/actualites' className='flex flex-col items-center gap-1'>
                     <p>ACTUALITÉS</p>

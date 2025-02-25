@@ -13,7 +13,7 @@ const Hero = () => {
                 </div>
                 <h1 className='prata-regular text-3xl sm:py-3 lg:text-3xl leading-relaxed'>Pour les réfugiés Karabaghiotes</h1>
                 <div className='flex items-center gap-2'>
-                    <p className='font-semibold text-sm md:text-base'>PLATFORME NUMERIQUE - <span className='text-lg'>Convergence pour l'Arménie <br /> en soutiens aux déplacés de l'Artsarkh</span></p>
+                    <p className='font-semibold text-sm md:text-base'>PLATFORME NUMERIQUE</p>
                     <p className='w-8 md:w-11 h-[1px] bg-[#414141]'></p>
                 </div>
             </div>

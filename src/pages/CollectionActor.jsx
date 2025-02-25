@@ -87,7 +87,7 @@ const CollectionActor = () => {
         </p>
         {/** Filtre par Pays */}
         <div className={`border border-gray-300 pl-5 py-3 mt-6 ${showFilter ? '' : 'hidden'} sm:block`}>
-          <p className='mb-3 text-sm font-medium'>DOMAINE</p>
+          <p className='mb-3 text-sm font-medium'>DOMAINE D'ACTIVITÉ</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
               <input className='w-3' type='checkbox' value={'Logement'} onChange={toggleDomaine} checked={sortDomaine.includes('Logement')} /> Logement
@@ -108,16 +108,16 @@ const CollectionActor = () => {
         </div>
         {/** Filtre par Type */}
         <div className={`border border-gray-300 pl-5 py-3 my-5 ${showFilter ? '' : 'hidden'} sm:block`}>
-          <p className='mb-3 text-sm font-medium'>TYPE D'ORGANISATION</p>
+          <p className='mb-3 text-sm font-medium'>PROFIL DE LA STRUCTURE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Organisation non gouvernementale'} onChange={toggleType} checked={sortTypeActor.includes('Organisation non gouvernementale')} /> Non Gouvernementale
+              <input className='w-3' type='checkbox' value={'Association'} onChange={toggleType} checked={sortTypeActor.includes('Association')} /> Association
             </p>
             <p className='flex gap-2'>
               <input className='w-3' type='checkbox' value={'Collectivité territoriale'} onChange={toggleType} checked={sortTypeActor.includes('Collectivité territoriale')} /> Collectivité territoriale
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Association'} onChange={toggleType} checked={sortTypeActor.includes('Association')} /> Association
+              <input className='w-3' type='checkbox' value={'Institutions'} onChange={toggleType} checked={sortTypeActor.includes('Institutions')} /> Institutions
             </p>
           </div>
         </div>
