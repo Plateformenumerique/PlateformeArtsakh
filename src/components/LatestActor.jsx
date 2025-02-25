@@ -10,11 +10,17 @@ const LatestActor = () => {
     // Get unique types
     const uniqueTypes = [...new Set(acteurs.flatMap(actor => actor.type))];
 
+    // Sort types in desired order
+    const sortedTypes = uniqueTypes.sort((a, b) => {
+        const order = ["Association", "Collectivité territoriale", "Institutions"];
+        return order.indexOf(a) - order.indexOf(b);
+    });
+
     // Type descriptions
     const typeDescriptions = {
-        "Organisation non gouvernementale": "Organisations indépendantes du gouvernement, souvent à but non lucratif, qui travaillent sur des projets humanitaires et de développement.",
         "Association": "Groupes de personnes réunies pour un but commun, souvent à but non lucratif.",
-        "Collectivité territoriale": "Entités administratives locales qui gèrent les affaires publiques dans une région spécifique."
+        "Collectivité territoriale": "Entités administratives locales qui gèrent les affaires publiques dans une région spécifique.",
+        "Institutions": "Organisations indépendantes du gouvernement, souvent à but non lucratif, qui travaillent sur des projets humanitaires et de développement."
     };
 
     // Handle click to navigate to CollectionActor with filter
@@ -33,7 +39,7 @@ const LatestActor = () => {
             {/* Rendering Type Cards */}
             <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 gap-y-6'>
                 {
-                    uniqueTypes.map((type, index) => (
+                    sortedTypes.map((type, index) => (
                         <div 
                             key={index} 
                             className='cursor-pointer p-4 border rounded-lg shadow-md hover:shadow-lg'
