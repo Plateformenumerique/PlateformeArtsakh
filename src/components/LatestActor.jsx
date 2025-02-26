@@ -12,16 +12,9 @@ const LatestActor = () => {
 
     // Sort types in desired order
     const sortedTypes = uniqueTypes.sort((a, b) => {
-        const order = ["Association", "Collectivité territoriale", "Institutions"];
+        const order = ["Associations", "Collectivités territoriales", "Institutions"];
         return order.indexOf(a) - order.indexOf(b);
     });
-
-    // Type descriptions
-    const typeDescriptions = {
-        "Association": "Groupes de personnes réunies pour un but commun, souvent à but non lucratif.",
-        "Collectivité territoriale": "Entités administratives locales qui gèrent les affaires publiques dans une région spécifique.",
-        "Institutions": "Organisations indépendantes du gouvernement, souvent à but non lucratif, qui travaillent sur des projets humanitaires et de développement."
-    };
 
     // Handle click to navigate to CollectionActor with filter
     const handleTypeClick = (type) => {
@@ -45,8 +38,7 @@ const LatestActor = () => {
                             className='cursor-pointer p-4 border rounded-lg shadow-md hover:shadow-lg'
                             onClick={() => handleTypeClick(type)}
                         >
-                            <h3 className='text-xl font-semibold'>{type}</h3>
-                            <p className='text-sm text-gray-700'>{typeDescriptions[type]}</p>
+                            <h3 className='text-xl font-semibold justify-center flex'>{type}</h3>
                         </div>
                     ))
                 }

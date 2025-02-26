@@ -100,7 +100,7 @@ export const acteurs = [
         name: "Fonds Arménien de France",
         description: "Organisation qui soutient les infrastructures et les programmes de développement en Arménie.",
         domain: "Santé",
-        type: ["Association"],
+        type: ["Associations"],
         establishedDate: 1994,
         website: "https://www.fondsarmenien.org",
         logo: fonds_armeniens_de_france
@@ -110,7 +110,7 @@ export const acteurs = [
         name: "Secours Populaire Français",
         description: "Organisation qui lutte contre la pauvreté et l'exclusion sociale, fournissant des aides alimentaires, vestimentaires et des loisirs en France.",
         domain: "Patrimoine",
-        type: ["Association", "Collectivité territoriale"],
+        type: ["Associations", "Collectivités territoriales"],
         establishedDate: 1945,
         website: "https://www.secourspopulaire.fr",
         logo: secours_populaire_logo
@@ -120,7 +120,7 @@ export const acteurs = [
         name: "Caritas Arménie",
         description: "Organisation caritative en Arménie qui se concentre sur les secours d'urgence, l'éducation et le développement communautaire.",
         domain: "Patrimoine",
-        type: ["Collectivité territoriale"],
+        type: ["Collectivités territoriales"],
         establishedDate: 1994,
         website: "https://www.caritas.am",
         logo: caritas_armenie
@@ -130,7 +130,7 @@ export const acteurs = [
         name: "Emmaüs France",
         description: "Mouvement solidaire en France qui lutte contre l'exclusion et aide les personnes en difficulté via des initiatives de recyclage et de réinsertion.",
         domain: "Santé",
-        type: ["Collectivité territoriale"],
+        type: ["Collectivités territoriales"],
         establishedDate: 1949,
         website: "https://www.emmaus-france.org",
         logo: emmaus_france
@@ -160,7 +160,7 @@ export const acteurs = [
         name: "Fondation Aznavour",
         description: "Fondation visant à promouvoir la culture arménienne et à soutenir le développement socio-économique en Arménie.",
         domain: "Agriculture",
-        type: ["Collectivité territoriale"],
+        type: ["Collectivités territoriales"],
         establishedDate: 2017,
         website: "https://www.aznavourfoundation.org",
         logo: fondation_aznavour

@@ -111,10 +111,10 @@ const CollectionActor = () => {
           <p className='mb-3 text-sm font-medium'>PROFIL DE LA STRUCTURE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Association'} onChange={toggleType} checked={sortTypeActor.includes('Association')} /> Association
+              <input className='w-3' type='checkbox' value={'Associations'} onChange={toggleType} checked={sortTypeActor.includes('Associations')} /> Associations
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Collectivité territoriale'} onChange={toggleType} checked={sortTypeActor.includes('Collectivité territoriale')} /> Collectivité territoriale
+              <input className='w-3' type='checkbox' value={'Collectivités territoriales'} onChange={toggleType} checked={sortTypeActor.includes('Collectivités territoriales')} /> Collectivités territoriales
             </p>
             <p className='flex gap-2'>
               <input className='w-3' type='checkbox' value={'Institutions'} onChange={toggleType} checked={sortTypeActor.includes('Institutions')} /> Institutions
