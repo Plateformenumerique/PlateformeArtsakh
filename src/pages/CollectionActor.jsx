@@ -146,6 +146,7 @@ const CollectionActor = () => {
                 type={item.type} 
                 description={truncateDescription(item.description, 115)} 
                 logo={item.logo} 
+                website={item.website}
                 establishedDate={item.establishedDate}
               />
             ))
