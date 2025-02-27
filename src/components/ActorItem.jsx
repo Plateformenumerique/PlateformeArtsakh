@@ -19,7 +19,7 @@ const ActorItem = ({ id, name, description, domain, type, establishedDate, websi
                         </h2>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='text-sm text-gray-500 font-semibold'>{domain.split(',').join(', ')}</p>
+                        <p className='text-sm text-gray-500 font-semibold'>{Array.isArray(domain) ? domain.join(', ') : domain}</p>
                         <p className='text-sm text-gray-500'>{Array.isArray(type) ? type.join(', ') : type}</p>
                         <p className='text-sm text-gray-500 mt-2'>{description}</p>
                         {establishedDate && <p className='text-sm text-gray-500 mt-2 font-semibold'>Depuis: {establishedDate}</p>}

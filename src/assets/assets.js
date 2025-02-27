@@ -129,7 +129,7 @@ export const acteurs = [
         _id: "7",
         name: "Emmaüs France",
         description: "Mouvement solidaire en France qui lutte contre l'exclusion et aide les personnes en difficulté via des initiatives de recyclage et de réinsertion.",
-        domain: "Santé",
+        domain: ["Santé", "Patrimoine"],
         type: ["Collectivités territoriales"],
         establishedDate: 1949,
         website: "https://www.emmaus-france.org",
