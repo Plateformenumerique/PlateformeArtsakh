@@ -7,9 +7,12 @@ const Footer = () => {
         <>
             <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm'>
                 <div>
-                    <img src={assets.LogoCADA} alt="" className='mb-5 w-32' />
+                    <div className='flex flex-row gap-6'> 
+                        <img src={assets.LogoCADA} alt="" className='mb-5 w-32' />
+                        <img src={assets.logo_asa} alt="" className='mb-5 w-32' />
+                    </div>
                     <p className='w-full md:w-2/3 text-gray-600'>
-                        Cette application vise à connecter les Organisations autour de projets communs, permettant non seulement de collaborer efficacement, mais aussi de visualiser et de suivre les différents projets en cours. Notre objectif est de faciliter les synergies et de maximiser l'impact des initiatives humanitaires.
+                        Cette plateforme interactive recense les acteurs français engagés en Arménie, leurs actions et besoins, et souhaite faciliter les synergies entre eux pour optimiser l’aide humanitaire aux déplacés d’Artsakh.
                     </p>
                 </div>
 

@@ -126,7 +126,7 @@ const CollectionActor = () => {
       {/** Filtre droite */}
       <div className='flex-1 '>
         <div className='flex justify-between text-base sm:text-2xl mb-4'>
-          <Title text1='Tous nos ' text2='Acteurs' />
+          <Title text1="Tous nos Acteurs engagés " text2="en Arménie en soutien des déplacés d'Artsakh" />
           {/** Trier par ordre alphabétique */}
           <select onChange={(e) => setSortOrder(e.target.value)} className='border-2 border-gray-300 text-sm px-2'>
             <option value='asc'>Trier par : A-Z</option>

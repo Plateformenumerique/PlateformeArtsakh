@@ -3,10 +3,10 @@ import { assets } from '../assets/assets'
 import Title from '../components/Title'
 
 const regions = [
-  { id: 'region1', name: 'Dzorashen', details: 'Distribution de nourriture et de vêtements pour les réfugiés du Haut-Karabagh.', cx: '200', cy: '150', r: '20' },
-  { id: 'region2', name: 'Achtarak', details: 'Fourniture de soins médicaux et de soutien psychologique aux familles déplacées.', cx: '250', cy: '100', r: '10' },
-  { id: 'region3', name: 'Gosh', details: 'Construction de logements temporaires pour les réfugiés.', cx: '400', cy: '200', r: '15' },
-  { id: 'region4', name: 'Martouni', details: 'Programmes éducatifs pour les enfants déplacés.', cx: '350', cy: '150', r: '30' },
+  { id: 'region1', name: 'Dzorashen', details: 'Distribution de nourriture et de vêtements pour les réfugiés du Haut-Karabagh.', cx: '100', cy: '150', r: '20' },
+  { id: 'region2', name: 'Achtarak', details: 'Fourniture de soins médicaux et de soutien psychologique aux familles déplacées.', cx: '300', cy: '400', r: '10' },
+  { id: 'region3', name: 'Gosh', details: 'Construction de logements temporaires pour les réfugiés.', cx: '200', cy: '200', r: '15' },
+  { id: 'region4', name: 'Martouni', details: 'Programmes éducatifs pour les enfants déplacés.', cx: '230', cy: '300', r: '30' },
 ]
 
 const Cartography = () => {
@@ -19,7 +19,7 @@ const Cartography = () => {
 
   return (
     <div className='flex flex-col gap-1 sm:gap-10 pt-10 border-t sm:text-2xl'>
-      <div className='flex flex-col sm:flex-row w-full'>
+      <div className='flex flex-col sm:flex-row w-full gap-4 '>
         <div className='flex flex-col sm:w-1/4 border-r border-gray-300 p-4'>
           <Title text1={'La'} text2={"cartographie"} />
           {selectedRegion ? (
@@ -39,7 +39,7 @@ const Cartography = () => {
           )}
         </div>
         <div className='relative flex-grow flex justify-center'>
-          <img src={assets.carte_3d_armenie_2} alt="Map" className='w-4/6 h-auto' />
+          <img src={assets.carte_artsakh_armenie} alt="Map" className='h-auto' />
           <svg className='absolute top-0 left-0 w-full h-full'>
             {regions.map(region => (
               region.cx && region.cy && region.r ? (
