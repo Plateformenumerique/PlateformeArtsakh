@@ -1,5 +1,4 @@
-import logo from './logo.png'
-import LogoCADA from './LogoCADA.png'
+import logo from './logo_convergences_arme.png'
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
 import dropdown_icon from './dropdown_icon.png'
@@ -36,7 +35,6 @@ import TATEV_market from './TATEV_market.jpg'
 
 export const assets = {
     logo,
-    LogoCADA,
     cart_icon,
     dropdown_icon,
     exchange_icon,
