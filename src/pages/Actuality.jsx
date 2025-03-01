@@ -33,9 +33,6 @@ const Actuality = () => {
         <span className="ml-2">/</span>
         <h2 className='text-lg font-semibold ml-2'>{actualityData.title}</h2>
       </div>
-      <p className="mt-5 text-3xl font-medium py-6">
-        {actualityData.content}
-      </p>
       <div className="flex justify-between items-center mb-10 sm:mb-0">
       <div className='flex flex-col sm:flex-row items-center mb-4'>
         <img src={actualityData.image} alt={`${actualityData.title} logo`} className='w-full h-auto mr-4 mb-4 sm:mb-0' />
@@ -48,15 +45,9 @@ const Actuality = () => {
           <p className="mt-5 text-gray-500 md:w-4/5">
             {actualityData.subtitle}
           </p>
-          <p className="mt-5 text-gray-500 md:w-4/5">
-            {actualityData.detailedContent}
-          </p>
-          <p className="mt-5 text-gray-500 md:w-4/5">
+          {/*<p className="mt-5 text-gray-500 md:w-4/5">
             Date: {actualityData.date}
-          </p>
-          <p className="mt-5 text-gray-500 md:w-4/5">
-            Author: {actualityData.author}
-          </p>
+          </p>*/}
           <hr className="mt-8 sm:w-4/5" />
         </div>
       </div>

@@ -32,7 +32,7 @@ const CollectionActualite = () => {
     return (
         <div className='flex flex-col gap-1 pt-10 border-t'>
             <div className='flex justify-between text-base sm:text-2xl'>
-                <Title text1='Tous nos ' text2='Acteurs Humanitaires' />
+                <Title text1='Toutes les réalisations ' text2='récentes et actualités' />
             </div>
             <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-6'>
                 {
@@ -42,11 +42,9 @@ const CollectionActualite = () => {
                             id={item._id} 
                             title={item.title} 
                             subtitle={item.subtitle} 
-                            content={item.content} 
-                            detailedContent={truncateDetailContent(item.detailedContent, 290)} 
                             date={item.date} 
-                            author={item.author} 
                             image={item.image} 
+                            lien={item.lien}
                         />
                     ))
                 }

@@ -27,7 +27,7 @@ const Navbar = () => {
                 </NavLink>
 
                 <NavLink to='/projets' className='flex flex-col items-center gap-1'>
-                    <p>INITIATIVES</p>
+                    <p>PARTENARIATS</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
 
@@ -39,7 +39,7 @@ const Navbar = () => {
                 */}
 
                 <NavLink to='/actualites' className='flex flex-col items-center gap-1'>
-                    <p>ACTUALITÉS</p>
+                    <p>RÉALISATIONS</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
 

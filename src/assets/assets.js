@@ -29,6 +29,10 @@ import secours_urgence_victime_guerre from './secours_urgence_victime_guerre.jpg
 import soutiens_personnes_deplacees from './soutiens_personnes_deplacees.jpg'
 import carte_3d_armenie_2 from './carte_3d_armenie_2.png'
 import forma from './forma.jpg'
+import logo_asa from './logo_asa.png'
+import carte_artsakh_armenie from './carte_artsakh_armenie.jpg'
+import convoi_armenie from './convoi-armenie.avif'
+import TATEV_market from './TATEV_market.jpg'
 
 export const assets = {
     logo,
@@ -61,7 +65,11 @@ export const assets = {
     secours_urgence_victime_guerre,
     soutiens_personnes_deplacees,
     carte_3d_armenie_2,
-    forma
+    forma,
+    logo_asa,
+    carte_artsakh_armenie,
+    convoi_armenie,
+    TATEV_market
 }
 
 export const acteurs = [
@@ -226,33 +234,27 @@ export const projets = [
 
 export const actualites = [
     {
-        _id: "3",
-        title: "Médecins Sans Frontières en action",
-        subtitle: "Déploiement d'équipes médicales supplémentaires",
-        content: "Médecins Sans Frontières a déployé des équipes médicales supplémentaires dans les zones de conflit pour fournir des soins d'urgence.",
-        detailedContent: "Dans les zones de conflit, les besoins médicaux sont souvent immenses et urgents. Médecins Sans Frontières a donc décidé de renforcer sa présence en envoyant des équipes supplémentaires. Ces équipes sont composées de médecins, d'infirmières et de logisticiens qui travaillent sans relâche pour apporter des soins vitaux aux populations touchées. Les défis sont nombreux, mais l'engagement de MSF reste inébranlable.",
+        _id: "1",
+        title: "Appel à projets franco-arménien",
+        subtitle: "Le ministère de l’Europe et des Affaires étrangères annonce l’ouverture de l’appel à projets Arménie 2025.",
         date: "2023-07-10",
-        author: "Albert Einstein",
-        image: secours_urgence_victime_guerre
+        image: secours_urgence_victime_guerre,
+        lien: "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/action-exterieure-des-collectivites-territoriales/appels-a-projets-2025/appels-a-projets-geographiques/appel-a-projets-franco-armenien/"
     },
     {
-        _id: "4",
-        title: "Fonds Arménien de France soutient les infrastructures",
-        subtitle: "Construction de nouvelles écoles et centres de santé",
-        content: "Le Fonds Arménien de France a financé la construction de nouvelles écoles et centres de santé en Arménie.",
-        detailedContent: "Grâce aux dons généreux de ses membres et sympathisants, le Fonds Arménien de France a pu lancer plusieurs projets de construction en Arménie. Ces projets incluent des écoles modernes équipées de toutes les commodités nécessaires pour offrir une éducation de qualité, ainsi que des centres de santé capables de fournir des soins médicaux de base et spécialisés. Ces initiatives visent à améliorer la qualité de vie des habitants et à soutenir le développement durable de la région.",
-        date: "2023-06-05",
-        author: "Isaac Newton",
-        image: soutiens_developpement_communautaire
-    },
-    {
-        _id: "5",
-        title: "Secours Populaire Français lutte contre la pauvreté",
-        subtitle: "Collecte de fonds pour soutenir les familles en difficulté",
-        content: "Le Secours Populaire Français a organisé une collecte de fonds pour soutenir les familles en difficulté en France.",
-        detailedContent: "Face à la montée de la pauvreté en France, le Secours Populaire Français a intensifié ses efforts pour venir en aide aux familles les plus vulnérables. Une grande collecte de fonds a été organisée, mobilisant des bénévoles et des donateurs à travers tout le pays. Les fonds récoltés permettront de fournir une aide alimentaire, des vêtements, et un soutien financier aux familles en difficulté. Cette initiative s'inscrit dans la mission du SPF de lutter contre toutes les formes de précarité.",
+        _id: "2",
+        title: "NEW MARKET IN TATEV",
+        subtitle: "Establishing a Local Market for Agricultural, Souvenir, and Handicraft Products in Tatev Municipality.",
         date: "2023-05-25",
-        author: "Marie Curie",
-        image: soutiens_personnes_deplacees
+        image: TATEV_market,
+        lien: "https://ourmountains.am/project/new-market-in-tatev/"
+    },
+    {
+        _id: "3",
+        title: "Arménie : un convoi humanitaire part de France pour apporter de l'aide aux réfugiés du Haut-Karabakh",
+        subtitle: "Alors que 100 000 Arméniens ont été forcés de fuir le Haut-Karabakh, la solidarité s’organise en France. Un convoi transportant du matériel médical part lundi 9 octobre de Martigues, près de Marseille, direction Erevan.",
+        date: " 09/10/2023 17:36",
+        image: convoi_armenie,
+        lien: "https://www.francetvinfo.fr/monde/armenie/armenie-un-convoi-humanitaire-part-de-france-pour-apporter-de-l-aide-aux-refugies-du-haut-karabakh_6111186.html"
     }
 ];

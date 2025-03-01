@@ -2,6 +2,7 @@ import React from 'react';
 import { Heart } from 'lucide-react';
 import DonationForm from '../components/DonationForm';
 import Title from '../components/Title';
+import { assets } from '../assets/assets';
 
 
 const Donation = () => {
@@ -22,7 +23,8 @@ const Donation = () => {
                 </div>
 
                 {/* Donation Form */}
-                <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex flex-col items-center bg-white rounded-2xl p-8 shadow-xl">
+                    <img src={assets.logo_asa} alt="ASA Logo" className="mb-5 w-32" />
                     <DonationForm />
                 </div>
 

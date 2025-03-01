@@ -9,12 +9,11 @@ const Hero = () => {
             <div className='text-[#414141]'>
                 <div className='flex items-center gap-2'>
                     <p className='w-8 md:w-11 h-[2px] bg-[#414141]'></p>
-                    <p className='font-semibold text-sm md:text-base'>PROJET DE CRÉATION</p>
-                </div>
-                <h1 className='prata-regular text-3xl sm:py-3 lg:text-3xl leading-relaxed'>Pour les réfugiés Karabaghiotes</h1>
-                <div className='flex items-center gap-2'>
                     <p className='font-semibold text-sm md:text-base'>PLATFORME NUMERIQUE</p>
-                    <p className='w-8 md:w-11 h-[1px] bg-[#414141]'></p>
+                </div>
+                <h1 className='prata-regular text-3xl sm:py-3 lg:text-3xl leading-relaxed'>en soutien aux déplacés artsakhiotes</h1>
+                <div className='flex flex-col items-end gap-2'>
+                    <p className='w-8 md:w-11 h-[2px] bg-[#414141]'></p>
                 </div>
             </div>
         </div>
