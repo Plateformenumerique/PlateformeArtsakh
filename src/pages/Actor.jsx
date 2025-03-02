@@ -43,10 +43,13 @@ const Actor = () => {
             Site Web de {actorData.name}
           </a>
           <p className="mt-5 text-gray-500 md:w-4/5">
-            Domaine: {actorData.domain}
+            Domaine: {Array.isArray(actorData.domain) ? actorData.domain.join(', ') : actorData.domain}
           </p>
           <p className="mt-5 text-3xl font-medium">
             {actorData.type} depuis {actorData.establishedDate}
+          </p>
+          <p className="mt-5 text-gray-500 md:w-4/5">
+            Dirigent: {actorData.dirigent}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
             {actorData.description}
