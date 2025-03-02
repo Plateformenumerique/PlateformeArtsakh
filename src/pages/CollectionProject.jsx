@@ -83,7 +83,7 @@ const CollectionProject = () => {
               <input className='w-3' type='checkbox' value={'Logement'} onChange={toggleDomaine} checked={sortDomaine.includes('Logement')} /> Logement
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Emploi - Formation'} onChange={toggleDomaine} checked={sortDomaine.includes('Emploi - Formation')} /> Emploi - Formation
+              <input className='w-3' type='checkbox' value={'Formation/Emploi'} onChange={toggleDomaine} checked={sortDomaine.includes('Formation/Emploi')} /> Formation/Emploi
             </p>
             <p className='flex gap-2'>
               <input className='w-3' type='checkbox' value={'Agriculture'} onChange={toggleDomaine} checked={sortDomaine.includes('Agriculture')} /> Agriculture

@@ -1,4 +1,3 @@
-import logo from './logo_convergences_arme.png'
 import cart_icon from './cart_icon.png'
 import bin_icon from './bin_icon.png'
 import dropdown_icon from './dropdown_icon.png'
@@ -29,12 +28,20 @@ import soutiens_personnes_deplacees from './soutiens_personnes_deplacees.jpg'
 import carte_3d_armenie_2 from './carte_3d_armenie_2.png'
 import forma from './forma.jpg'
 import logo_asa from './logo_asa.png'
+import logo_plateforme from './logo_plateforme.png'
 import carte_artsakh_armenie from './carte_artsakh_armenie.jpg'
 import convoi_armenie from './convoi-armenie.avif'
 import TATEV_market from './TATEV_market.jpg'
+import ville_lyon from './Ville_de_Lyon.png'
+import Dep_isere from './Dep_isere.png'
+import joeuf from './joeuf.jpg'
+import rara_logo from './rara_logo.svg'
+import Logo_CHENE from './Logo_CHENE.png'
+import ugab from './ugab.png'
+import fadf from './fadf.jpg'
+import Logo_Sante_Armenie from './Logo_Sante_Armenie.png'
 
 export const assets = {
-    logo,
     cart_icon,
     dropdown_icon,
     exchange_icon,
@@ -67,109 +74,121 @@ export const assets = {
     logo_asa,
     carte_artsakh_armenie,
     convoi_armenie,
-    TATEV_market
+    TATEV_market,
+    logo_plateforme,
+    ville_lyon,
+    Dep_isere,
+    joeuf,
+    rara_logo,
+    Logo_CHENE,
+    ugab,
+    fadf,
+    Logo_Sante_Armenie
 }
 
 export const acteurs = [
+    // Acteurs Institutionnels
     {
         _id: "1",
         name: "Croix-Rouge Française",
         description: "Association humanitaire qui offre des secours d'urgence, actions sociales, santé, et formation aux premiers secours en France.",
-        domain: "Logement",
+        domain: ["Logement", "Education", "Sociale", "Santé", "Formation/Emploi"],
         type: ["Institutions"],
         establishedDate: 1864,
         website: "https://www.croix-rouge.fr",
         logo: logo_Croix_Rouge_Française
     },
+
+    // Acteurs Associations
     {
         _id: "2",
-        name: "Association Solidarité Arménie",
-        description: "Organisation de soutien pour le développement et la protection des droits en Arménie, axée sur l'aide aux réfugiés et les projets éducatifs.",
-        domain: "Emploi - Formation",
-        type: ["Institutions"],
-        establishedDate: 1990,
-        website: "https://www.solidaritearmenie.org",
-        logo: logo_solidarite_armenie
-    },
-    {
-        _id: "3",
-        name: "Médecins Sans Frontières",
-        description: "Organisation médicale et humanitaire qui intervient en urgence dans les pays en crise pour apporter des soins de santé.",
-        domain: "Agriculture",
-        type: ["Institutions"],
-        establishedDate: 1971,
-        website: "https://www.msf.fr",
-        logo: logo_medecin_sans_frontieres
-    },
-    {
-        _id: "4",
-        name: "Fonds Arménien de France",
-        description: "Organisation qui soutient les infrastructures et les programmes de développement en Arménie.",
-        domain: "Santé",
+        name: "Fonds Arménien de France",
+        description: "Le Fonds Arménien de France intervient dans le domaine humanitaire, avec un accent particulier sur : La région Tavouch : Développement agro-pastoral et les régions frontalières : Développement agricole et aide aux réfugiés",
+        domain: ["Logement", "Education", "Sociale", "Formation/Emploi", "Agriculture"],
         type: ["Associations"],
-        establishedDate: 1994,
-        website: "https://www.fondsarmenien.org",
-        logo: fonds_armeniens_de_france
-    },
-    {
-        _id: "5",
-        name: "Secours Populaire Français",
-        description: "Organisation qui lutte contre la pauvreté et l'exclusion sociale, fournissant des aides alimentaires, vestimentaires et des loisirs en France.",
-        domain: "Patrimoine",
-        type: ["Associations", "Collectivités territoriales"],
-        establishedDate: 1945,
-        website: "https://www.secourspopulaire.fr",
-        logo: secours_populaire_logo
-    },
-    {
-        _id: "6",
-        name: "Caritas Arménie",
-        description: "Organisation caritative en Arménie qui se concentre sur les secours d'urgence, l'éducation et le développement communautaire.",
-        domain: "Patrimoine",
-        type: ["Collectivités territoriales"],
-        establishedDate: 1994,
-        website: "https://www.caritas.am",
-        logo: caritas_armenie
+        establishedDate: 1993,
+        website: "https://fondsarmenien.org/",
+        logo: fadf,
+        dirigent: "Pierre TERZIAN"
     },
     {
         _id: "7",
-        name: "Emmaüs France",
-        description: "Mouvement solidaire en France qui lutte contre l'exclusion et aide les personnes en difficulté via des initiatives de recyclage et de réinsertion.",
-        domain: ["Santé", "Patrimoine"],
-        type: ["Collectivités territoriales"],
-        establishedDate: 1949,
-        website: "https://www.emmaus-france.org",
-        logo: emmaus_france
+        name: "UGAB",
+        description: "L'UGAB a toujours joué un rôle essentiel dans l'histoire du peuple arménien. Depuis notre création en 1906, nous sommes restés fidèles à la vision de nos fondateurs en poursuivant notre mission à travers les décennies : œuvrer à la prospérité et au bien-être de tous les Arméniens. De manière générale, l’UGAB s'engage au quotidien pour développer et assurer la prospérité de l'Arménie, en créant des initiatives en faveur des industries, des individus et des communautés. Nous faisons le lien entre la diaspora et l’Arménie en proposant de nombreuses opportunités de collaboration et d’engagement. Nous avons des programmes d’éducation, de culture, d’aide humanitaire et de développement socio-économique s’adressant à toutes les tranches d’âge, dans toutes les régions d’Arménie et en diaspora.",
+        domain: ["Logement", "Education", "Sociale", "Santé", "Formation/Emploi"],
+        type: ["Associations"],
+        establishedDate: 1948,
+        website: "https://ugabfrance.org/fr",
+        logo: ugab,
+        dirigent: "GORTZOUNIAN Claude Nadia"
     },
     {
         _id: "8",
-        name: "Association Franco-Arménienne",
-        description: "Association qui promeut les relations culturelles et économiques entre la France et l'Arménie.",
-        domain: "Emploi - Formation",
-        type: ["Institutions"],
-        establishedDate: 1989,
-        website: "https://www.franco-armenie.org",
-        logo: asso_franco_armenienne
+        name: "Santé Arménie",
+        description: "Santé Arménie à pour mission d'apporter une aide médicale directe à la population arménienne à travers : Soins médicaux : Équipes mobiles et centres spécialisés. Formation : Académie médicale en ligne pour les professionnels de santé. Recherche clinique : Amélioration des pratiques médicales et traitements. Infrastructure : Construction et équipement des établissements de santé en Arménie.",
+        domain: ["Formation/Emploi", "Santé"],
+        type: ["Associations"],
+        establishedDate: 2021,
+        website: "https://www.santearmenie.org/",
+        logo: Logo_Sante_Armenie,
+        dirigent: "MEKINIAN Arsène"
     },
     {
         _id: "9",
-        name: "Secours Catholique",
-        description: "Organisation qui apporte un soutien social et humanitaire aux personnes en situation de précarité, en France et à l'étranger.",
-        domain: "Santé",
-        type: ["Institutions"],
-        establishedDate: 1946,
-        website: "https://www.secours-catholique.org",
-        logo: secours_catholique
+        name: "Chene",
+        description: "Nous intervenons dans la construction et la réhabilitation de maisons, d'écoles maternelles et d'équipements collectifs, tout en soutenant le développement du tissu socio-économique et agricole. Nous répondons également aux besoins d'urgence humanitaire.",
+        domain: ["Logement", "Agriculture", "Education", "Sociale"],
+        type: ["Associations"],
+        establishedDate: 1990,
+        website: "https://www.chene-france.org/",
+        logo: Logo_CHENE,
+        dirigent: "TOROSSIAN Schavarch"
+    },
+
+    // Acteurs Collectivités territoriales
+    {
+        _id: "3",
+        name: "Ville de Lyon",
+        description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
+        domain: [""],
+        type: ["Collectivités territoriales"],
+        establishedDate: 1982,
+        website: "https://www.lyon.fr/",
+        logo: ville_lyon,
+        dirigent: "DOUCET Grégory"
     },
     {
-        _id: "10",
-        name: "Fondation Aznavour",
-        description: "Fondation visant à promouvoir la culture arménienne et à soutenir le développement socio-économique en Arménie.",
-        domain: "Agriculture",
+        _id: "4",
+        name: "Département de l'Isère",
+        description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
+        domain: [""],
         type: ["Collectivités territoriales"],
-        establishedDate: 2017,
-        website: "https://www.aznavourfoundation.org",
-        logo: fondation_aznavour
+        establishedDate: 2010,
+        website: "https://www.isere.fr/",
+        logo: Dep_isere,
+        dirigent: "BARBIER Jean-Pierre"
+    },
+    {
+        _id: "5",
+        name: "Ville de Joeuf",
+        description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
+        domain: [""],
+        type: ["Collectivités territoriales"],
+        establishedDate: 2014,
+        website: "https://www.ville-joeuf.fr/",
+        logo: joeuf,
+        dirigent: "CORZANI André"
+    },
+    {
+        _id: "6",
+        name: "Région Auvergne Rhône Alpes",
+        description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
+        domain: [""],
+        type: ["Collectivités territoriales"],
+        establishedDate: 2019,
+        website: "https://www.auvergnerhonealpes.fr/",
+        logo: rara_logo,
+        dirigent: "PANNEKOUCKE Fabrice"
     }
 ];
 
@@ -226,7 +245,7 @@ export const projets = [
         budget: '250',
         currency: "EUR",
         image: soutiens_personnes_deplacees,
-        domain: "Emploi - Formation"
+        domain: "Formation/Emploi"
     }*/
 ];
 

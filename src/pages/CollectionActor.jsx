@@ -55,7 +55,9 @@ const CollectionActor = () => {
     }
 
     if (sortDomaine.length > 0) {
-      actorsCopy = actorsCopy.filter(item => sortDomaine.includes(item.domain));
+      actorsCopy = actorsCopy.filter(item => 
+        item.domain.some(d => sortDomaine.includes(d))
+      );
     }
   
     if (showSearch && search) {
@@ -93,7 +95,7 @@ const CollectionActor = () => {
               <input className='w-3' type='checkbox' value={'Logement'} onChange={toggleDomaine} checked={sortDomaine.includes('Logement')} /> Logement
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Emploi - Formation'} onChange={toggleDomaine} checked={sortDomaine.includes('Emploi - Formation')} /> Emploi - Formation
+              <input className='w-3' type='checkbox' value={'Formation/Emploi'} onChange={toggleDomaine} checked={sortDomaine.includes('Formation/Emploi')} /> Formation/Emploi
             </p>
             <p className='flex gap-2'>
               <input className='w-3' type='checkbox' value={'Agriculture'} onChange={toggleDomaine} checked={sortDomaine.includes('Agriculture')} /> Agriculture
@@ -103,6 +105,12 @@ const CollectionActor = () => {
             </p>
             <p className='flex gap-2'>
               <input className='w-3' type='checkbox' value={'Patrimoine'} onChange={toggleDomaine} checked={sortDomaine.includes('Patrimoine')} /> Patrimoine
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type='checkbox' value={'Education'} onChange={toggleDomaine} checked={sortDomaine.includes('Education')} /> Education
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type='checkbox' value={'Sociale'} onChange={toggleDomaine} checked={sortDomaine.includes('Sociale')} /> Sociale
             </p>
           </div>
         </div>
@@ -147,6 +155,7 @@ const CollectionActor = () => {
                 description={truncateDescription(item.description, 115)} 
                 logo={item.logo} 
                 website={item.website}
+                dirigent={item.dirigent}
                 establishedDate={item.establishedDate}
               />
             ))
