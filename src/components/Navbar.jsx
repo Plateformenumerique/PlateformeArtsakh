@@ -24,20 +24,20 @@ const Navbar = () => {
                 <img src={assets.logo_plateforme} className='w-36' alt="" />
             </Link>
 
-            <ul className='hidden sm:flex gap-5 text-sm text-gray-700 items-center'>
+            <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
                 
                 <NavLink to='/' className='flex flex-col items-center gap-1'>
                     <p>ACCUEIL</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
 
-                <div className='relative flex gap-1 items-center'>
+                <div className='relative flex gap-1'>
                     <NavLink to='/acteurs' className='flex flex-col items-center gap-1'>
                         <p>ACTEURS</p>
                         <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                     </NavLink>
                     <button onClick={handleDropdownClick} className='flex items-center'>
-                        <img src={assets.dropdown_icon} className="w-7 transition-transform" alt="Dropdown Icon" />
+                        <img src={assets.dropdown_icon} className="w-7 transition-transform mt-[-6px]" alt="Dropdown Icon" />
                     </button>
                     {dropdownVisible && (
                         <div className='absolute top-full left-0 mt-2 w-48 bg-white border rounded-lg shadow-lg'>
