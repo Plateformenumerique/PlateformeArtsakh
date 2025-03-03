@@ -63,6 +63,11 @@ const Navbar = () => {
                     <p>RÉALISATIONS</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
+               
+                <NavLink to='/messagerie' className='flex flex-col items-center gap-1'>
+                    <p>MESSAGERIE</p>
+                    <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
+                </NavLink>
 
                 <NavLink to='/cartographie' className='flex flex-col items-center gap-1'>
                     <p>CARTOGRAPHIE</p>
