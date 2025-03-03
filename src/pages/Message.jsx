@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Title from '../components/Title';
+import { assets } from '../assets/assets';
 
 const Message = () => {
   const [selectedChat, setSelectedChat] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const users = ['Croix-Rouge Française', 'Médecins Sans Frontières'];
   const groups = ['Opération E 2024', 'Action Sauvetage 2024', 'Secours Urgence Croix-Rouge'];
   const messages = [
@@ -13,12 +15,23 @@ const Message = () => {
     { sender: 'Secours Urgence Croix-Rouge', content: 'Merci à tous pour votre soutien continu.' },
   ];
 
+  const googleServicesLogos = [
+    assets.drive,
+    assets.gmail,
+    assets.meet,
+    assets.calendar,
+    assets.google
+  ];
+
   return (
     <div className='flex flex-col gap-1 sm:gap-10 pt-10 border-t sm:text-2xl'>
       <div className='flex justify-between items-center'>
         <Title text1={'La'} text2={"messagerie"} />
+        <button className='blue-gradient_bg text-white px-3 py-1 text-sm rounded-lg' onClick={() => setIsModalOpen(true)}>
+            Voir les services Google qui pourront être connectés 
+        </button>
         <div className='flex flex-col items-end'>
-          <button className='text-sm mb-1'>Connecter en tant que :</button>
+          <span className='text-sm mb-1'>Connecter en tant que :</span>
           <span className='blue-gradient_bg text-white px-3 py-1 text-sm rounded-lg'>Secours Populaires Français</span>
         </div>
       </div>
@@ -63,6 +76,24 @@ const Message = () => {
           )}
         </div>
       </div>
+
+      {isModalOpen && (
+        <div className='fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center'>
+          <div className='bg-white p-6 rounded-lg relative'>
+            <button className='absolute top-2 right-2 text-gray-500 hover:text-gray-700' onClick={() => setIsModalOpen(false)}>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 m-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <h2 className='text-xl mb-4'>Services Google</h2>
+            <div className='grid grid-cols-3 gap-10 px-10'>
+              {googleServicesLogos.map((logo, index) => (
+                <img key={index} src={logo} alt={`Google Service ${index}`} className='w-auto h-16' />
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -41,6 +41,12 @@ import ugab from './ugab.png'
 import fadf from './fadf.jpg'
 import Logo_Sante_Armenie from './Logo_Sante_Armenie.png'
 
+import drive from './google/drive.png'
+import gmail from './google/gmail.png'
+import meet from './google/meet.webp'
+import calendar from './google/calendar.png'
+import google from './google/google.png'
+
 export const assets = {
     cart_icon,
     dropdown_icon,
@@ -83,7 +89,12 @@ export const assets = {
     Logo_CHENE,
     ugab,
     fadf,
-    Logo_Sante_Armenie
+    Logo_Sante_Armenie,
+    drive,
+    gmail,
+    meet,
+    calendar,
+    google
 }
 
 export const acteurs = [
