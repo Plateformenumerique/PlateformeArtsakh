@@ -99,16 +99,6 @@ export const assets = {
 
 export const acteurs = [
     // Acteurs Institutionnels
-    {
-        _id: "1",
-        name: "Croix-Rouge Française",
-        description: "Association humanitaire qui offre des secours d'urgence, actions sociales, santé, et formation aux premiers secours en France.",
-        domain: ["Logement", "Education", "Sociale", "Santé", "Formation/Emploi"],
-        type: ["Institutions"],
-        establishedDate: 1864,
-        website: "https://www.croix-rouge.fr",
-        logo: logo_Croix_Rouge_Française
-    },
 
     // Acteurs Associations
     {
