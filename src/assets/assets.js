@@ -120,7 +120,9 @@ export const acteurs = [
         establishedDate: 1993,
         website: "https://fondsarmenien.org/",
         logo: fadf,
-        dirigent: "Pierre TERZIAN"
+        dirigeant: "Pierre TERZIAN",
+        mail: "mail",
+        telephone: "telephone"
     },
     {
         _id: "7",
@@ -131,7 +133,9 @@ export const acteurs = [
         establishedDate: 1948,
         website: "https://ugabfrance.org/fr",
         logo: ugab,
-        dirigent: "GORTZOUNIAN Claude Nadia"
+        dirigeant: "GORTZOUNIAN Claude Nadia",
+        mail: "mail",
+        telephone: "telephone"
     },
     {
         _id: "8",
@@ -142,7 +146,9 @@ export const acteurs = [
         establishedDate: 2021,
         website: "https://www.santearmenie.org/",
         logo: Logo_Sante_Armenie,
-        dirigent: "MEKINIAN Arsène"
+        dirigeant: "MEKINIAN Arsène",
+        mail: "mail",
+        telephone: "telephone"
     },
     {
         _id: "9",
@@ -153,7 +159,9 @@ export const acteurs = [
         establishedDate: 1990,
         website: "https://www.chene-france.org/",
         logo: Logo_CHENE,
-        dirigent: "TOROSSIAN Schavarch"
+        dirigeant: "TOROSSIAN Schavarch",
+        mail: "mail",
+        telephone: "telephone"
     },
 
     // Acteurs Collectivités territoriales
@@ -163,10 +171,11 @@ export const acteurs = [
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
         type: ["Collectivités territoriales"],
-        establishedDate: 1982,
         website: "https://www.lyon.fr/",
         logo: ville_lyon,
-        dirigent: "DOUCET Grégory"
+        dirigeant: "DOUCET Grégory",
+        mail: "mail",
+        telephone: "telephone"
     },
     {
         _id: "4",
@@ -174,10 +183,11 @@ export const acteurs = [
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
         type: ["Collectivités territoriales"],
-        establishedDate: 2010,
         website: "https://www.isere.fr/",
         logo: Dep_isere,
-        dirigent: "BARBIER Jean-Pierre"
+        dirigeant: "BARBIER Jean-Pierre",
+        mail: "mail",
+        telephone: "telephone"
     },
     {
         _id: "5",
@@ -185,10 +195,11 @@ export const acteurs = [
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
         type: ["Collectivités territoriales"],
-        establishedDate: 2014,
         website: "https://www.ville-joeuf.fr/",
         logo: joeuf,
-        dirigent: "CORZANI André"
+        dirigeant: "CORZANI André",
+        mail: "mail",
+        telephone: "telephone"
     },
     {
         _id: "6",
@@ -196,10 +207,11 @@ export const acteurs = [
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
         type: ["Collectivités territoriales"],
-        establishedDate: 2019,
         website: "https://www.auvergnerhonealpes.fr/",
         logo: rara_logo,
-        dirigent: "PANNEKOUCKE Fabrice"
+        dirigeant: "PANNEKOUCKE Fabrice",
+        mail: "mail",
+        telephone: "telephone"
     }
 ];
 

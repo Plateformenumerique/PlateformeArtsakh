@@ -1,7 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ActorItem = ({ id, name, description, domain, type, establishedDate, logo, dirigent }) => {
+const ActorItem = ({ id, name, description, domain, type, establishedDate, logo, dirigeant }) => {
+    const isCollectiviteTerritoriale = Array.isArray(type) && type.includes('Collectivités territoriales');
+
     return (
         <div>
             <div className='text-gray-700'>
@@ -19,15 +21,17 @@ const ActorItem = ({ id, name, description, domain, type, establishedDate, logo,
                             <p className='text-sm text-gray-500 font-semibold pt-2'>
                                 {Array.isArray(type) ? type.join(', ') : type}
                             </p>
-                            {dirigent && <p className='text-sm text-gray-500 mt-2'>Dirigent(e): <span className='font-semibold'>{dirigent}</span></p>}
+                            {dirigeant && <p className='text-sm text-gray-500 mt-2'>dirigeant(e): <span className='font-semibold'>{dirigeant}</span></p>}
                             <p className='text-sm text-gray-500 mt-2'>{description}</p>
-                            {establishedDate && <p className='text-sm text-gray-500 mt-2 font-semibold'>Depuis: {establishedDate}</p>}
+                            {!isCollectiviteTerritoriale && establishedDate && (
+                                <p className='text-sm text-gray-500 mt-2 font-semibold'>Depuis: {establishedDate}</p>
+                            )}
                         </div>
                     </div>
                 </Link>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ActorItem
+export default ActorItem;

@@ -49,10 +49,13 @@ const Actor = () => {
             {actorData.type} depuis {actorData.establishedDate}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
-            Dirigent: {actorData.dirigent}
+            dirigeant: {actorData.dirigeant}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
             {actorData.description}
+          </p>
+          <p className="mt-5 text-gray-500 md:w-4/5">
+            Contact: {actorData.mail}, {actorData.telephone}
           </p>
           <hr className="mt-8 sm:w-4/5" />
         </div>
