@@ -46,7 +46,8 @@ const Actor = () => {
             Domaine: {Array.isArray(actorData.domain) ? actorData.domain.join(', ') : actorData.domain}
           </p>
           <p className="mt-5 text-3xl font-medium">
-            {actorData.type} depuis {actorData.establishedDate}
+            {actorData.type}
+            {!Array.isArray(actorData.type) || !actorData.type.includes('Collectivité territoriale') ? ` depuis ${actorData.establishedDate}` : ''}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
             dirigeant: {actorData.dirigeant}

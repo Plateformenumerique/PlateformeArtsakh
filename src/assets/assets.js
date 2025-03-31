@@ -104,19 +104,19 @@ export const acteurs = [
     //    name: "Croix-Rouge Française",
     //    description: "Association humanitaire qui offre des secours d'urgence, actions sociales, santé, et formation aux premiers secours en France.",
     //    domain: ["Logement", "Education", "Sociale", "Santé", "Formation/Emploi"],
-    //    type: ["Institutions"],
+    //    type: ["Institution"],
     //    establishedDate: 1864,
     //    website: "https://www.croix-rouge.fr",
     //    logo: logo_Croix_Rouge_Française
     //},
 
-    // Acteurs Associations
+    // Acteurs Association
     {
         _id: "2",
         name: "Fonds Arménien de France",
         description: "Le Fonds Arménien de France intervient dans le domaine humanitaire, avec un accent particulier sur : La région Tavouch : Développement agro-pastoral et les régions frontalières : Développement agricole et aide aux réfugiés",
         domain: ["Logement", "Education", "Sociale", "Formation/Emploi", "Agriculture"],
-        type: ["Associations"],
+        type: ["Association"],
         establishedDate: 1993,
         website: "https://fondsarmenien.org/",
         logo: fadf,
@@ -129,7 +129,7 @@ export const acteurs = [
         name: "UGAB",
         description: "L'UGAB a toujours joué un rôle essentiel dans l'histoire du peuple arménien. Depuis notre création en 1906, nous sommes restés fidèles à la vision de nos fondateurs en poursuivant notre mission à travers les décennies : œuvrer à la prospérité et au bien-être de tous les Arméniens. De manière générale, l’UGAB s'engage au quotidien pour développer et assurer la prospérité de l'Arménie, en créant des initiatives en faveur des industries, des individus et des communautés. Nous faisons le lien entre la diaspora et l’Arménie en proposant de nombreuses opportunités de collaboration et d’engagement. Nous avons des programmes d’éducation, de culture, d’aide humanitaire et de développement socio-économique s’adressant à toutes les tranches d’âge, dans toutes les régions d’Arménie et en diaspora.",
         domain: ["Logement", "Education", "Sociale", "Santé", "Formation/Emploi"],
-        type: ["Associations"],
+        type: ["Association"],
         establishedDate: 1948,
         website: "https://ugabfrance.org/fr",
         logo: ugab,
@@ -142,7 +142,7 @@ export const acteurs = [
         name: "Santé Arménie",
         description: "Santé Arménie à pour mission d'apporter une aide médicale directe à la population arménienne à travers : Soins médicaux : Équipes mobiles et centres spécialisés. Formation : Académie médicale en ligne pour les professionnels de santé. Recherche clinique : Amélioration des pratiques médicales et traitements. Infrastructure : Construction et équipement des établissements de santé en Arménie.",
         domain: ["Formation/Emploi", "Santé"],
-        type: ["Associations"],
+        type: ["Association"],
         establishedDate: 2021,
         website: "https://www.santearmenie.org/",
         logo: Logo_Sante_Armenie,
@@ -155,7 +155,7 @@ export const acteurs = [
         name: "Chene",
         description: "Nous intervenons dans la construction et la réhabilitation de maisons, d'écoles maternelles et d'équipements collectifs, tout en soutenant le développement du tissu socio-économique et agricole. Nous répondons également aux besoins d'urgence humanitaire.",
         domain: ["Logement", "Agriculture", "Education", "Sociale"],
-        type: ["Associations"],
+        type: ["Association"],
         establishedDate: 1990,
         website: "https://www.chene-france.org/",
         logo: Logo_CHENE,
@@ -164,13 +164,13 @@ export const acteurs = [
         telephone: "telephone"
     },
 
-    // Acteurs Collectivités territoriales
+    // Acteurs Collectivité territoriale
     {
         _id: "3",
         name: "Ville de Lyon",
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
-        type: ["Collectivités territoriales"],
+        type: ["Collectivité territoriale"],
         website: "https://www.lyon.fr/",
         logo: ville_lyon,
         dirigeant: "DOUCET Grégory",
@@ -182,7 +182,7 @@ export const acteurs = [
         name: "Département de l'Isère",
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
-        type: ["Collectivités territoriales"],
+        type: ["Collectivité territoriale"],
         website: "https://www.isere.fr/",
         logo: Dep_isere,
         dirigeant: "BARBIER Jean-Pierre",
@@ -194,7 +194,7 @@ export const acteurs = [
         name: "Ville de Joeuf",
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
-        type: ["Collectivités territoriales"],
+        type: ["Collectivité territoriale"],
         website: "https://www.ville-joeuf.fr/",
         logo: joeuf,
         dirigeant: "CORZANI André",
@@ -206,7 +206,7 @@ export const acteurs = [
         name: "Région Auvergne Rhône Alpes",
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
-        type: ["Collectivités territoriales"],
+        type: ["Collectivité territoriale"],
         website: "https://www.auvergnerhonealpes.fr/",
         logo: rara_logo,
         dirigeant: "PANNEKOUCKE Fabrice",

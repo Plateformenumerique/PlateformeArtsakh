@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ActorItem = ({ id, name, description, domain, type, establishedDate, logo, dirigeant }) => {
-    const isCollectiviteTerritoriale = Array.isArray(type) && type.includes('Collectivités territoriales');
+    const isCollectiviteTerritoriale = Array.isArray(type) && type.includes('Collectivité territoriale');
 
     return (
         <div>
