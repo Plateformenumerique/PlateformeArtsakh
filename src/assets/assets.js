@@ -40,6 +40,7 @@ import Logo_CHENE from './Logo_CHENE.png'
 import ugab from './ugab.png'
 import fadf from './fadf.jpg'
 import Logo_Sante_Armenie from './Logo_Sante_Armenie.png'
+import Logo_Gardanne from './Logo_Gardanne.webp'
 
 import drive from './google/drive.png'
 import gmail from './google/gmail.png'
@@ -94,7 +95,8 @@ export const assets = {
     gmail,
     meet,
     calendar,
-    google
+    google,
+    Logo_Gardanne,
 }
 
 export const acteurs = [
@@ -212,7 +214,19 @@ export const acteurs = [
         dirigeant: "PANNEKOUCKE Fabrice",
         mail: "mail",
         telephone: "telephone"
-    }
+    },
+    {
+        _id: "7",
+        name: "Commune de Gardanne ",
+        description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
+        domain: [""],
+        type: ["Collectivité territoriale"],
+        website: "https://www.auvergnerhonealpes.fr/",
+        logo: rara_logo,
+        dirigeant: "PANNEKOUCKE Fabrice",
+        mail: "mail",
+        telephone: "telephone"
+    },
 ];
 
 export const projets = [
