@@ -3,10 +3,9 @@ import { assets } from '../assets/assets'
 import Title from '../components/Title'
 
 const regions = [
-  { id: 'region1', name: 'Dzorashen', details: 'Distribution de nourriture et de vêtements pour les réfugiés du Haut-Karabagh.', cx: '100', cy: '150', r: '20' },
-  { id: 'region2', name: 'Achtarak', details: 'Fourniture de soins médicaux et de soutien psychologique aux familles déplacées.', cx: '300', cy: '400', r: '10' },
-  { id: 'region3', name: 'Gosh', details: 'Construction de logements temporaires pour les réfugiés.', cx: '200', cy: '200', r: '15' },
-  { id: 'region4', name: 'Martouni', details: 'Programmes éducatifs pour les enfants déplacés.', cx: '230', cy: '300', r: '30' },
+  { id: 'region1', name: 'Syunik', details: 'Fourniture de soins médicaux et de soutien psychologique aux familles déplacées.', cx: '370', cy: '400', r: '10' },
+  { id: 'region2', name: 'Shirak', details: 'Construction de logements temporaires pour les réfugiés.', cx: '100', cy: '200', r: '15' },
+  { id: 'region3', name: 'Sevan', details: 'Programmes éducatifs pour les enfants déplacés.', cx: '250', cy: '300', r: '30' },
 ]
 
 const Cartography = () => {
@@ -38,8 +37,8 @@ const Cartography = () => {
             <p className='text-base'>Cliquez sur une région pour voir les détails</p>
           )}
         </div>
-        <div className='relative flex-grow flex justify-center'>
-          <img src={assets.carte_artsakh_armenie} alt="Map" className='h-auto' />
+        <div className='relative flex-grow flex justify-center items-center'>
+          <img src={assets.armenie_carte} alt="Map" className='h-auto max-w-full object-contain' />
           <svg className='absolute top-0 left-0 w-full h-full'>
             {regions.map(region => (
               region.cx && region.cy && region.r ? (
@@ -48,7 +47,7 @@ const Cartography = () => {
                   cx={region.cx} 
                   cy={region.cy} 
                   r={region.r} 
-                  className='fill-transparent stroke-red-500 cursor-pointer'
+                  className='fill-transparent stroke-red-500 cursor-pointer hover:stroke-red-700 transition-all duration-300'
                   onClick={() => handleRegionClick(region.id)} 
                   strokeWidth="2"
                 />
@@ -57,7 +56,7 @@ const Cartography = () => {
                   key={region.id}
                   id={region.id}
                   points={region.points}
-                  className='fill-transparent stroke-red-500 cursor-pointer'
+                  className='fill-transparent stroke-red-500 cursor-pointer hover:stroke-red-700 transition-all duration-300'
                   onClick={() => handleRegionClick(region.id)}
                   strokeWidth="2"
                 />

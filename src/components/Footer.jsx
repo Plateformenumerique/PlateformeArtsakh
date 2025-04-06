@@ -11,9 +11,6 @@ const Footer = () => {
                         <img src={assets.logo_plateforme} alt="" className='mb-5 w-36 h-auto' />
                         <img src={assets.logo_asa} alt="" className='mb-5 w-32' />
                     </div>
-                    <p className='w-full md:w-2/3 text-gray-600'>
-                        Cette plateforme interactive recense les acteurs français engagés en Arménie, leurs actions et besoins, et souhaite faciliter les synergies entre eux pour optimiser l’aide humanitaire aux déplacés d’Artsakh.
-                    </p>
                 </div>
 
                 <div>

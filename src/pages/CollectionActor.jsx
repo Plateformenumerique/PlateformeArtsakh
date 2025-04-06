@@ -110,7 +110,7 @@ const CollectionActor = () => {
               <input className='w-3' type='checkbox' value={'Education'} onChange={toggleDomaine} checked={sortDomaine.includes('Education')} /> Education
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Sociale'} onChange={toggleDomaine} checked={sortDomaine.includes('Sociale')} /> Sociale
+              <input className='w-3' type='checkbox' value={'Social'} onChange={toggleDomaine} checked={sortDomaine.includes('Social')} /> Social
             </p>
           </div>
         </div>

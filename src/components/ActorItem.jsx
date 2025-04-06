@@ -21,7 +21,7 @@ const ActorItem = ({ id, name, description, domain, type, establishedDate, logo,
                             <p className='text-sm text-gray-500 font-semibold pt-2'>
                                 {Array.isArray(type) ? type.join(', ') : type}
                             </p>
-                            {dirigeant && <p className='text-sm text-gray-500 mt-2'>dirigeant(e): <span className='font-semibold'>{dirigeant}</span></p>}
+                            {dirigeant && <p className='text-sm text-gray-500 mt-2'>Dirigeant(e): <span className='font-semibold'>{dirigeant}</span></p>}
                             <p className='text-sm text-gray-500 mt-2'>{description}</p>
                             {!isCollectiviteTerritoriale && establishedDate && (
                                 <p className='text-sm text-gray-500 mt-2 font-semibold'>Depuis: {establishedDate}</p>
