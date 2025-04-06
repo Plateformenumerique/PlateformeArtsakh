@@ -52,7 +52,10 @@ const Project = () => {
             Domaine de la mission : {projectData.domain}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
-            Budget: {projectData.budget} {projectData.currency}
+            Budget: {projectData.currency}{projectData.budget}
+          </p>
+          <p className="mt-5 text-gray-500 md:w-4/5">
+            Lien vers l'article : <a href={projectData.externalLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">{projectData.externalLink}</a>
           </p>
           <hr className="mt-8 sm:w-4/5" />
           <button onClick={handleContributeClick} className="mt-5 border px-4 py-2 rounded transition duration-300">

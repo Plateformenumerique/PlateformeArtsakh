@@ -145,6 +145,7 @@ const CollectionProject = () => {
                 currency={item.currency}
                 image={item.image}
                 domain={item.domain}
+                externalLink={item.externalLink}
               />
             ))
           }

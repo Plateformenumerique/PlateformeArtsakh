@@ -44,6 +44,7 @@ const CollectionActualite = () => {
                             subtitle={item.subtitle} 
                             date={item.date} 
                             image={item.image} 
+                            video={item.video}
                             lien={item.lien}
                         />
                     ))

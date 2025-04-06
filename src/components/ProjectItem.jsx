@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-const ProjectItem = ({ id, name, description, association, type, startDate, endDate, budget, currency, image, domain }) => {
+
+const ProjectItem = ({ id, name, description, association, type, startDate, endDate, budget, currency, image, domain, externalLink }) => {
     return (
         <div>
             <Link className='text-gray-700 cursor-pointer' to={`/projets/${id}`}>
@@ -23,7 +24,6 @@ const ProjectItem = ({ id, name, description, association, type, startDate, endD
                                 {startDate && `Début: ${startDate}`} {endDate && `- Fin: ${endDate}`}
                             </p>
                         )}
-                        {budget && <p className='text-sm text-gray-500 mt-2'>Budget: {budget} {currency}</p>}
                         <p className='text-sm text-gray-500 mt-2'>Type de mission : <span className='font-semibold'>{type}</span></p>
                     </div>
                 </div>

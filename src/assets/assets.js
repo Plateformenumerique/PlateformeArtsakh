@@ -21,15 +21,14 @@ import emmaus_france from './emmaus_france.png'
 import asso_franco_armenienne from './asso_franco_armenienne.jpeg'
 import secours_catholique from './secours_catholique.png'
 import fondation_aznavour from './fondation_aznavour.jpg'
-import soutiens_refugies_karabaghiotes from './soutiens_refugies_karabaghiotes.jpg'
+import formation_watm from './formation-watm.jpg'
 import soutiens_developpement_communautaire from './soutiens_developpement_communautaire.jpeg'
 import secours_urgence_victime_guerre from './secours_urgence_victime_guerre.jpg'
 import soutiens_personnes_deplacees from './soutiens_personnes_deplacees.jpg'
-import carte_3d_armenie_2 from './carte_3d_armenie_2.png'
 import forma from './forma.jpg'
 import logo_asa from './logo_asa.png'
 import logo_plateforme from './logo_plateforme.png'
-import carte_artsakh_armenie from './carte_artsakh_armenie.jpg'
+import armenie_carte from './armenie-carte.png'
 import convoi_armenie from './convoi-armenie.avif'
 import TATEV_market from './TATEV_market.jpg'
 import ville_lyon from './Ville_de_Lyon.png'
@@ -41,12 +40,15 @@ import ugab from './ugab.png'
 import fadf from './fadf.jpg'
 import Logo_Sante_Armenie from './Logo_Sante_Armenie.png'
 import Logo_Gardanne from './Logo_Gardanne.webp'
-
+import stetienne from './stetienne.jpg'
 import drive from './google/drive.png'
 import gmail from './google/gmail.png'
 import meet from './google/meet.webp'
 import calendar from './google/calendar.png'
 import google from './google/google.png'
+import Weareourmountains from './Weareourmountains.mp4'
+import LogoUnionfrarm from './LogoUnionfrarm.webp'
+import croix_bleue from './croix_bleue.jpg'
 
 export const assets = {
     cart_icon,
@@ -72,14 +74,13 @@ export const assets = {
     asso_franco_armenienne,
     secours_catholique,
     fondation_aznavour,
-    soutiens_refugies_karabaghiotes,
+    formation_watm,
     soutiens_developpement_communautaire,
     secours_urgence_victime_guerre,
     soutiens_personnes_deplacees,
-    carte_3d_armenie_2,
     forma,
     logo_asa,
-    carte_artsakh_armenie,
+    armenie_carte,
     convoi_armenie,
     TATEV_market,
     logo_plateforme,
@@ -97,50 +98,55 @@ export const assets = {
     calendar,
     google,
     Logo_Gardanne,
+    stetienne,
+    Weareourmountains,
+    LogoUnionfrarm,
+    croix_bleue
 }
 
 export const acteurs = [
-    // Acteurs Institutionnels
+    // Type dacteurs "Association" | "Collectivité territoriale" | "Institution"
+
+
     //**{
     //    _id: "1",
     //    name: "Croix-Rouge Française",
     //    description: "Association humanitaire qui offre des secours d'urgence, actions sociales, santé, et formation aux premiers secours en France.",
-    //    domain: ["Logement", "Education", "Sociale", "Santé", "Formation/Emploi"],
+    //    domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"],
     //    type: ["Institution"],
     //    establishedDate: 1864,
     //    website: "https://www.croix-rouge.fr",
     //    logo: logo_Croix_Rouge_Française
     //},
 
-    // Acteurs Association
     {
         _id: "2",
         name: "Fonds Arménien de France",
         description: "Le Fonds Arménien de France intervient dans le domaine humanitaire, avec un accent particulier sur : La région Tavouch : Développement agro-pastoral et les régions frontalières : Développement agricole et aide aux réfugiés",
-        domain: ["Logement", "Education", "Sociale", "Formation/Emploi", "Agriculture"],
+        domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"],
         type: ["Association"],
         establishedDate: 1993,
         website: "https://fondsarmenien.org/",
         logo: fadf,
         dirigeant: "Pierre TERZIAN",
-        mail: "mail",
-        telephone: "telephone"
+        mail: "info@fondsarmenien.org",
+        telephone: "01 48 83 51 06"
     },
     {
-        _id: "7",
+        _id: "3",
         name: "UGAB",
         description: "L'UGAB a toujours joué un rôle essentiel dans l'histoire du peuple arménien. Depuis notre création en 1906, nous sommes restés fidèles à la vision de nos fondateurs en poursuivant notre mission à travers les décennies : œuvrer à la prospérité et au bien-être de tous les Arméniens. De manière générale, l’UGAB s'engage au quotidien pour développer et assurer la prospérité de l'Arménie, en créant des initiatives en faveur des industries, des individus et des communautés. Nous faisons le lien entre la diaspora et l’Arménie en proposant de nombreuses opportunités de collaboration et d’engagement. Nous avons des programmes d’éducation, de culture, d’aide humanitaire et de développement socio-économique s’adressant à toutes les tranches d’âge, dans toutes les régions d’Arménie et en diaspora.",
-        domain: ["Logement", "Education", "Sociale", "Santé", "Formation/Emploi"],
+        domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"],
         type: ["Association"],
         establishedDate: 1948,
         website: "https://ugabfrance.org/fr",
         logo: ugab,
         dirigeant: "GORTZOUNIAN Claude Nadia",
-        mail: "mail",
-        telephone: "telephone"
+        mail: "administratif@agbu.org",
+        telephone: "01 45 20 03 18"
     },
     {
-        _id: "8",
+        _id: "4",
         name: "Santé Arménie",
         description: "Santé Arménie à pour mission d'apporter une aide médicale directe à la population arménienne à travers : Soins médicaux : Équipes mobiles et centres spécialisés. Formation : Académie médicale en ligne pour les professionnels de santé. Recherche clinique : Amélioration des pratiques médicales et traitements. Infrastructure : Construction et équipement des établissements de santé en Arménie.",
         domain: ["Formation/Emploi", "Santé"],
@@ -149,26 +155,24 @@ export const acteurs = [
         website: "https://www.santearmenie.org/",
         logo: Logo_Sante_Armenie,
         dirigeant: "MEKINIAN Arsène",
-        mail: "mail",
-        telephone: "telephone"
+        mail: "contact@santearmenie.org",
+        telephone: "01 45 24 72 79"
     },
     {
-        _id: "9",
+        _id: "5",
         name: "Chene",
         description: "Nous intervenons dans la construction et la réhabilitation de maisons, d'écoles maternelles et d'équipements collectifs, tout en soutenant le développement du tissu socio-économique et agricole. Nous répondons également aux besoins d'urgence humanitaire.",
-        domain: ["Logement", "Agriculture", "Education", "Sociale"],
+        domain: ["Logement", "Agriculture", "Education", "Social"],
         type: ["Association"],
         establishedDate: 1990,
         website: "https://www.chene-france.org/",
         logo: Logo_CHENE,
         dirigeant: "TOROSSIAN Schavarch",
-        mail: "mail",
-        telephone: "telephone"
+        mail: "contact@chene-france.org",
+        telephone: ""
     },
-
-    // Acteurs Collectivité territoriale
     {
-        _id: "3",
+        _id: "6",
         name: "Ville de Lyon",
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
@@ -176,11 +180,11 @@ export const acteurs = [
         website: "https://www.lyon.fr/",
         logo: ville_lyon,
         dirigeant: "DOUCET Grégory",
-        mail: "mail",
-        telephone: "telephone"
+        mail: "roxane.beneyton@mairie-lyon.fr",
+        telephone: ""
     },
     {
-        _id: "4",
+        _id: "7",
         name: "Département de l'Isère",
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
@@ -188,11 +192,11 @@ export const acteurs = [
         website: "https://www.isere.fr/",
         logo: Dep_isere,
         dirigeant: "BARBIER Jean-Pierre",
-        mail: "mail",
-        telephone: "telephone"
+        mail: "",
+        telephone: ""
     },
     {
-        _id: "5",
+        _id: "8",
         name: "Ville de Joeuf",
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
@@ -200,11 +204,11 @@ export const acteurs = [
         website: "https://www.ville-joeuf.fr/",
         logo: joeuf,
         dirigeant: "CORZANI André",
-        mail: "mail",
-        telephone: "telephone"
+        mail: "",
+        telephone: ""
     },
     {
-        _id: "6",
+        _id: "9",
         name: "Région Auvergne Rhône Alpes",
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
@@ -212,11 +216,11 @@ export const acteurs = [
         website: "https://www.auvergnerhonealpes.fr/",
         logo: rara_logo,
         dirigeant: "PANNEKOUCKE Fabrice",
-        mail: "mail",
-        telephone: "telephone"
+        mail: "Bruno.chiaverni@auvergnerhonealpes.fr",
+        telephone: "04 26 73 40 69 "
     },
     {
-        _id: "7",
+        _id: "10",
         name: "Commune de Gardanne ",
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
@@ -224,24 +228,63 @@ export const acteurs = [
         website: "https://www.auvergnerhonealpes.fr/",
         logo: rara_logo,
         dirigeant: "PANNEKOUCKE Fabrice",
-        mail: "mail",
-        telephone: "telephone"
+        mail: "arnaud-mazille@ville-gardanne.fr",
+        telephone: "07 88 35 93 93"
+    },
+    {
+        _id: "11",
+        name: " Ville de Saint-Etienne ",
+        description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
+        domain: [""],
+        type: ["Collectivité territoriale"],
+        website: "https://www.saint-etienne.fr",
+        logo: stetienne,
+        dirigeant: "PERDRIAU Gaël",
+        mail: "sona.hedhibi@saint-etienne-metropole.fr",
+        telephone: "04 77 48 63 65"
+    },
+    {
+        _id: "12",
+        name: "Union Franco-Arménienne",
+        description: "Notre association vise à préserver, promouvoir et intégrer avec succès la culture arménienne en France, tout en développant des échanges culturels, en organisant des événements culturels et caritatifs et en mettant en œuvre des projets humanitaires, sportifs et éducatifs en France et en Arménie.",
+        domain: ["Education", "Social", "Culture"],
+        type: ["Association"],
+        website: "https://www.unionfrarm.com",
+        logo: LogoUnionfrarm,
+        establishedDate: 2021,
+        dirigeant: "ARZOYAN Artur",
+        mail: "contact@unionfrarm.com",
+        telephone: "+33 (0)6 95 14 77 67"
+    },
+    {
+        _id: "13",
+        name: "Croix Bleue des Arméniens de France",
+        description: "La Croix Bleue des Arméniens de France agit dans les domaines de l’humanitaire, du social et de la culture. Ainsi, la CBAF oeuvre aussi pour la transmission et la pérennisation de la langue et de l’identité arméniennes, en portant surtout une attention particulière aux jeunes générations, notamment dans ses écoles et sa colonie. Lien fondamental entre les citoyens français d’origine arménienne, elle contribue aussi à favoriser l’intégration des nouveaux immigrés arméniens.",
+        domain: ["Logement", "Social", "Santé"],
+        type: ["Association"],
+        website: "https://www.croixbleue-france.com/",
+        logo: croix_bleue,
+        establishedDate: 1928,
+        dirigeant: "Corinne Sévane Mardirossian",
+        mail: "cbaf@wanadoo.fr",
+        telephone: "+33 (0)1 53 34 18 18"
     },
 ];
 
 export const projets = [
     {
         _id: "1",
-        name: "Projet de spectacle en soutiens aux réfugiées karabaghiotes",
-        description: "Besoin de 3 musiciens pour le spectacle aux réfugiées karabaghiotes",
-        association: "Association Solidarité Arménie",
+        name: "PROGRAMME DE LANGUE FRANÇAISE POUR LES ÉTUDIANTS D'ARTSAKH",
+        description: "Le programme de langue française vise à fournir des cours complets de langue française aux étudiants de l'Artsakh, comblant ainsi les lacunes de leur programme.",
+        association: "We are our mountains",
         type: "Urgence",
-        startDate: "2020-01-01",
-        endDate: "2020-12-31",
-        budget: '100',
-        currency: "EUR",
-        image: soutiens_refugies_karabaghiotes,
-        domain: ["Santé", "Formation"]
+        startDate: "Mars 2024",
+        endDate: "Janvier 2025",
+        budget: '6 402',
+        currency: "$",
+        image: formation_watm,
+        domain: ["Formation"],
+        externalLink: "https://ourmountains.am/project/french-language-program-for-artsakh-students/"
     }
     /*
     }
@@ -297,11 +340,11 @@ export const actualites = [
     },
     {
         _id: "2",
-        title: "NEW MARKET IN TATEV",
-        subtitle: "Establishing a Local Market for Agricultural, Souvenir, and Handicraft Products in Tatev Municipality.",
+        title: "Projet WINGS",
+        subtitle: "Le projet Wings, porté par l’association artsakhiote « Nous sommes nos Montagnes » partenaire de l'Association de Soutien à l'Artsakh, joue un rôle central. Ce programme est destiné à aider les familles, et tout particulièrement les enfants, à se reconstruire sur les plans éducatif, psychologique et social, afin de se réadapter dans un nouveau cadre de vie.",
         date: "2023-05-25",
-        image: TATEV_market,
-        lien: "https://ourmountains.am/project/new-market-in-tatev/"
+        video: Weareourmountains,
+        lien: "#"
     },
     {
         _id: "3",
