@@ -35,7 +35,12 @@ const ActualiteItem = ({ title, subtitle, date, image, video, lien }) => {
                 </div>
 
                 <div className='flex justify-end mt-4'>
-                    <Link to={lien} target='_blank' className='text-white hover:underline py-2 px-4 rounded-tl-lg rounded-br-lg blue-gradient_bg'>
+                    <Link
+                        to={lien}
+                        target='_blank'
+                        className='text-white hover:underline py-2 px-4 rounded-tl-lg rounded-br-lg blue-gradient_bg'
+                        onClick={(e) => e.stopPropagation()}
+                    >
                         Lire l'article
                     </Link>
                 </div>

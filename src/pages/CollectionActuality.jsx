@@ -34,7 +34,7 @@ const CollectionActualite = () => {
             <div className='flex justify-between text-base sm:text-2xl'>
                 <Title text1='Toutes les réalisations ' text2='récentes et actualités' />
             </div>
-            <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-6'>
                 {
                     filterActualites.map((item, index) => (
                         <ActualiteItem 

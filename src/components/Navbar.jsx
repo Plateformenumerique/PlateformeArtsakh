@@ -93,9 +93,9 @@ const Navbar = () => {
                     </div>
                     <NavLink className='py-2 pl-6 border' to='/'>ACCUEIL</NavLink>
                     <NavLink className='py-2 pl-6 border' to='/acteurs'>ACTEURS</NavLink>
-                    <NavLink className='py-2 pl-6 border' to='/projets'>PROJETS</NavLink>
+                    <NavLink className='py-2 pl-6 border' to='/projets'>PARTENARIATS</NavLink>
+                    <NavLink className='py-2 pl-6 border' to='/actualites'>RÉALISATIONS</NavLink>
                     <NavLink className='py-2 pl-6 border' to='/messagerie'>MESSAGERIE</NavLink>
-                    <NavLink className='py-2 pl-6 border' to='/actualites'>ACTUALITÉS</NavLink>
                     <NavLink className='py-2 pl-6 border' to='/cartographie'>CARTOGRAPHIE</NavLink>
                     <NavLink className='py-2 pl-6 border' to='/donation'>FAIRE UN DON</NavLink>
                 </div>
