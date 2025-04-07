@@ -15,7 +15,7 @@ const ActualiteItem = ({ title, subtitle, date, image, video, lien }) => {
                     </div>
                 ) : (
                     image && (
-                        <div className='w-full h-56 overflow-hidden rounded-t-lg'>
+                        <div className='w-full h-60 overflow-hidden rounded-t-lg'>
                             <img src={image} alt={`${title} image`} className='w-full h-full object-cover object-center' />
                         </div>
                     )
@@ -30,7 +30,9 @@ const ActualiteItem = ({ title, subtitle, date, image, video, lien }) => {
                     </div>
                     */}
                     <div className='flex flex-col'>
-                        <p className='text-base text-gray-500 font-semibold'>{subtitle}</p>
+                        <p className='text-base text-gray-500 font-semibold mt-2'>
+                            {subtitle.length > 200 ? `${subtitle.substring(0, 200)}...` : subtitle}
+                        </p>
                     </div>
                 </div>
 

@@ -23,7 +23,7 @@ import secours_catholique from './secours_catholique.png'
 import fondation_aznavour from './fondation_aznavour.jpg'
 import formation_watm from './formation-watm.jpg'
 import soutiens_developpement_communautaire from './soutiens_developpement_communautaire.jpeg'
-import secours_urgence_victime_guerre from './secours_urgence_victime_guerre.jpg'
+import quai_image from './quai_image.jpg'
 import soutiens_personnes_deplacees from './soutiens_personnes_deplacees.jpg'
 import forma from './forma.jpg'
 import logo_asa from './logo_asa.png'
@@ -76,7 +76,7 @@ export const assets = {
     fondation_aznavour,
     formation_watm,
     soutiens_developpement_communautaire,
-    secours_urgence_victime_guerre,
+    quai_image,
     soutiens_personnes_deplacees,
     forma,
     logo_asa,
@@ -128,8 +128,8 @@ export const acteurs = [
         establishedDate: 1993,
         website: "https://fondsarmenien.org/",
         logo: fadf,
-        dirigeant: "Pierre TERZIAN",
-        mail: "info@fondsarmenien.org",
+        dirigeant: "Pierre Terzian",
+        email: "info@fondsarmenien.org",
         telephone: "01 48 83 51 06"
     },
     {
@@ -141,8 +141,8 @@ export const acteurs = [
         establishedDate: 1948,
         website: "https://ugabfrance.org/fr",
         logo: ugab,
-        dirigeant: "GORTZOUNIAN Claude Nadia",
-        mail: "administratif@agbu.org",
+        dirigeant: "Claude Nadia Gortzounian",
+        email: "administratif@agbu.org",
         telephone: "01 45 20 03 18"
     },
     {
@@ -154,8 +154,8 @@ export const acteurs = [
         establishedDate: 2021,
         website: "https://www.santearmenie.org/",
         logo: Logo_Sante_Armenie,
-        dirigeant: "MEKINIAN Arsène",
-        mail: "contact@santearmenie.org",
+        dirigeant: "Arsène Mekinian",
+        email: "contact@santearmenie.org",
         telephone: "01 45 24 72 79"
     },
     {
@@ -167,8 +167,8 @@ export const acteurs = [
         establishedDate: 1990,
         website: "https://www.chene-france.org/",
         logo: Logo_CHENE,
-        dirigeant: "TOROSSIAN Schavarch",
-        mail: "contact@chene-france.org",
+        dirigeant: "Schavarch Torossian",
+        email: "contact@chene-france.org",
         telephone: ""
     },
     {
@@ -179,20 +179,20 @@ export const acteurs = [
         type: ["Collectivité territoriale"],
         website: "https://www.lyon.fr/",
         logo: ville_lyon,
-        dirigeant: "DOUCET Grégory",
-        mail: "roxane.beneyton@mairie-lyon.fr",
+        dirigeant: "Grégory Doucet",
+        email: "roxane.beneyton@mairie-lyon.fr",
         telephone: ""
     },
     {
         _id: "7",
-        name: "Département de l'Isère",
+        name: "Département de l'Isère",
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
         type: ["Collectivité territoriale"],
         website: "https://www.isere.fr/",
         logo: Dep_isere,
-        dirigeant: "BARBIER Jean-Pierre",
-        mail: "",
+        dirigeant: "Suzie Grenèche",
+        email: "suzie.greneche@isere.fr",
         telephone: ""
     },
     {
@@ -203,8 +203,8 @@ export const acteurs = [
         type: ["Collectivité territoriale"],
         website: "https://www.ville-joeuf.fr/",
         logo: joeuf,
-        dirigeant: "CORZANI André",
-        mail: "",
+        dirigeant: "Maria Abiza",
+        email: "cabinet.maire@ville-joeuf.fr",
         telephone: ""
     },
     {
@@ -215,8 +215,8 @@ export const acteurs = [
         type: ["Collectivité territoriale"],
         website: "https://www.auvergnerhonealpes.fr/",
         logo: rara_logo,
-        dirigeant: "PANNEKOUCKE Fabrice",
-        mail: "Bruno.chiaverni@auvergnerhonealpes.fr",
+        dirigeant: "Fabrice Pannekoucke",
+        email: "bruno.chiaverini@auvergnerhonealpes.fr",
         telephone: "04 26 73 40 69 "
     },
     {
@@ -227,8 +227,8 @@ export const acteurs = [
         type: ["Collectivité territoriale"],
         website: "https://www.auvergnerhonealpes.fr/",
         logo: rara_logo,
-        dirigeant: "PANNEKOUCKE Fabrice",
-        mail: "arnaud-mazille@ville-gardanne.fr",
+        dirigeant: "Fabrice Pannekoucke",
+        email: "arnaud-mazille@ville-gardanne.fr",
         telephone: "07 88 35 93 93"
     },
     {
@@ -239,8 +239,8 @@ export const acteurs = [
         type: ["Collectivité territoriale"],
         website: "https://www.saint-etienne.fr",
         logo: stetienne,
-        dirigeant: "PERDRIAU Gaël",
-        mail: "sona.hedhibi@saint-etienne-metropole.fr",
+        dirigeant: "Gaël Perdriau",
+        email: "sona.hedhibi@saint-etienne-metropole.fr",
         telephone: "04 77 48 63 65"
     },
     {
@@ -252,21 +252,21 @@ export const acteurs = [
         website: "https://www.unionfrarm.com",
         logo: LogoUnionfrarm,
         establishedDate: 2021,
-        dirigeant: "ARZOYAN Artur",
-        mail: "contact@unionfrarm.com",
+        dirigeant: "Artur Arzoyan",
+        email: "contact@unionfrarm.com",
         telephone: "+33 (0)6 95 14 77 67"
     },
     {
         _id: "13",
         name: "Croix Bleue des Arméniens de France",
-        description: "La Croix Bleue des Arméniens de France agit dans les domaines de l’humanitaire, du social et de la culture. Ainsi, la CBAF oeuvre aussi pour la transmission et la pérennisation de la langue et de l’identité arméniennes, en portant surtout une attention particulière aux jeunes générations, notamment dans ses écoles et sa colonie. Lien fondamental entre les citoyens français d’origine arménienne, elle contribue aussi à favoriser l’intégration des nouveaux immigrés arméniens.",
+        description: "La Croix Bleue des Arméniens de France agit dans les domaines de l’humanitaire, du social et de la culture...",
         domain: ["Logement", "Social", "Santé"],
         type: ["Association"],
         website: "https://www.croixbleue-france.com/",
         logo: croix_bleue,
         establishedDate: 1928,
         dirigeant: "Corinne Sévane Mardirossian",
-        mail: "cbaf@wanadoo.fr",
+        email: "cbaf@wanadoo.fr",
         telephone: "+33 (0)1 53 34 18 18"
     },
 ];
@@ -311,7 +311,7 @@ export const projets = [
         endDate: "2020-12-31",
         budget: '150',
         currency: "EUR",
-        image: secours_urgence_victime_guerre,
+        image: quai_image,
         domain: "Patrimoine",
     },
     {
@@ -333,9 +333,9 @@ export const actualites = [
     {
         _id: "1",
         title: "Appel à projets franco-arménien",
-        subtitle: "Le ministère de l’Europe et des Affaires étrangères annonce l’ouverture de l’appel à projets Arménie 2025.",
+        subtitle: "Le ministère de l’Europe et des Affaires étrangères annonce l’ouverture de l’appel à projets Arménie 2025. Les candidatures sont possibles jusqu’au 23 mai 2025. Les collectivités peuvent désormais déposer leurs projets sur le site de Démarches simplifiées.",
         date: "2023-07-10",
-        image: secours_urgence_victime_guerre,
+        image: quai_image,
         lien: "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/action-exterieure-des-collectivites-territoriales/appels-a-projets-2025/appels-a-projets-geographiques/appel-a-projets-franco-armenien/"
     },
     {
