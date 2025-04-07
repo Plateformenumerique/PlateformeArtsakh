@@ -27,7 +27,7 @@ const Actor = () => {
     <div className="border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100">
       <div className="flex justify-between items-center mb-10 sm:mb-0">
         <div className='flex flex-col sm:flex-row items-center mb-4'>
-          <img src={actorData.logo} alt={`${actorData.name} logo`} className='w-44x h-auto mr-4 mb-4 sm:mb-0' />
+          <img src={actorData.logo} alt={`${actorData.name} logo`} className='w-44 h-auto mr-4 mb-4 sm:mb-0' />
         </div>
         <h2 className='text-lg font-semibold'>{actorData.name}</h2>
         <button onClick={() => window.history.back()} className="border px-4 py-2 rounded transition duration-300">
@@ -61,7 +61,7 @@ const Actor = () => {
             Contact:
           </p>
           <p className="mt-2 text-gray-500 md:w-4/5">
-            Email: <a href={`mailto:${actorData.mail}`} className="text-blue-500">{actorData.mail}</a>
+            Email: <a href={`mailto:${actorData.email}`} className="text-blue-500">{actorData.email}</a>
           </p>
           <p className="mt-2 text-gray-500 md:w-4/5">
             Téléphone: {actorData.telephone}

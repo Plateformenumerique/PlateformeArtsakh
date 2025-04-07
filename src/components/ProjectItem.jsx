@@ -8,7 +8,7 @@ const ProjectItem = ({ id, name, description, association, type, startDate, endD
                 {/* Card to present Projects */}
                 <div className='flex flex-col bg-white p-3 border rounded-lg shadow-md hover:shadow-lg h-auto'>
                     {image && (
-                        <div className='w-full h-56 overflow-hidden rounded-t-lg'>
+                        <div className='w-full h-60 overflow-hidden rounded-t-lg'>
                             <img src={image} alt={`${name} image`} className='w-full h-full object-cover object-center' />
                         </div>
                     )}
