@@ -23,7 +23,7 @@ import secours_catholique from './secours_catholique.png'
 import fondation_aznavour from './fondation_aznavour.jpg'
 import formation_watm from './formation-watm.jpg'
 import soutiens_developpement_communautaire from './soutiens_developpement_communautaire.jpeg'
-import quai_image from './quai_image.jpg'
+import quai_image from './quai_image.png'
 import soutiens_personnes_deplacees from './soutiens_personnes_deplacees.jpg'
 import forma from './forma.jpg'
 import logo_asa from './logo_asa.png'
@@ -130,7 +130,8 @@ export const acteurs = [
         logo: fadf,
         dirigeant: "Pierre Terzian",
         email: "info@fondsarmenien.org",
-        telephone: "01 48 83 51 06"
+        telephone: "01 48 83 51 06",
+        contact: "Pierre Terzian"
     },
     {
         _id: "3",
@@ -143,7 +144,8 @@ export const acteurs = [
         logo: ugab,
         dirigeant: "Claude Nadia Gortzounian",
         email: "administratif@agbu.org",
-        telephone: "01 45 20 03 18"
+        telephone: "01 45 20 03 18",
+        contact: "Claude Nadia Gortzounian"
     },
     {
         _id: "4",
@@ -156,7 +158,8 @@ export const acteurs = [
         logo: Logo_Sante_Armenie,
         dirigeant: "Arsène Mekinian",
         email: "contact@santearmenie.org",
-        telephone: "01 45 24 72 79"
+        telephone: "01 45 24 72 79",
+        contact: "Arsène Mekinian"
     },
     {
         _id: "5",
@@ -169,7 +172,8 @@ export const acteurs = [
         logo: Logo_CHENE,
         dirigeant: "Schavarch Torossian",
         email: "contact@chene-france.org",
-        telephone: ""
+        telephone: "",
+        contact: "Schavarch Torossian"
     },
     {
         _id: "6",
@@ -181,7 +185,8 @@ export const acteurs = [
         logo: ville_lyon,
         dirigeant: "Grégory Doucet",
         email: "roxane.beneyton@mairie-lyon.fr",
-        telephone: ""
+        telephone: "",
+        contact: "Roxane Beneyton"
     },
     {
         _id: "7",
@@ -193,7 +198,8 @@ export const acteurs = [
         logo: Dep_isere,
         dirigeant: "Suzie Grenèche",
         email: "suzie.greneche@isere.fr",
-        telephone: ""
+        telephone: "",
+        contact: "Suzie Grenèche"
     },
     {
         _id: "8",
@@ -205,7 +211,8 @@ export const acteurs = [
         logo: joeuf,
         dirigeant: "Maria Abiza",
         email: "cabinet.maire@ville-joeuf.fr",
-        telephone: ""
+        telephone: "",
+        contact: "Maria Abiza"
     },
     {
         _id: "9",
@@ -217,7 +224,8 @@ export const acteurs = [
         logo: rara_logo,
         dirigeant: "Fabrice Pannekoucke",
         email: "bruno.chiaverini@auvergnerhonealpes.fr",
-        telephone: "04 26 73 40 69 "
+        telephone: "04 26 73 40 69",
+        contact: "Bruno Chiaverini"
     },
     {
         _id: "10",
@@ -226,10 +234,11 @@ export const acteurs = [
         domain: [""],
         type: ["Collectivité territoriale"],
         website: "https://www.auvergnerhonealpes.fr/",
-        logo: rara_logo,
+        logo: Logo_Gardanne,
         dirigeant: "Fabrice Pannekoucke",
         email: "arnaud-mazille@ville-gardanne.fr",
-        telephone: "07 88 35 93 93"
+        telephone: "07 88 35 93 93",
+        contact: "Arnaud Mazille"
     },
     {
         _id: "11",
@@ -241,7 +250,8 @@ export const acteurs = [
         logo: stetienne,
         dirigeant: "Gaël Perdriau",
         email: "sona.hedhibi@saint-etienne-metropole.fr",
-        telephone: "04 77 48 63 65"
+        telephone: "04 77 48 63 65",
+        contact: "Sona Hedhibi"
     },
     {
         _id: "12",
@@ -254,7 +264,8 @@ export const acteurs = [
         establishedDate: 2021,
         dirigeant: "Artur Arzoyan",
         email: "contact@unionfrarm.com",
-        telephone: "+33 (0)6 95 14 77 67"
+        telephone: "+33 (0)6 95 14 77 67",
+        contact: "Artur Arzoyan"
     },
     {
         _id: "13",
@@ -267,7 +278,8 @@ export const acteurs = [
         establishedDate: 1928,
         dirigeant: "Corinne Sévane Mardirossian",
         email: "cbaf@wanadoo.fr",
-        telephone: "+33 (0)1 53 34 18 18"
+        telephone: "+33 (0)1 53 34 18 18",
+        contact: "Corinne Sévane Mardirossian"
     },
 ];
 

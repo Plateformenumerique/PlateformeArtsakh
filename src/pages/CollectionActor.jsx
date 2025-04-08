@@ -159,6 +159,7 @@ const CollectionActor = () => {
                 website={item.website}
                 dirigeant={item.dirigeant}
                 establishedDate={item.establishedDate}
+                contact={item.contact}
               />
             ))
           }

@@ -1,10 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ActorItem = ({ id, name, description, domain, type, establishedDate, logo, dirigeant, email }) => {
+const ActorItem = ({ id, name, description, domain, type, establishedDate, logo, dirigeant, email, contact }) => {
     const isCollectiviteTerritoriale = Array.isArray(type) && type.includes('Collectivité territoriale');
-    const labelDirigeant = isCollectiviteTerritoriale ? 'Référent(e)' : 'Dirigeant(e)';
-
     return (
         <div>
             <div className='text-gray-700'>
@@ -22,18 +20,14 @@ const ActorItem = ({ id, name, description, domain, type, establishedDate, logo,
                             <p className='text-sm text-gray-500 font-semibold pt-2'>
                                 {Array.isArray(type) ? type.join(', ') : type}
                             </p>
-                            {dirigeant && (
-                                <p className='text-sm text-gray-500 mt-2'>
-                                    {labelDirigeant}: <span className='font-semibold'>{dirigeant}</span>
-                                </p>
-                            )}
+                            {dirigeant && <p className='text-sm text-gray-500 mt-2'>Dirigeant(e): {dirigeant}</p>}
                             <p className='text-sm text-gray-500 mt-2'>{description}</p>
                             {!isCollectiviteTerritoriale && establishedDate && (
                                 <p className='text-sm text-gray-500 mt-2 font-semibold'>Depuis: {establishedDate}</p>
                             )}
                             {email && (
                                 <p className='text-sm text-gray-500 mt-1'>
-                                    Email: <span className='font-semibold'>{email}</span>
+                                    Contact: <span className='font-semibold'>{contact}</span>
                                 </p>
                             )}
                         </div>
