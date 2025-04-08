@@ -12,7 +12,7 @@ const CollectionActor = () => {
   const [filterActors, setFilterActors] = useState(acteurs)
   const [sortTypeActor, setSortTypeActor] = useState([])
   const [sortDomaine, setSortDomaine] = useState([])
-  const [sortOrder, setSortOrder] = useState('asc') // 'asc' for ascending, 'desc' for descending
+  const [sortOrder, setSortOrder] = useState('asc'); // Par défaut : A-Z
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -63,13 +63,12 @@ const CollectionActor = () => {
     if (showSearch && search) {
       actorsCopy = actorsCopy.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
     }
-
-    // Sort actors by name
+    
     actorsCopy.sort((a, b) => {
       if (sortOrder === 'asc') {
-        return a.name.localeCompare(b.name);
+        return a.name.localeCompare(b.name); // Tri A-Z
       } else {
-        return b.name.localeCompare(a.name);
+        return b.name.localeCompare(a.name); // Tri Z-A
       }
     });
   
@@ -134,7 +133,7 @@ const CollectionActor = () => {
       {/** Filtre droite */}
       <div className='flex-1 '>
         <div className='flex justify-between text-base sm:text-2xl mb-4'>
-          <Title text1="Tous nos Acteurs engagés " text2="en Arménie en soutien des déplacés d'Artsakh" />
+          <Title text1="Acteurs engagés " text2="en Arménie en soutien des déplacés d'Artsakh" />
           {/** Trier par ordre alphabétique */}
           <select onChange={(e) => setSortOrder(e.target.value)} className='border-2 border-gray-300 text-sm px-2'>
             <option value='asc'>Trier par : A-Z</option>
@@ -143,7 +142,7 @@ const CollectionActor = () => {
         </div>
 
         {/** Liste des acteurs */}
-        <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-6'>
           {
             filterActors.map((item, index) => (
               <ActorItem 

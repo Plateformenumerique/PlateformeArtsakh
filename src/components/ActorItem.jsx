@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ActorItem = ({ id, name, description, domain, type, establishedDate, logo, dirigeant, email, contact }) => {
+const ActorItem = ({ id, name, description, domain, type, establishedDate, logo, dirigeant, email, contact, website }) => {
     const isCollectiviteTerritoriale = Array.isArray(type) && type.includes('Collectivité territoriale');
     return (
         <div>
@@ -14,20 +14,31 @@ const ActorItem = ({ id, name, description, domain, type, establishedDate, logo,
                             <h2 className='ml-2 text-lg font-semibold cursor-pointer'>{name}</h2>
                         </div>
                         <div className='flex flex-col'>
-                            <p className='text-sm text-gray-500 font-semibold'>
-                                {Array.isArray(domain) ? domain.join(', ') : domain}
-                            </p>
-                            <p className='text-sm text-gray-500 font-semibold pt-2'>
+                            <p className='text-sm text-gray-500 font-semibold mt-2'>
                                 {Array.isArray(type) ? type.join(', ') : type}
                             </p>
-                            {dirigeant && <p className='text-sm text-gray-500 mt-2'>Dirigeant(e): {dirigeant}</p>}
-                            <p className='text-sm text-gray-500 mt-2'>{description}</p>
+                            <p className='text-sm text-gray-500 font-semibold mt-2'>
+                                {Array.isArray(domain) ? domain.join(', ') : domain}
+                            </p>
+                            {!isCollectiviteTerritoriale && dirigeant && (
+                                <p className='text-sm text-gray-500 mt-2'>Dirigeant(e): {dirigeant}</p>
+                            )}
                             {!isCollectiviteTerritoriale && establishedDate && (
                                 <p className='text-sm text-gray-500 mt-2 font-semibold'>Depuis: {establishedDate}</p>
                             )}
-                            {email && (
+                            {isCollectiviteTerritoriale && email && (
+                                <p className='text-sm text-gray-500 mt-2'>
+                                    Email: <span className='font-semibold'>{email}</span>
+                                </p>
+                            )}
+                            {isCollectiviteTerritoriale && contact && (
+                                <p className='text-sm text-gray-500 mt-2'>
+                                    Téléphone: <span className='font-semibold'>{contact}</span>
+                                </p>
+                            )}
+                            {isCollectiviteTerritoriale && website && (
                                 <p className='text-sm text-gray-500 mt-1'>
-                                    Contact: <span className='font-semibold'>{contact}</span>
+                                    Site internet: <a href={website} className='text-blue-500 underline'>{website}</a>
                                 </p>
                             )}
                         </div>

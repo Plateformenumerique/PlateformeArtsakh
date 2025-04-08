@@ -39,20 +39,25 @@ const CollectionProject = () => {
 
   const applyFilter = () => {
     let projectsCopy = projets.slice();
-
+  
+    // Filtrer par type de mission
     if (sortTypeProject.length > 0) {
       projectsCopy = projectsCopy.filter(item => sortTypeProject.includes(item.type));
     }
-
+  
+    // Filtrer par domaine
     if (sortDomaine.length > 0) {
-      projectsCopy = projectsCopy.filter(item => sortDomaine.includes(item.domain));
+      projectsCopy = projectsCopy.filter(item => 
+        item.domain.some(domain => sortDomaine.includes(domain))
+      );
     }
-
+  
+    // Filtrer par recherche
     if (showSearch && search) {
       projectsCopy = projectsCopy.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
     }
-
-    // Sort Project by name
+  
+    // Trier par nom
     projectsCopy.sort((a, b) => {
       if (sortOrder === 'asc') {
         return a.name.localeCompare(b.name);
@@ -60,7 +65,7 @@ const CollectionProject = () => {
         return b.name.localeCompare(a.name);
       }
     });
-
+  
     setFilterProjects(projectsCopy);
   };
 
@@ -80,10 +85,10 @@ const CollectionProject = () => {
           <p className='mb-3 text-sm font-medium'>DOMAINE D'ACTIVITÉ</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Logement'} onChange={toggleDomaine} checked={sortDomaine.includes('Logement')} /> Logement
+              <input className='w-3' type='checkbox' value={'Formation/Emploi'} onChange={toggleDomaine} checked={sortDomaine.includes('Formation/Emploi')} /> Formation/Emploi
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Formation/Emploi'} onChange={toggleDomaine} checked={sortDomaine.includes('Formation/Emploi')} /> Formation/Emploi
+              <input className='w-3' type='checkbox' value={'Logement'} onChange={toggleDomaine} checked={sortDomaine.includes('Logement')} /> Logement
             </p>
             <p className='flex gap-2'>
               <input className='w-3' type='checkbox' value={'Agriculture'} onChange={toggleDomaine} checked={sortDomaine.includes('Agriculture')} /> Agriculture
@@ -116,7 +121,7 @@ const CollectionProject = () => {
       {/** Filtre droite */}
       <div className='flex-1 '>
         <div className='flex md:flex-row flex-col justify-between text-base sm:text-2xl mb-4'>
-          <Title text1='Toutes les propositions de ' text2='partenariats des acteurs' />
+          <Title text1='Propositions de ' text2='partenariats des acteurs' />
           <div className='flex gap-4 items-center'>
             <button className='blue-gradient_bg text-white text-xs px-6 sm:px-10 py-4 rounded-sm'>Vous avez un projet ?</button>
             {/*<button onClick={() => setIsModalOpen(true)} className='blue-gradient_bg text-white text-xs px-10 py-4'>Vous avez un projet ?</button>*/}

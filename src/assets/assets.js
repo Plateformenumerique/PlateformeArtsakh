@@ -243,7 +243,7 @@ export const acteurs = [
     },
     {
         _id: "11",
-        name: " Ville de Saint-Etienne ",
+        name: "Ville de Saint-Etienne ",
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
         type: ["Collectivité territoriale"],
@@ -288,58 +288,17 @@ export const projets = [
     {
         _id: "1",
         name: "PROGRAMME DE LANGUE FRANÇAISE POUR LES ÉTUDIANTS D'ARTSAKH",
-        description: "Le programme de langue française vise à fournir des cours complets de langue française aux étudiants de l'Artsakh, comblant ainsi les lacunes de leur programme.",
+        description: "Le programme de langue française vise à fournir des cours complets de langue française aux étudiants de l'Artsakh, comblant ainsi les lacunes de leur programme. Nous recherchons activement des partenaires pour soutenir ce programme, que ce soit par des contributions financières, des ressources pédagogiques ou des collaborations éducatives.",
         association: "We are our mountains",
         type: "Urgence",
-        startDate: "Mars 2024",
-        endDate: "Janvier 2025",
+        startDate: "2024-03-01",
+        endDate: "2025-01-31",
         budget: '6 402',
         currency: "$",
         image: formation_watm,
-        domain: ["Formation"],
+        domain: ["Formation/Emploi"],
         externalLink: "https://ourmountains.am/project/french-language-program-for-artsakh-students/"
     }
-    /*
-    }
-    {
-        _id: "2",
-        name: "Projet de développement communautaire",
-        description: "Projet de développement communautaire en Arménie, pour construire des écoles et des centres de santé. Ce projet a pour objectif de renforcer les infrastructures locales et d'améliorer l'accès à l'éducation et aux soins de santé pour les communautés défavorisées. En construisant de nouvelles écoles et centres de santé, nous espérons offrir de meilleures opportunités d'apprentissage et de soins médicaux, contribuant ainsi à un développement durable et à une amélioration de la qualité de vie des habitants.",
-        association: "Caritas Arménie",
-        type: "Développement",
-        startDate: "2020-01-01",
-        endDate: "2020-12-31",
-        budget: '200',
-        currency: "EUR",
-        image: soutiens_developpement_communautaire,
-        domain: "Santé",
-    },
-    {
-        _id: "3",
-        name: "Projet de secours d'urgence pour les victimes de guerre",
-        description: "Projet de secours d'urgence pour les victimes de guerre au Haut-Karabagh, pour fournir des soins médicaux et des abris. Ce projet est crucial pour apporter une aide immédiate aux personnes touchées par le conflit, en leur offrant des soins médicaux d'urgence et des abris temporaires. En travaillant avec des organisations humanitaires locales et internationales, nous visons à atténuer les souffrances des victimes de guerre et à leur fournir un soutien essentiel pour reconstruire leur vie.",
-        association: "Croix-Rouge Française",
-        type: "Urgence",
-        startDate: "2020-01-01",
-        endDate: "2020-12-31",
-        budget: '150',
-        currency: "EUR",
-        image: quai_image,
-        domain: "Patrimoine",
-    },
-    {
-        _id: "4",
-        name: "Projet de réhabilitation post-conflit",
-        description: "Projet de réhabilitation post-conflit en Arménie, visant à reconstruire les infrastructures détruites et à fournir un soutien psychosocial aux victimes. Ce projet se concentre sur la reconstruction des maisons, des écoles et des hôpitaux endommagés par le conflit, ainsi que sur l'offre de services de soutien psychosocial pour aider les victimes à surmonter les traumatismes. En collaborant avec des experts en reconstruction et en santé mentale, nous espérons créer un environnement propice à la guérison et à la reprise d'une vie normale pour les communautés affectées.",
-        association: "Fondation Arménienne de Reconstruction",
-        type: "Réhabilitation",
-        startDate: "2020-01-01",
-        endDate: "2020-12-31",
-        budget: '250',
-        currency: "EUR",
-        image: soutiens_personnes_deplacees,
-        domain: "Formation/Emploi"
-    }*/
 ];
 
 export const actualites = [
