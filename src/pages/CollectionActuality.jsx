@@ -32,7 +32,7 @@ const CollectionActualite = () => {
     return (
         <div className='flex flex-col gap-1 pt-10 border-t'>
             <div className='flex justify-between text-base sm:text-2xl'>
-                <Title text1='Toutes les réalisations ' text2='récentes et actualités' />
+                <Title text1='Réalisations récentes ' text2='et actualités' />
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-6'>
                 {

@@ -59,7 +59,7 @@ const Project = () => {
           </p>
           <hr className="mt-8 sm:w-4/5" />
           <button onClick={handleContributeClick} className="mt-5 border px-4 py-2 rounded transition duration-300">
-            Contribuer
+            Contacter
           </button>
         </div>
       </div>

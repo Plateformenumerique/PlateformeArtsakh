@@ -38,10 +38,6 @@ const Actor = () => {
       <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row pt-4">
         {/* Actor Infos */}
         <div className="flex-1">
-
-          <a href={actorData.website} className="mt-5 text-blue-500 md:w-4/5">
-            Site Web de {actorData.name}
-          </a>
           {!Array.isArray(actorData.type) || !actorData.type.includes('Collectivité territoriale') ? (
             <p className="mt-5 text-gray-500 md:w-4/5">
               Domaine: {Array.isArray(actorData.domain) ? actorData.domain.join(', ') : actorData.domain}
@@ -66,7 +62,12 @@ const Actor = () => {
           <p className="mt-2 text-gray-500 md:w-4/5">
             Téléphone: {actorData.telephone}
           </p>
-          <hr className="mt-8 sm:w-4/5" />
+          <hr className="my-4 sm:w-4/5" />
+          <div className="flex">
+            <a href={actorData.website} target="_blank" rel="noopener noreferrer" className="text-blue-500">
+              <span className="text-gray-500">Site Web de {actorData.name}: </span>{actorData.website}
+            </a>
+          </div>
         </div>
       </div>
     </div>
