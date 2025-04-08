@@ -58,7 +58,7 @@ const Actor = () => {
             {actorData.description}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
-            Contact:
+            Contact: {actorData.contact}
           </p>
           <p className="mt-2 text-gray-500 md:w-4/5">
             Email: <a href={`mailto:${actorData.email}`} className="text-blue-500">{actorData.email}</a>
