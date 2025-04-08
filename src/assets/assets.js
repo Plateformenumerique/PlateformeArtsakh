@@ -29,7 +29,7 @@ import forma from './forma.jpg'
 import logo_asa from './logo_asa.png'
 import logo_plateforme from './logo_plateforme.png'
 import armenie_carte from './armenie-carte.png'
-import convoi_armenie from './convoi-armenie.avif'
+import florence from './florence.jpg'
 import TATEV_market from './TATEV_market.jpg'
 import ville_lyon from './Ville_de_Lyon.png'
 import Dep_isere from './Dep_isere.png'
@@ -49,6 +49,7 @@ import google from './google/google.png'
 import Weareourmountains from './Weareourmountains.mp4'
 import LogoUnionfrarm from './LogoUnionfrarm.webp'
 import croix_bleue from './croix_bleue.jpg'
+import interviewFlorencePDF from './interview-florence.pdf';
 
 export const assets = {
     cart_icon,
@@ -81,7 +82,7 @@ export const assets = {
     forma,
     logo_asa,
     armenie_carte,
-    convoi_armenie,
+    florence,
     TATEV_market,
     logo_plateforme,
     ville_lyon,
@@ -223,9 +224,9 @@ export const acteurs = [
         website: "https://www.auvergnerhonealpes.fr/",
         logo: rara_logo,
         dirigeant: "Fabrice Pannekoucke",
-        email: "bruno.chiaverini@auvergnerhonealpes.fr",
+        email: "agnes.hernu@auvergnerhonealpes.fr",
         telephone: "04 26 73 40 69",
-        contact: "Bruno Chiaverini"
+        contact: "Agnès Hernu-Duclos"
     },
     {
         _id: "10",
@@ -233,7 +234,7 @@ export const acteurs = [
         description: "Collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
         domain: [""],
         type: ["Collectivité territoriale"],
-        website: "https://www.auvergnerhonealpes.fr/",
+        website: "https://www.ville-gardanne.fr/",
         logo: Logo_Gardanne,
         dirigeant: "Fabrice Pannekoucke",
         email: "arnaud-mazille@ville-gardanne.fr",
@@ -360,10 +361,10 @@ export const actualites = [
     },
     {
         _id: "3",
-        title: "Arménie : un convoi humanitaire part de France pour apporter de l'aide aux réfugiés du Haut-Karabakh",
-        subtitle: "Alors que 100 000 Arméniens ont été forcés de fuir le Haut-Karabakh, la solidarité s’organise en France. Un convoi transportant du matériel médical part lundi 9 octobre de Martigues, près de Marseille, direction Erevan.",
-        date: " 09/10/2023 17:36",
-        image: convoi_armenie,
-        lien: "https://www.francetvinfo.fr/monde/armenie/armenie-un-convoi-humanitaire-part-de-france-pour-apporter-de-l-aide-aux-refugies-du-haut-karabakh_6111186.html"
+        title: "Interview de Florence : Témoignage sur la solidarité envers l'Artsakh",
+        subtitle: "Florence partage son expérience et son engagement dans les initiatives de soutien aux réfugiés du Haut-Karabakh, mettant en lumière les actions humanitaires en cours.",
+        date: "2025-04-08",
+        image: florence, // Remplacez par une image appropriée si nécessaire
+        lien: interviewFlorencePDF
     }
 ];
