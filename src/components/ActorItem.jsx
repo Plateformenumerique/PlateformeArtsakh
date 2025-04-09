@@ -1,8 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const InfoRow = ({ label, value, isLink }) => {
+    if (!value) return null;
+    return (
+        <p className='text-sm text-gray-500 mt-2'>
+            {label}: {isLink ? (
+                <span className='text-blue-500 underline'>{value}</span>
+            ) : (
+                <span className='font-semibold'>{value}</span>
+            )}
+        </p>
+    );
+};
+
 const ActorItem = ({ id, name, description, domain, type, establishedDate, logo, dirigeant, email, contact, website, telephone }) => {
     const isCollectiviteTerritoriale = Array.isArray(type) && type.includes('Collectivité territoriale');
+    const isAssociation = Array.isArray(type) && type.includes('Association');
+
     return (
         <div>
             <div className='text-gray-700'>
@@ -14,38 +29,19 @@ const ActorItem = ({ id, name, description, domain, type, establishedDate, logo,
                             <h2 className='ml-2 text-lg font-semibold cursor-pointer'>{name}</h2>
                         </div>
                         <div className='flex flex-col'>
-                            <p className='text-sm text-gray-500 font-semibold mt-2'>
-                                {Array.isArray(type) ? type.join(', ') : type}
-                            </p>
-                            <p className='text-sm text-gray-500 font-semibold mt-2'>
-                                {Array.isArray(domain) ? domain.join(', ') : domain}
-                            </p>
-                            {!isCollectiviteTerritoriale && dirigeant && (
-                                <p className='text-sm text-gray-500 mt-2'>Dirigeant(e): {dirigeant}</p>
+                            <InfoRow label="Type" value={Array.isArray(type) ? type.join(', ') : type} />
+                            <InfoRow label="Domaine" value={Array.isArray(domain) ? domain.join(', ') : domain} />
+                            {!isCollectiviteTerritoriale && (
+                                <>
+                                    <InfoRow label="Dirigeant(e)" value={dirigeant} />
+                                </>
                             )}
-                            {!isCollectiviteTerritoriale && establishedDate && (
-                                <p className='text-sm text-gray-500 mt-2 font-semibold'>Depuis: {establishedDate}</p>
+                            {!isAssociation && (
+                                <InfoRow label="Contact" value={contact} />
                             )}
-                            {isCollectiviteTerritoriale && email && (
-                                <p className='text-sm text-gray-500 mt-2'>
-                                    Email: <span className='font-semibold'>{email}</span>
-                                </p>
-                            )}
-                            {isCollectiviteTerritoriale && telephone && (
-                                <p className='text-sm text-gray-500 mt-2'>
-                                    Téléphone: <span className='font-semibold'>{telephone}</span>
-                                </p>
-                            )}
-                            {isCollectiviteTerritoriale && contact && (
-                                <p className='text-sm text-gray-500 mt-2'>
-                                    Contact: <span className='font-semibold'>{contact}</span>
-                                </p>
-                            )}
-                            {isCollectiviteTerritoriale && website && (
-                                <p className='text-sm text-gray-500 mt-1'>
-                                    Site internet: <a href={website} className='text-blue-500 underline'>{website}</a>
-                                </p>
-                            )}
+                            <InfoRow label="Email" value={email} />
+                            <InfoRow label="Téléphone" value={telephone} />
+                            <InfoRow label="Site internet" value={website} isLink={false} />
                         </div>
                     </div>
                 </Link>
