@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ActorItem = ({ id, name, description, domain, type, establishedDate, logo, dirigeant, email, contact, website }) => {
+const ActorItem = ({ id, name, description, domain, type, establishedDate, logo, dirigeant, email, contact, website, telephone }) => {
     const isCollectiviteTerritoriale = Array.isArray(type) && type.includes('Collectivité territoriale');
     return (
         <div>
@@ -31,9 +31,14 @@ const ActorItem = ({ id, name, description, domain, type, establishedDate, logo,
                                     Email: <span className='font-semibold'>{email}</span>
                                 </p>
                             )}
+                            {isCollectiviteTerritoriale && telephone && (
+                                <p className='text-sm text-gray-500 mt-2'>
+                                    Téléphone: <span className='font-semibold'>{telephone}</span>
+                                </p>
+                            )}
                             {isCollectiviteTerritoriale && contact && (
                                 <p className='text-sm text-gray-500 mt-2'>
-                                    Téléphone: <span className='font-semibold'>{contact}</span>
+                                    Contact: <span className='font-semibold'>{contact}</span>
                                 </p>
                             )}
                             {isCollectiviteTerritoriale && website && (
