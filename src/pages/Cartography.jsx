@@ -38,7 +38,7 @@ const Cartography = () => {
           )}
         </div>
         <div className='relative flex-grow flex justify-center items-center'>
-          <img src={assets.armenie_carte} alt="Map" className='h-auto max-w-full object-contain' />
+          <img src={assets.armenie_carte} alt="Map" className='h-auto max-w-full object-cover' />
           <svg className='absolute top-0 left-0 w-full h-full'>
             {regions.map(region => (
               region.cx && region.cy && region.r ? (

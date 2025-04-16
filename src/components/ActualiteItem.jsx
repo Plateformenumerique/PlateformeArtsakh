@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const ActualiteItem = ({ title, subtitle, date, image, video, lien }) => {
+    const [showFullSubtitle, setShowFullSubtitle] = React.useState(false);
+
     return (
         <div>
             {/* Card to present Actualites */}
@@ -16,7 +18,7 @@ const ActualiteItem = ({ title, subtitle, date, image, video, lien }) => {
                 ) : (
                     image && (
                         <div className='w-full h-56 overflow-hidden rounded-t-lg'>
-                            <img src={image} alt={`${title} image`} className='w-full h-full object-contain object-center' />
+                            <img src={image} alt={`${title} image`} className='w-full h-full object-cover object-center' />
                         </div>
                     )
                 )}
@@ -24,15 +26,18 @@ const ActualiteItem = ({ title, subtitle, date, image, video, lien }) => {
                     <div className='flex flex-col sm:flex-row items-center mt-2'>
                         <h2 className='text-xl font-semibold'>{title}</h2>
                     </div>
-                    {/*}
-                    <div className='flex flex-row items-center my-2'>
-                        <p className='text-sm text-gray-500 ml-2'>Le {new Date(date).toLocaleDateString()}</p>
-                    </div>
-                    */}
                     <div className='flex flex-col'>
                         <p className='text-base text-gray-500 font-semibold mt-2'>
-                            {subtitle.length > 200 ? `${subtitle.substring(0, 200)}...` : subtitle}
+                            {showFullSubtitle ? subtitle : (subtitle.length > 200 ? `${subtitle.substring(0, 200)}...` : subtitle)}
                         </p>
+                        {subtitle.length > 200 && (
+                            <button
+                                onClick={() => setShowFullSubtitle(!showFullSubtitle)}
+                                className='text-blue-500 hover:underline mt-2 self-start'
+                            >
+                                {showFullSubtitle ? 'Lire moins' : 'Lire tout'}
+                            </button>
+                        )}
                     </div>
                 </div>
 
