@@ -287,7 +287,7 @@ export const acteurs = [
 export const projets = [
     {
         _id: "1",
-        name: "PROGRAMME DE LANGUE FRANÇAISE POUR LES ÉTUDIANTS D'ARTSAKH",
+        name: "RECHERCHE DE PARTENAIRE POUR UN PROGRAMME DE LANGUE FRANÇAISE POUR LES ÉTUDIANTS D'ARTSAKH",
         description: "Le programme de langue française vise à fournir des cours complets de langue française aux étudiants de l'Artsakh, comblant ainsi les lacunes de leur programme. Nous recherchons activement des partenaires pour soutenir ce programme, que ce soit par des contributions financières, des ressources pédagogiques ou des collaborations éducatives.",
         association: "We are our mountains",
         type: "Urgence",
