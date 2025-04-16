@@ -34,7 +34,7 @@ const Footer = () => {
                 <div>
                     <p className='font-medium text-xl mb-5'>RESTER EN CONTACT</p>
                     <ul className='flex flex-col gap-1 text-gray-600'>
-                        <li>contact.artsakh@connect.fr</li>
+                        <li>secretariat@soutien-artsakh.eu</li>
                     </ul>
                 </div>
 
