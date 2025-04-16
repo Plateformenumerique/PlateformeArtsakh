@@ -305,7 +305,7 @@ export const actualites = [
     {
         _id: "1",
         title: "Appel à projets franco-arménien",
-        subtitle: "Le ministère de l’Europe et des Affaires étrangères annonce l’ouverture de l’appel à projets Arménie 2025. Les candidatures sont possibles jusqu’au 23 mai 2025. Les collectivités peuvent désormais déposer leurs projets sur le site de Démarches simplifiées.",
+        subtitle: "Le ministère de l’Europe et des Affaires étrangères annonce l’ouverture de l’appel à projets Arménie 2025. Les candidatures sont ouvertes jusqu’au 23 mai 2025. Les collectivités peuvent désormais soumettre leurs projets via la plateforme Démarches simplifiées.",
         date: "2023-07-10",
         image: quai_image,
         lien: "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/action-exterieure-des-collectivites-territoriales/appels-a-projets-2025/appels-a-projets-geographiques/appel-a-projets-franco-armenien/"
@@ -313,15 +313,15 @@ export const actualites = [
     {
         _id: "2",
         title: "Projet WINGS",
-        subtitle: "Le projet Wings, porté par l’association artsakhiote « Nous sommes nos Montagnes » partenaire de l'Association de Soutien à l'Artsakh, joue un rôle central. Ce programme est destiné à aider les familles, et tout particulièrement les enfants, à se reconstruire sur les plans éducatif, psychologique et social, afin de se réadapter dans un nouveau cadre de vie.",
+        subtitle: "Porté par l’association artsakhiote « Nous sommes nos Montagnes », en partenariat avec l'Association de Soutien à l'Artsakh, le projet Wings joue un rôle essentiel. Ce programme accompagne les familles, et tout particulièrement les enfants, dans leur reconstruction éducative, psychologique et sociale, afin de s’adapter à un nouveau cadre de vie.",
         date: "2023-05-25",
         video: Weareourmountains,
         lien: "#"
     },
     {
         _id: "3",
-        title: "Interview de Florence : Témoignage sur la solidarité envers l'Artsakh",
-        subtitle: "Florence partage son expérience et son engagement dans les initiatives de soutien aux réfugiés du Haut-Karabakh, mettant en lumière les actions humanitaires en cours.",
+        title: "Interview accordée au Fonds Arménien, réalisée par Achod Papasian et parue dans le Courrier du Fonds Arménien de France n°118 - ©Mars 2025",
+        subtitle: "Florence partage son expérience et son engagement dans les initiatives de soutien aux réfugiés du Haut-Karabakh, mettant en lumière les actions humanitaires en cours. Découvrez son témoignage poignant sur la solidarité envers l'Artsakh.",
         date: "2025-04-08",
         image: florence, // Remplacez par une image appropriée si nécessaire
         lien: interviewFlorencePDF
