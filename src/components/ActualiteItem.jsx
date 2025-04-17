@@ -17,7 +17,7 @@ const ActualiteItem = ({ title, subtitle, date, image, video, lien }) => {
                     </div>
                 ) : (
                     image && (
-                        <div className='w-full h-56 overflow-hidden rounded-t-lg'>
+                        <div className='w-full h-64 overflow-hidden rounded-t-lg'>
                             <img src={image} alt={`${title} image`} className='w-full h-full object-cover object-center' />
                         </div>
                     )
