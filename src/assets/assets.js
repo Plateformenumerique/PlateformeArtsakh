@@ -313,15 +313,15 @@ export const actualites = [
     {
         _id: "2",
         title: "Projet WINGS",
-        subtitle: "Porté par l’association artsakhiote « Nous sommes nos Montagnes », en partenariat avec l'Association de Soutien à l'Artsakh, le projet Wings joue un rôle essentiel. Ce programme accompagne les familles, et tout particulièrement les enfants, dans leur reconstruction éducative, psychologique et sociale, afin de s’adapter à un nouveau cadre de vie.",
+        subtitle: "Porté par l’Association de Soutien à l’Artsakh, en partenariat avec l’ONG locale arménienne « Nous sommes nos Montagnes », le projet Wings accompagne les enfants déplacés dans leur parcours de reconstruction éducative, psychologique et sociale, afin de faciliter leur intégration dans un nouvel environnement de vie.",
         date: "2023-05-25",
         video: Weareourmountains,
         lien: "#"
     },
     {
         _id: "3",
-        title: "Interview accordée au Fonds Arménien, réalisée par Achod Papasian et parue dans le Courrier du Fonds Arménien de France n°118 - ©Mars 2025",
-        subtitle: "Florence partage son expérience et son engagement dans les initiatives de soutien aux réfugiés du Haut-Karabakh, mettant en lumière les actions humanitaires en cours. Découvrez son témoignage poignant sur la solidarité envers l'Artsakh.",
+        title: "Interview de Florence Provendier, coordinatrice des coopérations franco-arméniennes du ministère des Affaires Étrangères et de l'Europe",
+        subtitle: "Dans cette interview accordée au Fonds Arménien, réalisée par Achod Papasian et parue dans le Courrier du Fonds Arménien de France n°118 – ©Mars 2025, Florence Provendier nous éclaire sur cette démarche qui prend corps à travers l’appel à projets « Arménie » et les prochaines assises de la coopération décentralisée à Goris, dans le Syunik. La coopération décentralisée s’impose aujourd’hui comme un levier central dans la dynamique de renforcement des relations franco-arméniennes. Portée par la feuille de route économique signée en 2021, cette stratégie vise à mobiliser l’ensemble des acteurs publics, associatifs et économiques autour de projets concrets.",
         date: "2025-04-08",
         image: florence, // Remplacez par une image appropriée si nécessaire
         lien: interviewFlorencePDF
