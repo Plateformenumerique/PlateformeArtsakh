@@ -324,7 +324,7 @@ export const actualites = [
         subtitle: "Dans cette interview accordée au Fonds Arménien, réalisée par Achod Papasian et parue dans le Courrier du Fonds Arménien de France n°118 – ©Mars 2025, Florence Provendier nous éclaire sur cette démarche qui prend corps à travers l’appel à projets « Arménie » et les prochaines assises de la coopération décentralisée à Goris, dans le Syunik. La coopération décentralisée s’impose aujourd’hui comme un levier central dans la dynamique de renforcement des relations franco-arméniennes. Portée par la feuille de route économique signée en 2021, cette stratégie vise à mobiliser l’ensemble des acteurs publics, associatifs et économiques autour de projets concrets.",
         date: "2025-04-08",
         image: florence, // Remplacez par une image appropriée si nécessaire
-        lien: interviewFlorencePDF
+        lien: interviewFlorencePDF // Chemin corrigé
     }
 ];
 
