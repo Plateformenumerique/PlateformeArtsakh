@@ -332,7 +332,7 @@ export const regions = [
   { 
     id: '1', 
     name: 'Shirak', 
-    refugees: 1200,
+    refugees: 4.034,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
@@ -346,7 +346,7 @@ export const regions = [
   { 
     id: '2', 
     name: 'Lorri', 
-    refugees: 800,
+    refugees: 4.229,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
@@ -359,7 +359,7 @@ export const regions = [
   { 
     id: '3', 
     name: 'Tavush', 
-    refugees: 950,
+    refugees: 2.962,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
@@ -372,7 +372,7 @@ export const regions = [
   { 
     id: '4', 
     name: 'Aragatsotn', 
-    refugees: 600,
+    refugees: 3.854,
     associations: [
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
@@ -384,7 +384,7 @@ export const regions = [
   { 
     id: '5', 
     name: 'Kotayk', 
-    refugees: 700,
+    refugees: 18.622,
     associations: [
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
@@ -396,7 +396,7 @@ export const regions = [
   { 
     id: '6', 
     name: 'Armavir', 
-    refugees: 500,
+    refugees: 10.970,
     associations: [
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
@@ -409,7 +409,7 @@ export const regions = [
   { 
     id: '7', 
     name: 'Ararat', 
-    refugees: 650,
+    refugees: 11.986,
     associations: [
       { name: 'Santé Arménie', domain: ["Formation/Emploi", "Santé"], },
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
@@ -422,7 +422,7 @@ export const regions = [
   { 
     id: '8', 
     name: 'Gegharkunik', 
-    refugees: 400,
+    refugees: 3.537,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
@@ -436,7 +436,7 @@ export const regions = [
   { 
     id: '9', 
     name: 'Vayots Dzor', 
-    refugees: 300,
+    refugees: 2.135,
     associations: [
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
@@ -448,7 +448,7 @@ export const regions = [
   { 
     id: '10', 
     name: 'Syunik', 
-    refugees: 550,
+    refugees: 6.547,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
@@ -462,20 +462,8 @@ export const regions = [
   },
   { 
     id: '11', 
-    name: 'Haut-Karabakh', 
-    refugees: 2000,
-    associations: [
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
-      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
-      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
-    ],
-    laws: ['Loi sur l’aide humanitaire (2018)', 'Loi sur la protection des déplacés internes (2020)'],
-    domains: ['Santé', 'Social', 'Education']
-  },
-  { 
-    id: '12', 
     name: 'Erevan',
-    refugees: 1500,
+    refugees: 46.512,
     associations: [
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },

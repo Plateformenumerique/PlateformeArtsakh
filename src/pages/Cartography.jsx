@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Title from '../components/Title'
 import '../assets/css/mapStyles.css'
 import { regions } from '../assets/assets'
-
+import { Tooltip } from 'primereact/tooltip';
 
 const Cartography = () => {
   const [selectedRegion, setSelectedRegion] = useState(null)
@@ -16,38 +16,39 @@ const Cartography = () => {
     <div className='flex flex-col gap-1 sm:gap-10 pt-10 border-t sm:text-2xl'>
       <div className='grid grid-cols-12 w-full gap-4'>
         {/* Section de gauche (3/12) */}
-        <div className='col-span-12 sm:col-span-3 border-r border-gray-300 p-4'>
-          <Title text1={'La'} text2={"cartographie"} />
+        <div className="col-span-12 sm:col-span-3 border-r border-gray-300 p-4">
+          <Title text1={'La'} text2={'cartographie'} />
           {selectedRegion ? (
-            <div>
-              <h2 className='text-lg font-semibold mb-4'>Information des actions menées dans cette région</h2>
-              <p className='text-base mb-2'>Nom: {selectedRegion.name}</p>
-              <p className='text-base mt-4'>Associations :</p>
-              <ul className='list-disc ml-6'>
-                {selectedRegion.associations.map((association, index) => (
-                  <li 
-                    key={index} 
-                    className='text-base relative group'
-                  >
-                    {/* Nom de l'association */}
-                    <span className="cursor-pointer">{association.name}</span>
-                    
-                    {/* Tooltip */}
-                    <span className="absolute left-4 top-6 w-48 p-2 z-10 bg-gray-200 text-sm text-gray-700 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
-                      Domaines : {Array.isArray(association.domain) ? association.domain.join(', ') : association.domain}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              {/*<p className='text-base mt-4'>Textes de lois :</p>
-              <ul className='list-disc ml-6'>
-                {selectedRegion.laws.map((law, index) => (
-                  <li key={index} className='text-base'>{law}</li>
-                ))}
-              </ul>*/}
-            </div>
+            <>
+              <div>
+                <h2 className="text-lg font-semibold mb-4">
+                  Information des actions menées dans cette région
+                </h2>
+                <p className="text-base mb-2">Nom: {selectedRegion.name}</p>
+                <p className="text-base mt-4">Associations :</p>
+                <ul className="list-disc ml-6">
+                  {selectedRegion.associations.map((association, index) => (
+                    <li key={index} className="text-base">
+                      {/* Nom de l'association avec Tooltip */}
+                      <span
+                        data-pr-tooltip={`Domaines : ${
+                          Array.isArray(association.domain)
+                            ? association.domain.join(', ')
+                            : association.domain
+                        }`}
+                        data-pr-position="right"
+                        className="cursor-pointer"
+                      >
+                        {association.name}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            <Tooltip className='bg-slate-200 rounded-md px-2 mx-2 border border-gray-300' target="[data-pr-tooltip]" />
+            </>
           ) : (
-            <p className='text-base'>Cliquez sur une région pour voir les détails</p>
+            <p className="text-base">Cliquez sur une région pour voir les détails</p>
           )}
         </div>
 
@@ -63,8 +64,8 @@ const Cartography = () => {
             <g id="Calque_4" className="st10">
             </g>
             <g id="Calque_1">
-              <path className={`st2 ${selectedRegion?.id === '11' ? 'selected-region' : ''}`} onClick={() => handleRegionClick('11')} d="M231.2,218l-11.4,10.3-19.6-10.3-19.6,5.2-20.7-11.4-47.6,16.5,7.2,26.9,56.9,30,1,37.2,18.6,25.9s6.2,33-2.1,51.6c-8.3,18.6-22.2,46.5-22.2,46.5l-30.5,16.5,1,11.4,21.7,10.3-7.2,34.1,9.3,17.6s11.4,3.1,16.5,27.9c5.2,24.8-10.9,25.8-10.9,25.8l9.8,14.5s34.1-5.2,57.9,21.7c0,0,40.3-18.6,80.6,0,0,0,40.3-19.6,67.7,0,27.4,19.6,41.9,24.8,41.9,24.8l17.6,19.6,11.4,25.8s42.4,13.4,54.8,42.4l40.3-12.4s16.5,7.2,30-4.1c13.4-11.4,15.5-17.6,15.5-17.6l20.7,6.2s6.2,7.2,19.6,27.9c13.4,20.7,13.4,40.3,13.4,40.3l19.6-13.4,15.5,13.4v11.4l43.4,23.8,16.5-9.3s5.2-20.7,30-21.7c0,0,14.5-19.6,32.1-15.5s32.1,17.6,32.1,17.6l9.3,37.2-9.3,34.1,63.1,25.8,9.3,15.5-12.4,11.4,4.1,22.7,12.4,5.2v21.7l30,41.4v25.8l17.6,27.9,58.9-27.9,19.6,11.4,36.2-2.1v-70.3l-10.3-22.7-21.7-9.3-3.1-17.6,20.7-6.2,6.2,15.5,13.4,5.2v-20.7l22.7,1v-12.4l-26.9-9.3-7.2-17.6-10.3-17.6h-34.1l-10.3-27.9,6.2-11.4,19.6,8.3,6.5-12.8,17.6,5.2,7.9-6.5-16.5-16.2,23.1-11-8.6-12.8-21-2.1-16.2,3.8-7.9-16.5h-15.5l-4.8-7.9-51.7,15.9-4.1,4.8-6.9-18.3-20-12.7-14.8-3.1,1.7-11.7-30.7-26.2-19-.3-6.9-8.3-16.2-1.7-13.1-27.2,5.5-8.3-2.1-7.9-25.5,1-10.3-8.8h-17.9l-9-16,16.5-5.5h39.3l16.2,12.8,7.9-1.4,5.5-13.4,5.2-15.2,1.7-13.4,16.2-9,6.9-36.9-11.7-7.9,4.1-9.3-17.9-12.1-15.9,4.1-51-24.8-14.5,1.4-7.9-13.8-31-25.8-16.9-3.4-13.4-10.3,2.1-9.3,6.2-4.5-.3-14.1-25.2-8.3-7.2-18.3s13.8-18.6,15.5-25.5l37.6-22.1s15.5-16.5,16.5-19-1-17.6-1-17.6l-33.4-14.1s-.7-13.1-5.2-16.2-15.9,5.2-15.9,5.2l-1.7-9.7,8.3-13.4-13.1-5.9-14.8,14.8-12.8-2.1-1-11.7-11-1-3.8,10-27.2-12.4-1.7-10.3-9-3.4-6.5,7.9-11.4-2.4,1.4-11.7,16.5.3,14.1-3.1,3.4-12.4-12.1-20.7-31,4.1,4.5-14.8-20.3-17.9s-20,1.4-45.1-3.4v15.2l18.6,10.3s1,10.3,0,10.3-56.9-.7-56.9-.7l-5.5-5.9h-15.2l-5.5,14.8-13.1,1-.7-5.9-8.6,1.4-5.9,7.2s-16.9-.3-17.9-.3-14.1-7.6-14.1-7.6l-8.3-1-3.3,6.2h-24.6l-6.2-13.1-7.9,1-3.1,17.9s-12.8,5.2-18.6,8.6l-31.4-5.2-7.2,4.8-35.2-1.7-22.4,10.3Z" />
-              <path className={`st2 ${selectedRegion?.id === '11' ? 'selected-region' : ''}`} onClick={() => handleRegionClick('11')} d="M1000.9,509.7l4.7-17.4-4.7-7.9,18.6-41.9,1.3-8.2,16.2-28.1v-22.8l17.8,2,5.3,15.8,7.6-1.3,3.3,6.3-7.3,8.3,18.8,20.1,4.6-6.9-5.3-9.2,6.9-6.3,6.9,10.2,7.3-5.9,7.2,7.9-8.6,7.6,5,5.9-2,4.6-10.2,4.1,4.5,10.9,38.5-15,12.5,5.7,1.4,17.2,17.9-3.8,6.5,11.4.3,14.1,12.8,14.1,9.3-3.1,9,5.2,2.1,5.2-7.6,5.9-11-2.1-3.4,1.4,1.7,10.7-12.8,9.7-6.5-3.8-15.3,2.4-4.4,3.4,7.3,7.1-5.9,6-11.7,1.4-3.4,5.9,2,19.6-12.4,11-14.5.7-6.5,3.1,1,6.2,30.4,1,10-5.9,9.7,6.9-3.8,5.9-2.1,13.4,2.8,7.2,14.5.7,10.3,7.2,10.3,1.7-1.4,9.3-23.4,22.7,2.1,6.9,5.2,2.8,20-15.5,12.1-16.9,11-2.1,12.1,7.9,13.1,2.4,11.4,11,7.2-1.7,3.1-9.7,8.3-3.1,7.6-10,4.8,7.9-1.4,18.6,41.4,16.2-3.1,21-4.5,5.5s-22.1,8.3-23.1,8.3-20,9.3-20,9.3l-4.1-5.9-5.9,2.4-5.2,19.6-5.2-4.8-12.4,1.4-3.4,8.3,12.8,10.3,1,3.8-11,4.5,1.4,4.5,17.2,3.8,6.5,22.4-6.2,4.8-1.4,13.4-11,.3.7,10,9,8.3s-3.4,1.4-6.9,2.4-8.3,8.6-8.3,8.6l-11-2.1-3.8-4.8-16.5-15.5v-12.8l-10.3-.3-4.5-6.5-6.6,5.2-1.6,8.3,8.3,8.6-3.4,13.8-17.6,2.1-5.5-8.3-9-23.1-6.3-2.8-11,9.7-15.5-14.8-2.1-11.4-5.2-5.9,27.6-20.7-7.5-9.3-39,21.7-14.5-21.7c9.3-34.5-10.9-94.1-10.9-94.1l-23.3-11.4s-17.6-43.4-17.6-46.5-21.7-12.4-21.7-12.4l2.1-20.7-23.8-10.3,13.3-48.8" />
+              <path className="st2" d="M231.2,218l-11.4,10.3-19.6-10.3-19.6,5.2-20.7-11.4-47.6,16.5,7.2,26.9,56.9,30,1,37.2,18.6,25.9s6.2,33-2.1,51.6c-8.3,18.6-22.2,46.5-22.2,46.5l-30.5,16.5,1,11.4,21.7,10.3-7.2,34.1,9.3,17.6s11.4,3.1,16.5,27.9c5.2,24.8-10.9,25.8-10.9,25.8l9.8,14.5s34.1-5.2,57.9,21.7c0,0,40.3-18.6,80.6,0,0,0,40.3-19.6,67.7,0,27.4,19.6,41.9,24.8,41.9,24.8l17.6,19.6,11.4,25.8s42.4,13.4,54.8,42.4l40.3-12.4s16.5,7.2,30-4.1c13.4-11.4,15.5-17.6,15.5-17.6l20.7,6.2s6.2,7.2,19.6,27.9c13.4,20.7,13.4,40.3,13.4,40.3l19.6-13.4,15.5,13.4v11.4l43.4,23.8,16.5-9.3s5.2-20.7,30-21.7c0,0,14.5-19.6,32.1-15.5s32.1,17.6,32.1,17.6l9.3,37.2-9.3,34.1,63.1,25.8,9.3,15.5-12.4,11.4,4.1,22.7,12.4,5.2v21.7l30,41.4v25.8l17.6,27.9,58.9-27.9,19.6,11.4,36.2-2.1v-70.3l-10.3-22.7-21.7-9.3-3.1-17.6,20.7-6.2,6.2,15.5,13.4,5.2v-20.7l22.7,1v-12.4l-26.9-9.3-7.2-17.6-10.3-17.6h-34.1l-10.3-27.9,6.2-11.4,19.6,8.3,6.5-12.8,17.6,5.2,7.9-6.5-16.5-16.2,23.1-11-8.6-12.8-21-2.1-16.2,3.8-7.9-16.5h-15.5l-4.8-7.9-51.7,15.9-4.1,4.8-6.9-18.3-20-12.7-14.8-3.1,1.7-11.7-30.7-26.2-19-.3-6.9-8.3-16.2-1.7-13.1-27.2,5.5-8.3-2.1-7.9-25.5,1-10.3-8.8h-17.9l-9-16,16.5-5.5h39.3l16.2,12.8,7.9-1.4,5.5-13.4,5.2-15.2,1.7-13.4,16.2-9,6.9-36.9-11.7-7.9,4.1-9.3-17.9-12.1-15.9,4.1-51-24.8-14.5,1.4-7.9-13.8-31-25.8-16.9-3.4-13.4-10.3,2.1-9.3,6.2-4.5-.3-14.1-25.2-8.3-7.2-18.3s13.8-18.6,15.5-25.5l37.6-22.1s15.5-16.5,16.5-19-1-17.6-1-17.6l-33.4-14.1s-.7-13.1-5.2-16.2-15.9,5.2-15.9,5.2l-1.7-9.7,8.3-13.4-13.1-5.9-14.8,14.8-12.8-2.1-1-11.7-11-1-3.8,10-27.2-12.4-1.7-10.3-9-3.4-6.5,7.9-11.4-2.4,1.4-11.7,16.5.3,14.1-3.1,3.4-12.4-12.1-20.7-31,4.1,4.5-14.8-20.3-17.9s-20,1.4-45.1-3.4v15.2l18.6,10.3s1,10.3,0,10.3-56.9-.7-56.9-.7l-5.5-5.9h-15.2l-5.5,14.8-13.1,1-.7-5.9-8.6,1.4-5.9,7.2s-16.9-.3-17.9-.3-14.1-7.6-14.1-7.6l-8.3-1-3.3,6.2h-24.6l-6.2-13.1-7.9,1-3.1,17.9s-12.8,5.2-18.6,8.6l-31.4-5.2-7.2,4.8-35.2-1.7-22.4,10.3Z" />
+              <path className="st2" d="M1000.9,509.7l4.7-17.4-4.7-7.9,18.6-41.9,1.3-8.2,16.2-28.1v-22.8l17.8,2,5.3,15.8,7.6-1.3,3.3,6.3-7.3,8.3,18.8,20.1,4.6-6.9-5.3-9.2,6.9-6.3,6.9,10.2,7.3-5.9,7.2,7.9-8.6,7.6,5,5.9-2,4.6-10.2,4.1,4.5,10.9,38.5-15,12.5,5.7,1.4,17.2,17.9-3.8,6.5,11.4.3,14.1,12.8,14.1,9.3-3.1,9,5.2,2.1,5.2-7.6,5.9-11-2.1-3.4,1.4,1.7,10.7-12.8,9.7-6.5-3.8-15.3,2.4-4.4,3.4,7.3,7.1-5.9,6-11.7,1.4-3.4,5.9,2,19.6-12.4,11-14.5.7-6.5,3.1,1,6.2,30.4,1,10-5.9,9.7,6.9-3.8,5.9-2.1,13.4,2.8,7.2,14.5.7,10.3,7.2,10.3,1.7-1.4,9.3-23.4,22.7,2.1,6.9,5.2,2.8,20-15.5,12.1-16.9,11-2.1,12.1,7.9,13.1,2.4,11.4,11,7.2-1.7,3.1-9.7,8.3-3.1,7.6-10,4.8,7.9-1.4,18.6,41.4,16.2-3.1,21-4.5,5.5s-22.1,8.3-23.1,8.3-20,9.3-20,9.3l-4.1-5.9-5.9,2.4-5.2,19.6-5.2-4.8-12.4,1.4-3.4,8.3,12.8,10.3,1,3.8-11,4.5,1.4,4.5,17.2,3.8,6.5,22.4-6.2,4.8-1.4,13.4-11,.3.7,10,9,8.3s-3.4,1.4-6.9,2.4-8.3,8.6-8.3,8.6l-11-2.1-3.8-4.8-16.5-15.5v-12.8l-10.3-.3-4.5-6.5-6.6,5.2-1.6,8.3,8.3,8.6-3.4,13.8-17.6,2.1-5.5-8.3-9-23.1-6.3-2.8-11,9.7-15.5-14.8-2.1-11.4-5.2-5.9,27.6-20.7-7.5-9.3-39,21.7-14.5-21.7c9.3-34.5-10.9-94.1-10.9-94.1l-23.3-11.4s-17.6-43.4-17.6-46.5-21.7-12.4-21.7-12.4l2.1-20.7-23.8-10.3,13.3-48.8" />
             </g>
             <g id="Calque_14" className="st10">
               <polyline className="st1" points="1109.4 454.9 1097.5 459.7 1070 471.1 1054.5 486.6 1045.9 503.5 1024.2 515.9 1000.9 509.7" />
@@ -93,13 +94,13 @@ const Cartography = () => {
               <text className="st4" transform="translate(686 708.5)" onClick={() => handleRegionClick('9')}><tspan x="0" y="0">Vayots</tspan><tspan x="0" y="41.6">Dzor</tspan></text>
               <text className="st4" transform="translate(912.7 874.3)" onClick={() => handleRegionClick('10')}><tspan x="0" y="0">Syunik</tspan></text>
               <text className="st4" transform="translate(431.1 515.2)" onClick={() => handleRegionClick('5')}><tspan x="0" y="0">Kotayk</tspan></text>
-              <polygon className={`st0 ${selectedRegion?.id === '12' ? 'selected-region' : ''}`} onClick={() => handleRegionClick('12')} points="502.6 595.4 501.4 582.4 493.4 583.7 487.5 581 483.9 571.8 493.4 565.9 491.5 550 485.5 549 479.6 539.8 466 541.1 463.7 545.4 463.7 552.7 429.1 552.7 429.1 558.1 448.6 602.3 463 615.1 498.9 595.6 502.6 595.4" />
-              <text className="st5" transform="translate(452.7 569.8)" onClick={() => handleRegionClick('12')}><tspan x="0" y="0">EREVAN</tspan></text>
-              <text className="st6" transform="translate(1143.4 708.1)" onClick={() => handleRegionClick('11')}><tspan x="0" y="0">STEPANAKERT </tspan></text>
+              <polygon className={`st0 ${selectedRegion?.id === '11' ? 'selected-region' : ''}`} onClick={() => handleRegionClick('11')} points="502.6 595.4 501.4 582.4 493.4 583.7 487.5 581 483.9 571.8 493.4 565.9 491.5 550 485.5 549 479.6 539.8 466 541.1 463.7 545.4 463.7 552.7 429.1 552.7 429.1 558.1 448.6 602.3 463 615.1 498.9 595.6 502.6 595.4" />
+              <text className="st5" transform="translate(452.7 569.8)" onClick={() => handleRegionClick('11')}><tspan x="0" y="0">EREVAN</tspan></text>
+              <text className="st6" transform="translate(1143.4 708.1)"><tspan x="0" y="0">STEPANAKERT </tspan></text>
               <path className="st1" d="M595.6,571.8l-3.3-20.3-14.4-7.2,2.1-20.5-15.4-15.6-9.2-28.5s-19.5-15.4-16.4-17.4,7.2-28.7-4.1-35.9c-11.3-7.2-14.4-21.5-14.4-21.5.2-7.6,2.3-13.2,5.6-17.4h-5.6v-16.4l-22.6,2.1-36.9-7.6-44.1,12.2-6.2,22,9.2,21.4,24.6,7.3-6.2,27.7-24.6,44.1-10.6,15.4,12.6,9.2,13.3,13.3v19.9l19.5,44.2,14.4,12.8,35.9-19.5,35.9-2.1,38-21.7h22.8Z" />
-              <circle className={`st7 ${selectedRegion?.id === '12' ? 'selected-region' : ''}`} onClick={() => handleRegionClick('12')} cx="465.9" cy="589.3" r="13.2" />
-              <circle className={`st7 ${selectedRegion?.id === '11' ? 'selected-region' : ''}`} onClick={() => handleRegionClick('11')} cx="1134.2" cy="697.4" r="5.9" transform="translate(176.9 1622.9) rotate(-75.6)" />
-              <text onClick={() => handleRegionClick('11')}>
+              <circle className={`st7 ${selectedRegion?.id === '11' ? 'selected-region' : ''}`} onClick={() => handleRegionClick('11')} cx="465.9" cy="589.3" r="13.2" />
+              <circle className="st7" cx="1134.2" cy="697.4" r="5.9" transform="translate(176.9 1622.9) rotate(-75.6)" />
+              <text>
                 <textPath xlinkHref="#path">
                   <tspan className="st9">
                     <tspan x="0" y="0">ARTSAKH</tspan>
@@ -117,14 +118,18 @@ const Cartography = () => {
         </div>
 
         {/* Section de droite (2/12) */}
-        <div className='col-span-12 sm:col-span-2 border-l border-gray-300 p-4'>
+        <div className="col-span-12 sm:col-span-2 border-l border-gray-300 p-4">
           {selectedRegion ? (
             <div>
-              <h2 className='text-lg font-semibold mb-4 mt-8'>Information sur le nombre de réfugiés</h2>
-              <p className='text-base mt-4'>Nombre de réfugiés : {selectedRegion.refugees}</p>
+              <h2 className="text-lg font-semibold mb-4 mt-8">
+                Information sur le nombre de réfugiés
+              </h2>
+              <p className="text-base mt-4">
+                Nombre de réfugiés : {selectedRegion.refugees}
+              </p>
             </div>
           ) : (
-            <p className='text-base'>Cliquez sur une région pour voir les détails</p>
+            <p className="text-base">Cliquez sur une région pour voir les détails</p>
           )}
         </div>
       </div>

@@ -17,32 +17,35 @@ import Message from './pages/Message'
 import Donation from './pages/Donation'
 import PrivatePolicy from './pages/PrivatePolicy'
 import Footer from './components/Footer'
+import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
 import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
   return (
-    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
-      <ToastContainer />
-      <Navbar />
-      <SearchBar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/acteurs' element={<CollectionActor />} />
-        <Route path='/acteurs/:actorId' element={<Actor />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/projets' element={<CollectionProject />} />
-        <Route path='/projets/:projectId' element={<Project />} />
-        <Route path='/cartographie' element={<Cartography />} />
-        <Route path='/actualites' element={<CollectionActuality />} />
-        <Route path='/actualites/:actualityId' element={<Actuality />} />
-        <Route path='/messagerie' element={<Message />} />
-        <Route path='/donation' element={<Donation />} />
-        <Route path='/confidentialite' element={<PrivatePolicy />} />
-      </Routes>
+    <PrimeReactProvider>
+      <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+        <ToastContainer />
+        <Navbar />
+        <SearchBar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/acteurs' element={<CollectionActor />} />
+          <Route path='/acteurs/:actorId' element={<Actor />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/projets' element={<CollectionProject />} />
+          <Route path='/projets/:projectId' element={<Project />} />
+          <Route path='/cartographie' element={<Cartography />} />
+          <Route path='/actualites' element={<CollectionActuality />} />
+          <Route path='/actualites/:actualityId' element={<Actuality />} />
+          <Route path='/messagerie' element={<Message />} />
+          <Route path='/donation' element={<Donation />} />
+          <Route path='/confidentialite' element={<PrivatePolicy />} />
+        </Routes>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </PrimeReactProvider>
   )
 }
 
