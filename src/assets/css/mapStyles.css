@@ -1,0 +1,85 @@
+.selected-region {
+    fill: #add8e6 !important;
+    /* Bleu clair */
+    stroke: #313280 !important;
+    /* Conservez la bordure */
+}
+
+.st7.selected-region {
+    fill: #e2aaae !important;
+    /* Bleu clair */
+    stroke: #313280 !important;
+    /* Conservez la bordure */
+}
+
+.st0 {
+    fill: #e2aaae;
+}
+
+.st1,
+.st2 {
+    fill: none;
+}
+
+.st1,
+.st2,
+.st3 {
+    stroke: #313280;
+    stroke-miterlimit: 10;
+}
+
+.st1,
+.st3 {
+    stroke-width: 1.6px;
+}
+
+.st4 {
+    font-family: AktivGroteskArmn-Regular, 'Aktiv Grotesk Armn';
+    font-size: 34.7px;
+    letter-spacing: 0em;
+}
+
+.st4,
+.st5,
+.st6,
+.st7 {
+    fill: #313280;
+}
+
+.st8 {
+    fill: #cbdef5;
+}
+
+.st5 {
+    font-size: 26.6px;
+    letter-spacing: 0em;
+}
+
+.st5,
+.st6,
+.st9 {
+    font-family: AktivGroteskArmn-Bold, 'Aktiv Grotesk Armn';
+    font-weight: 700;
+}
+
+.st6 {
+    font-size: 21px;
+    letter-spacing: 0em;
+}
+
+.st2 {
+    stroke-width: 6.2px;
+}
+
+.st3 {
+    fill: #fff;
+}
+
+.st10 {
+    display: none;
+}
+
+.st9 {
+    fill: #4570b4;
+    font-size: 31px;
+}

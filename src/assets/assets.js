@@ -327,3 +327,149 @@ export const actualites = [
         lien: interviewFlorencePDF
     }
 ];
+
+export const regions = [
+  { 
+    id: '1', 
+    name: 'Shirak', 
+    refugees: 4.034,
+    associations: [
+      { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
+      { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
+      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
+      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+    ], 
+    laws: ['Loi sur la protection des réfugiés (2015)', 'Loi sur l’aide humanitaire (2018)'],
+    domains: ['Santé', 'Social', 'Logement']
+  },
+  { 
+    id: '2', 
+    name: 'Lorri', 
+    refugees: 4.229,
+    associations: [
+      { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
+      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
+      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+    ],
+    laws: ['Loi sur le logement social (2017)', 'Loi sur la réhabilitation post-conflit (2020)'],
+    domains: ['Logement', 'Social', 'Formation/Emploi']
+  },
+  { 
+    id: '3', 
+    name: 'Tavush', 
+    refugees: 2.962,
+    associations: [
+      { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
+      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
+      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+    ],    
+    laws: ['Loi sur l’éducation des enfants déplacés (2019)', 'Loi sur la formation professionnelle (2021)'],
+    domains: ['Education', 'Social', 'Agriculture']
+  },
+  { 
+    id: '4', 
+    name: 'Aragatsotn', 
+    refugees: 3.854,
+    associations: [
+      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
+      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+    ],    
+    laws: ['Loi sur la sécurité alimentaire (2016)', 'Loi sur l’aide aux familles vulnérables (2019)'],
+    domains: ['Santé', 'Social', 'Agriculture']
+  },
+  { 
+    id: '5', 
+    name: 'Kotayk', 
+    refugees: 18.622,
+    associations: [
+      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
+      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+    ],    
+    laws: ['Loi sur la santé mentale (2018)', 'Loi sur la protection des enfants (2020)'],
+    domains: ['Santé', 'Social', 'Education']
+  },
+  { 
+    id: '6', 
+    name: 'Armavir', 
+    refugees: 10.970,
+    associations: [
+      { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
+      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
+      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+    ],    
+    laws: ['Loi sur la réintégration des réfugiés (2021)', 'Loi sur le développement communautaire (2019)'],
+    domains: ['Logement', 'Social', 'Formation/Emploi']
+  },
+  { 
+    id: '7', 
+    name: 'Ararat', 
+    refugees: 11.986,
+    associations: [
+      { name: 'Santé Arménie', domain: ["Formation/Emploi", "Santé"], },
+      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
+      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+    ],    
+    laws: ['Loi sur la santé publique (2017)', 'Loi sur l’aide psychologique (2020)'],
+    domains: ['Santé', 'Social', 'Logement']
+  },
+  { 
+    id: '8', 
+    name: 'Gegharkunik', 
+    refugees: 3.537,
+    associations: [
+      { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
+      { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
+      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
+      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+    ],
+    laws: ['Loi sur l’emploi des réfugiés (2019)', 'Loi sur la formation professionnelle (2021)'],
+    domains: ['Education', 'Social', 'Formation/Emploi']
+  },
+  { 
+    id: '9', 
+    name: 'Vayots Dzor', 
+    refugees: 2.135,
+    associations: [
+      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
+      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+    ],
+    laws: ['Loi sur la reconstruction post-conflit (2020)', 'Loi sur l’aide humanitaire (2018)'],
+    domains: ['Logement', 'Social', 'Agriculture']
+  },
+  { 
+    id: '10', 
+    name: 'Syunik', 
+    refugees: 6.547,
+    associations: [
+      { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
+      { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
+      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
+      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+      { name: 'Santé Arménie', domain: ["Formation/Emploi", "Santé"], },
+    ],
+    laws: ['Loi sur les familles d’accueil (2019)', 'Loi sur la protection des réfugiés (2015)'],
+    domains: ['Santé', 'Social', 'Logement']
+  },
+  { 
+    id: '11', 
+    name: 'Erevan',
+    refugees: 46.512,
+    associations: [
+      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
+      { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+    ],
+    laws: ['Loi sur l’aide humanitaire (2018)', 'Loi sur la protection des réfugiés (2015)'],
+    domains: ['Santé', 'Social', 'Education']
+  },
+];
