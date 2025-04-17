@@ -332,7 +332,7 @@ export const regions = [
   { 
     id: '1', 
     name: 'Shirak', 
-    refugees: 4.034,
+    refugees: 3.368,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
@@ -346,7 +346,7 @@ export const regions = [
   { 
     id: '2', 
     name: 'Lorri', 
-    refugees: 4.229,
+    refugees: 5.496,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
@@ -359,7 +359,7 @@ export const regions = [
   { 
     id: '3', 
     name: 'Tavush', 
-    refugees: 2.962,
+    refugees: 2.383,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
@@ -372,7 +372,7 @@ export const regions = [
   { 
     id: '4', 
     name: 'Aragatsotn', 
-    refugees: 3.854,
+    refugees: 4.014,
     associations: [
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
@@ -384,7 +384,7 @@ export const regions = [
   { 
     id: '5', 
     name: 'Kotayk', 
-    refugees: 18.622,
+    refugees: 20.331,
     associations: [
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
@@ -396,7 +396,7 @@ export const regions = [
   { 
     id: '6', 
     name: 'Armavir', 
-    refugees: 10.970,
+    refugees: 10.416,
     associations: [
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
@@ -409,7 +409,7 @@ export const regions = [
   { 
     id: '7', 
     name: 'Ararat', 
-    refugees: 11.986,
+    refugees: 14.743,
     associations: [
       { name: 'Santé Arménie', domain: ["Formation/Emploi", "Santé"], },
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
@@ -422,7 +422,7 @@ export const regions = [
   { 
     id: '8', 
     name: 'Gegharkunik', 
-    refugees: 3.537,
+    refugees: 3.468,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
@@ -436,7 +436,7 @@ export const regions = [
   { 
     id: '9', 
     name: 'Vayots Dzor', 
-    refugees: 2.135,
+    refugees: 1.274,
     associations: [
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
@@ -448,7 +448,7 @@ export const regions = [
   { 
     id: '10', 
     name: 'Syunik', 
-    refugees: 6.547,
+    refugees: 3.439,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
