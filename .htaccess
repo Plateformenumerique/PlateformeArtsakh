@@ -1,0 +1,21 @@
+# Forcer le type MIME pour les fichiers JavaScript
+AddType application/javascript .js
+AddType application/javascript .jsx
+AddType text/javascript .js
+AddType text/css .css
+AddType text/html .html
+
+# Configurer les headers
+<IfModule mod_headers.c>
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# Activer la réécriture d'URL pour React Router
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+</IfModule>
