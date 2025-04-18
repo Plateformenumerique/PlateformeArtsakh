@@ -1,14 +1,17 @@
-# Création d'u site pour la solidarité avec l'Artsakh : Convergences pour l'Arménie en soutien aux déplacés de l'Artsakh
+# Plateforme de solidarité avec l'Artsakh  
+**Convergences pour l'Arménie en soutien aux déplacés de l'Artsakh**
 
-"Convergences pour l'Arménie en soutien aux déplacés de l'Artsakh" est une plateforme visant à mettre en relation des association (acteurs) et leurs projets afin d'aider la population karabaghiote. Elle facilite la mise en contact entre les organisations humanitaires et les initiatives locales pour maximiser l'impact des actions solidaires.
+Cette plateforme a pour objectif de mettre en relation les acteurs associatifs, les porteurs de projets et les initiatives locales afin de venir en aide aux réfugiés de l’Artsakh. Elle favorise la coordination et la visibilité des actions solidaires en facilitant les échanges entre les organisations humanitaires et les contributeurs engagés.
 
-### Côté technique : 
+---
 
-#### React + Vite
+## ⚙️ Côté technique
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Stack : React + Vite
 
-Currently, two official plugins are available:
+Ce projet utilise une configuration minimale pour faire fonctionner React avec Vite, en intégrant le Hot Module Replacement (HMR) et quelques règles ESLint.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Deux plugins officiels sont disponibles selon le moteur de transformation souhaité :
+
+- [`@vitejs/plugin-react`](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) – basé sur Babel pour le Fast Refresh
+- [`@vitejs/plugin-react-swc`](https://github.com/vitejs/vite-plugin-react-swc) – basé sur SWC pour le Fast Refresh
