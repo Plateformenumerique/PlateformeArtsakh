@@ -42,7 +42,12 @@ const Footer = () => {
             
             <div>
                 <hr />
-                <p className='py-5 text-sm text-center'>Copyright 2024 - Tous droits réservés</p>
+                <p className='py-5 text-sm text-center'>
+                    Copyright 2024-2025 - Tous droits réservés | Créé par Mathieu Lalande - 
+                    <a href="https://mathieulalandeportfolio.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                        Portfolio
+                    </a>
+                </p>
             </div>
         </>
     )
