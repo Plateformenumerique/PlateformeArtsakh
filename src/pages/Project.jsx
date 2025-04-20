@@ -52,7 +52,7 @@ const Project = () => {
             Domaine de la mission : {projectData.domain}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
-            Budget: {projectData.currency}{projectData.budget}
+            Budget : {projectData.currency}{projectData.budget}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
             Lien vers l'article : <a href={projectData.externalLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">{projectData.externalLink}</a>

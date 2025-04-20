@@ -30,14 +30,14 @@ const ActorItem = ({ id, name, description, domain, type, establishedDate, logo,
                         </div>
                         <div className='flex flex-col'>
                             <InfoRow label="Type " value={Array.isArray(type) ? type.join(', ') : type} />
-                            <InfoRow label="Domaine d'activité" value={Array.isArray(domain) ? domain.join(', ') : domain} />
+                            <InfoRow label="Domaine d'activité " value={Array.isArray(domain) ? domain.join(', ') : domain} />
                             {!isCollectiviteTerritoriale && (
                                 <>
                                     <InfoRow label="Dirigeant(e) " value={dirigeant} />
                                 </>
                             )}
                             {!isAssociation && (
-                                <InfoRow label="Contact" value={contact} />
+                                <InfoRow label="Contact " value={contact} />
                             )}
                             <InfoRow label="Email " value={email} />
                             <InfoRow label="Téléphone " value={telephone} />
