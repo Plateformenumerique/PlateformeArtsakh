@@ -52,57 +52,57 @@ import croix_bleue from './croix_bleue.jpg'
 import interviewFlorencePDF from './interview-florence.pdf';
 
 export const assets = {
-    cart_icon,
-    dropdown_icon,
-    exchange_icon,
-    quality_icon,
-    search_icon,
-    star_dull_icon,
-    star_icon,
-    bin_icon,
-    support_img,
-    menu_icon,
-    about_img,
-    cross_icon,
-    hero_image,
-    logo_Croix_Rouge_Française,
-    logo_medecin_sans_frontieres,
-    logo_solidarite_armenie,
-    fonds_armeniens_de_france,
-    secours_populaire_logo,
-    caritas_armenie,
-    emmaus_france,
-    asso_franco_armenienne,
-    secours_catholique,
-    fondation_aznavour,
-    formation_watm,
-    soutiens_developpement_communautaire,
-    quai_image,
-    soutiens_personnes_deplacees,
-    forma,
-    logo_asa,
-    armenie_carte,
-    florence,
-    TATEV_market,
-    logo_plateforme,
-    ville_lyon,
-    Dep_isere,
-    joeuf,
-    rara_logo,
-    Logo_CHENE,
-    ugab,
-    fadf,
-    Logo_Sante_Armenie,
-    drive,
-    gmail,
-    meet,
-    calendar,
-    google,
-    Logo_Gardanne,
-    stetienne,
-    Weareourmountains,
-    LogoUnionfrarm,
-    croix_bleue
+  cart_icon,
+  dropdown_icon,
+  exchange_icon,
+  quality_icon,
+  search_icon,
+  star_dull_icon,
+  star_icon,
+  bin_icon,
+  support_img,
+  menu_icon,
+  about_img,
+  cross_icon,
+  hero_image,
+  logo_Croix_Rouge_Française,
+  logo_medecin_sans_frontieres,
+  logo_solidarite_armenie,
+  fonds_armeniens_de_france,
+  secours_populaire_logo,
+  caritas_armenie,
+  emmaus_france,
+  asso_franco_armenienne,
+  secours_catholique,
+  fondation_aznavour,
+  formation_watm,
+  soutiens_developpement_communautaire,
+  quai_image,
+  soutiens_personnes_deplacees,
+  forma,
+  logo_asa,
+  armenie_carte,
+  florence,
+  TATEV_market,
+  logo_plateforme,
+  ville_lyon,
+  Dep_isere,
+  joeuf,
+  rara_logo,
+  Logo_CHENE,
+  ugab,
+  fadf,
+  Logo_Sante_Armenie,
+  drive,
+  gmail,
+  meet,
+  calendar,
+  google,
+  Logo_Gardanne,
+  stetienne,
+  Weareourmountains,
+  LogoUnionfrarm,
+  croix_bleue
 }
 
 export const acteurs = [
@@ -185,7 +185,7 @@ export const acteurs = [
     logo: ville_lyon,
     dirigeant: "Grégory Doucet",
     email: "roxane.beneyton@mairie-lyon.fr",
-    telephone: "",
+    telephone: "04 78 63 40 00",
     contact: "Roxane Beneyton"
   },
   {
@@ -211,7 +211,7 @@ export const acteurs = [
     logo: joeuf,
     dirigeant: "Maria Abiza",
     email: "cabinet.maire@ville-joeuf.fr",
-    telephone: "",
+    telephone: "03 82 22 98 69",
     contact: "Maria Abiza"
   },
   {
@@ -284,53 +284,53 @@ export const acteurs = [
 ];
 
 export const projets = [
-    {
-        _id: "1",
-        name: "RECHERCHE DE PARTENAIRE POUR UN PROGRAMME DE LANGUE FRANÇAISE POUR LES ÉTUDIANTS D'ARTSAKH",
-        description: "Le programme de langue française vise à fournir des cours complets de langue française aux étudiants de l'Artsakh, comblant ainsi les lacunes de leur programme. Nous recherchons activement des partenaires pour soutenir ce programme, que ce soit par des contributions financières, des ressources pédagogiques ou des collaborations éducatives.",
-        association: "We are our mountains",
-        type: "Urgence",
-        startDate: "2024-03-01",
-        endDate: "2025-01-31",
-        budget: '6 402',
-        currency: "$",
-        image: formation_watm,
-        domain: ["Formation/Emploi"],
-        externalLink: "https://ourmountains.am/project/french-language-program-for-artsakh-students/"
-    }
+  {
+    _id: "1",
+    name: "RECHERCHE DE PARTENAIRE POUR UN PROGRAMME DE LANGUE FRANÇAISE POUR LES ÉTUDIANTS D'ARTSAKH",
+    description: "Le programme de langue française vise à fournir des cours complets de langue française aux étudiants de l'Artsakh, comblant ainsi les lacunes de leur programme. Nous recherchons activement des partenaires pour soutenir ce programme, que ce soit par des contributions financières, des ressources pédagogiques ou des collaborations éducatives.",
+    association: "We are our mountains",
+    type: "Urgence",
+    startDate: "2024-03-01",
+    endDate: "2025-01-31",
+    budget: '6 402',
+    currency: "$",
+    image: formation_watm,
+    domain: ["Formation/Emploi"],
+    externalLink: "https://ourmountains.am/project/french-language-program-for-artsakh-students/"
+  }
 ];
 
 export const actualites = [
-    {
-        _id: "1",
-        title: "Appel à projets franco-arménien",
-        subtitle: "Le ministère de l’Europe et des Affaires étrangères annonce l’ouverture de l’appel à projets Arménie 2025. Les candidatures sont ouvertes jusqu’au 23 mai 2025. Les collectivités peuvent désormais soumettre leurs projets via la plateforme Démarches simplifiées.",
-        date: "2023-07-10",
-        image: quai_image,
-        lien: "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/action-exterieure-des-collectivites-territoriales/appels-a-projets-2025/appels-a-projets-geographiques/appel-a-projets-franco-armenien/"
-    },
-    {
-        _id: "2",
-        title: "Projet WINGS",
-        subtitle: "Porté par l’Association de Soutien à l’Artsakh, en partenariat avec l’ONG locale arménienne « Nous sommes nos Montagnes », le projet Wings accompagne les enfants déplacés dans leur parcours de reconstruction éducative, psychologique et sociale, afin de faciliter leur intégration dans un nouvel environnement de vie.",
-        date: "2023-05-25",
-        video: Weareourmountains,
-        lien: "#"
-    },
-    {
-        _id: "3",
-        title: "Interview de Florence Provendier, coordinatrice des coopérations franco-arméniennes du ministère des Affaires Étrangères et de l'Europe",
-        subtitle: "Dans cette interview accordée au Fonds Arménien, réalisée par Achod Papasian et parue dans le Courrier du Fonds Arménien de France n°118 – ©Mars 2025, Florence Provendier nous éclaire sur cette démarche qui prend corps à travers l’appel à projets « Arménie » et les prochaines assises de la coopération décentralisée à Goris, dans le Syunik. La coopération décentralisée s’impose aujourd’hui comme un levier central dans la dynamique de renforcement des relations franco-arméniennes. Portée par la feuille de route économique signée en 2021, cette stratégie vise à mobiliser l’ensemble des acteurs publics, associatifs et économiques autour de projets concrets.",
-        date: "2025-04-08",
-        image: florence, // Remplacez par une image appropriée si nécessaire
-        lien: interviewFlorencePDF
-    }
+  {
+    _id: "1",
+    title: "Appel à projets franco-arménien",
+    subtitle: "Le ministère de l’Europe et des Affaires étrangères annonce l’ouverture de l’appel à projets Arménie 2025. Les candidatures sont ouvertes jusqu’au 23 mai 2025. Les collectivités peuvent désormais soumettre leurs projets via la plateforme Démarches simplifiées.",
+    date: "2023-07-10",
+    image: quai_image,
+    lien: "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/action-exterieure-des-collectivites-territoriales/appels-a-projets-2025/appels-a-projets-geographiques/appel-a-projets-franco-armenien/"
+  },
+  {
+    _id: "2",
+    title: "Projet WINGS",
+    subtitle: "Porté par l’Association de Soutien à l’Artsakh, en partenariat avec l’ONG locale arménienne « Nous sommes nos Montagnes », le projet Wings accompagne les enfants déplacés dans leur parcours de reconstruction éducative, psychologique et sociale, afin de faciliter leur intégration dans un nouvel environnement de vie.",
+    date: "2023-05-25",
+    video: Weareourmountains,
+    lien: "#"
+  },
+  {
+    _id: "3",
+    title: "Interview de Florence Provendier, coordinatrice des coopérations franco-arméniennes du ministère des Affaires Étrangères et de l'Europe",
+    subtitle: "Dans cette interview accordée au Fonds Arménien, réalisée par Achod Papasian et parue dans le Courrier du Fonds Arménien de France n°118 – ©Mars 2025, Florence Provendier nous éclaire sur cette démarche qui prend corps à travers l’appel à projets « Arménie » et les prochaines assises de la coopération décentralisée à Goris, dans le Syunik. La coopération décentralisée s’impose aujourd’hui comme un levier central dans la dynamique de renforcement des relations franco-arméniennes. Portée par la feuille de route économique signée en 2021, cette stratégie vise à mobiliser l’ensemble des acteurs publics, associatifs et économiques autour de projets concrets.",
+    date: "2025-04-08",
+    image: florence, // Remplacez par une image appropriée si nécessaire
+    lien: interviewFlorencePDF
+  }
 ];
 
 export const regions = [
-  { 
-    id: '1', 
-    name: 'Shirak', 
+  {
+    id: '1',
+    name: 'Shirak',
     refugees: 3.368,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
@@ -340,9 +340,9 @@ export const regions = [
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
   },
-  { 
-    id: '2', 
-    name: 'Lorri', 
+  {
+    id: '2',
+    name: 'Lorri',
     refugees: 5.496,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
@@ -351,9 +351,9 @@ export const regions = [
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
   },
-  { 
-    id: '3', 
-    name: 'Tavush', 
+  {
+    id: '3',
+    name: 'Tavush',
     refugees: 2.383,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
@@ -362,9 +362,9 @@ export const regions = [
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
   },
-  { 
-    id: '4', 
-    name: 'Aragatsotn', 
+  {
+    id: '4',
+    name: 'Aragatsotn',
     refugees: 4.014,
     associations: [
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
@@ -372,9 +372,9 @@ export const regions = [
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
   },
-  { 
-    id: '5', 
-    name: 'Kotayk', 
+  {
+    id: '5',
+    name: 'Kotayk',
     refugees: 20.331,
     associations: [
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
@@ -382,31 +382,31 @@ export const regions = [
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
   },
-  { 
-    id: '6', 
-    name: 'Armavir', 
+  {
+    id: '6',
+    name: 'Armavir',
     refugees: 10.416,
     associations: [
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
-    ],    
+    ],
   },
-  { 
-    id: '7', 
-    name: 'Ararat', 
+  {
+    id: '7',
+    name: 'Ararat',
     refugees: 14.743,
     associations: [
       { name: 'Santé Arménie', domain: ["Formation/Emploi", "Santé"], },
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
-    ],    
+    ],
   },
-  { 
-    id: '8', 
-    name: 'Gegharkunik', 
+  {
+    id: '8',
+    name: 'Gegharkunik',
     refugees: 3.468,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
@@ -416,9 +416,9 @@ export const regions = [
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
   },
-  { 
-    id: '9', 
-    name: 'Vayots Dzor', 
+  {
+    id: '9',
+    name: 'Vayots Dzor',
     refugees: 1.274,
     associations: [
       { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
@@ -426,9 +426,9 @@ export const regions = [
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
   },
-  { 
-    id: '10', 
-    name: 'Syunik', 
+  {
+    id: '10',
+    name: 'Syunik',
     refugees: 3.439,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
@@ -439,8 +439,8 @@ export const regions = [
       { name: 'Santé Arménie', domain: ["Formation/Emploi", "Santé"], },
     ],
   },
-  { 
-    id: '11', 
+  {
+    id: '11',
     name: 'Erevan',
     refugees: 46.512,
     associations: [
