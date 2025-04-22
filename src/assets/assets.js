@@ -237,7 +237,7 @@ export const acteurs = [
     logo: Logo_Gardanne,
     dirigeant: "Hervé Granier",
     email: "arnaud-mazille@ville-gardanne.fr",
-    telephone: "07 88 35 93 93",
+    telephone: "04 42 51 79 00",
     contact: "Arnaud Mazille"
   },
   {
