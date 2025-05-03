@@ -51,6 +51,8 @@ import LogoUnionfrarm from './LogoUnionfrarm.webp'
 import croix_bleue from './croix_bleue.jpg'
 import interviewFlorencePDF from './interview-florence.pdf';
 import empathia from './Empathia_2025.png';
+import terreculture from './logo-terre-culture.jpg'
+import hamazkayin from './logo-Hamaskaine.png'
 
 export const assets = {
   cart_icon,
@@ -104,7 +106,9 @@ export const assets = {
   Weareourmountains,
   LogoUnionfrarm,
   croix_bleue,
-  empathia
+  empathia,
+  terreculture,
+  hamazkayin
 }
 
 export const acteurs = [
@@ -283,6 +287,34 @@ export const acteurs = [
     telephone: "+33 (0)1 53 34 18 18",
     contact: "Corinne Sévane Mardirossian"
   },
+  {
+    _id: "14",
+    name: "Organisation Terre et Culture",
+    description: "L'Organisation Terre et Culture a pour objectif de valoriser, par la conception, l'élaboration et la réalisaiton de projets précis, le patrimoine culturel arménien et de créer, par la mise en oeuvre d'actions coopératives, les conditions économiques et sociales indispensables à son développement (article 2 des statuts). ",
+    domain: ["Social", "Aide d'urgence"],
+    type: ["Association"],
+    website: "https://www.terreetculture.org",
+    logo: terreculture,
+    establishedDate: 1978,
+    dirigeant: "Kaprélian Nelly",
+    email: "contact@otc-france.org",
+    telephone: "+33 (0)1 48 97 42 58",
+    contact: "Kaprélian Nelly"
+  },
+  {
+    _id: "15",
+    name: "Association éducative et culturelle arménienne Hamaskaïne",
+    description: "L'association éducative et culturelle arménienne Hamaskaïne agit dans le domaine de la culture et de l'éducation. Elle a pour objectif de préserver l'identité nationale et les traditions culturelles arméniennes, tout en transmettant une éducation arménienne à la jeune génération vivant dans la diaspora. Hamaskaïne Artsakh, le bureau artsakhiote de l'association basé à Erévan, met en œuvre plusieurs projets éducatifs et culturels avec les adolescents, les jeunes et les artistes déplacés de force de l’Artsakh. Il met également en place un programme éditorial valorisant la littérature et l'histoire artsakhiotes.",
+    domain: ["Education", "Culture"],
+    type: ["Association"],
+    website: "https://hamaskaine.org/",
+    logo: hamazkayin,
+    establishedDate: 1928,
+    dirigeant: "Président Kéchichian Zakar, responsable Europe Chahinian Hasmig",
+    email: "hasmig.chahinian@gmail.com",
+    telephone: "+33 (0)6 61 43 17 65",
+    contact: "Président Kéchichian Zakar, responsable Europe Chahinian Hasmig"
+  },
 ];
 
 export const projets = [
@@ -354,6 +386,7 @@ export const regions = [
       /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+      { name: 'Association éducative et culturelle arménienne Hamaskaïne', domain: ["Éducation", "Culture"], },
     ],
   },
   {
@@ -365,6 +398,7 @@ export const regions = [
       /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+      { name: 'Organisation Terre et Culture', domain: ["Social", "Aide d'urgence"], },
     ],
   },
   {
@@ -396,6 +430,7 @@ export const regions = [
       /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+      { name: 'Association éducative et culturelle arménienne Hamaskaïne', domain: ["Éducation", "Culture"], },
     ],
   },
   {
@@ -418,6 +453,7 @@ export const regions = [
       /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+      { name: 'Association éducative et culturelle arménienne Hamaskaïne', domain: ["Éducation", "Culture"], },
     ],
   },
   {
@@ -453,6 +489,7 @@ export const regions = [
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
       { name: 'Santé Arménie', domain: ["Formation/Emploi", "Santé"], },
+      { name: 'Organisation Terre et Culture', domain: ["Social", "Aide d'urgence"], },
     ],
   },
   {
