@@ -50,6 +50,7 @@ import Weareourmountains from './Weareourmountains.mp4'
 import LogoUnionfrarm from './LogoUnionfrarm.webp'
 import croix_bleue from './croix_bleue.jpg'
 import interviewFlorencePDF from './interview-florence.pdf';
+import empathia from './Empathia_2025.png';
 
 export const assets = {
   cart_icon,
@@ -102,7 +103,8 @@ export const assets = {
   stetienne,
   Weareourmountains,
   LogoUnionfrarm,
-  croix_bleue
+  croix_bleue,
+  empathia
 }
 
 export const acteurs = [
@@ -297,6 +299,20 @@ export const projets = [
     image: formation_watm,
     domain: ["Formation/Emploi"],
     externalLink: "https://ourmountains.am/project/french-language-program-for-artsakh-students/"
+  },
+  {
+    _id: "2",
+    name: "Empathia – Prise en charge des psychotraumatismes des déplacés d’Artsakh",
+    description: "Le projet Empathia, porté par Santé Arménie, vise à offrir un soutien psychologique de proximité aux réfugiés d’Artsakh installés en Arménie depuis l’exode de septembre 2023. Une équipe composée de psychologues, d’un psychiatre et d’une travailleuse sociale intervient auprès des familles déplacées dans les régions d’Ararat et de Kotayk. Cette approche mobile, gratuite et humaine permet d’aller à la rencontre des personnes les plus fragiles, souvent isolées et sans ressources. Supervisée par des spécialistes européens de la santé mentale, l’équipe locale garantit des soins conformes aux standards internationaux. En 2024, plus de 2 000 consultations ont été réalisées. Face à l’ampleur des besoins, le projet souhaite se développer pour répondre durablement à cette urgence psychologique.",
+    association: "Santé Arménie",
+    type: "Soutien",
+    startDate: "2022-01-01",
+    endDate: "2025-12-31",
+    budget: '65 580',
+    currency: "€",
+    image: empathia,
+    domain: ['Santé', "Social", "Éducation"],
+    externalLink: "https://www.santearmenie.org/"
   }
 ];
 

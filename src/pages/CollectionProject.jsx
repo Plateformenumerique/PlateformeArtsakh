@@ -99,6 +99,12 @@ const CollectionProject = () => {
             <p className='flex gap-2'>
               <input className='w-3' type='checkbox' value={'Patrimoine'} onChange={toggleDomaine} checked={sortDomaine.includes('Patrimoine')} /> Patrimoine
             </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type='checkbox' value={'Social'} onChange={toggleDomaine} checked={sortDomaine.includes('Social')} /> Social
+            </p>
+            <p className='flex gap-2'>
+              <input className='w-3' type='checkbox' value={'Éducation'} onChange={toggleDomaine} checked={sortDomaine.includes('Éducation')} /> Éducation
+            </p>
           </div>
         </div>
         {/** Filtre par Type */}

@@ -14,11 +14,11 @@ const ProjectItem = ({ id, name, description, association, type, startDate, endD
                     )}
                     <div className='p-3'>
                         <div className='flex flex-col sm:flex-row items-center mb-2'>
-                            <h2 className='text-lg font-semibold'>{name}</h2>
+                            <h2 className='text-lg font-semibold uppercase'>{name}</h2>
                         </div>
                         <div className='flex flex-col'>
                             {association && <p className='text-sm text-gray-500 mt-2 font-semibold'>Association : {association}</p>}
-                            {domain && <p className='text-sm text-gray-500'>Domaine de la mission : <span className='font-bold'>{domain}</span></p>}
+                            {domain && <p className='text-sm text-gray-500'>Domaine de la mission : <span className='font-bold'>{domain.join(', ')}</span></p>}
                             <p className='text-sm text-gray-500 mt-2'>{description}</p>
                             {(startDate || endDate) && (
                                 <p className='text-sm text-gray-500 mt-2'>
