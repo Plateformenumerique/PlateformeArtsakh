@@ -291,7 +291,7 @@ export const acteurs = [
     _id: "14",
     name: "Organisation Terre et Culture",
     description: "L'Organisation Terre et Culture a pour objectif de valoriser, par la conception, l'élaboration et la réalisaiton de projets précis, le patrimoine culturel arménien et de créer, par la mise en oeuvre d'actions coopératives, les conditions économiques et sociales indispensables à son développement (article 2 des statuts). ",
-    domain: ["Social", "Aide d'urgence"],
+    domain: ["Social"],
     type: ["Association"],
     website: "https://www.terreetculture.org",
     logo: terreculture,
@@ -334,8 +334,8 @@ export const projets = [
   },
   {
     _id: "2",
-    name: "Empathia – Prise en charge des psychotraumatismes des déplacés d’Artsakh",
-    description: "Le projet Empathia, porté par Santé Arménie, vise à offrir un soutien psychologique de proximité aux réfugiés d’Artsakh installés en Arménie depuis l’exode de septembre 2023. Une équipe composée de psychologues, d’un psychiatre et d’une travailleuse sociale intervient auprès des familles déplacées dans les régions d’Ararat et de Kotayk. Cette approche mobile, gratuite et humaine permet d’aller à la rencontre des personnes les plus fragiles, souvent isolées et sans ressources. Supervisée par des spécialistes européens de la santé mentale, l’équipe locale garantit des soins conformes aux standards internationaux. En 2024, plus de 2 000 consultations ont été réalisées. Face à l’ampleur des besoins, le projet souhaite se développer pour répondre durablement à cette urgence psychologique.",
+    name: "Empathia – Besoins : soutien financier, logistique et matériel pour les déplacés d’Artsakh",
+    description: "Le projet Empathia, porté par Santé Arménie, vise à offrir un soutien psychologique de proximité aux réfugiés d’Artsakh installés en Arménie depuis l’exode de septembre 2023. Une équipe composée de psychologues, d’un psychiatre et d’une travailleuse sociale intervient auprès des familles déplacées dans les régions d’Ararat et de Kotayk. Cette approche mobile, gratuite et humaine permet d’aller à la rencontre des personnes les plus fragiles, souvent isolées et sans ressources. Supervisée par des spécialistes européens de la santé mentale, l’équipe locale garantit des soins conformes aux standards internationaux. En 2024, plus de 2 000 consultations ont été réalisées. Face à l’ampleur des besoins, le projet souhaite se développer pour répondre durablement à cette urgence psychologique.\n\nBesoins identifiés :\n- Soutien financier (salaires des professionnels, frais logistiques)\n- Appui logistique (moyens de transport, coordination sur le terrain)\n- Don de matériel (fournitures pour interventions et accompagnement psychosocial)",
     association: "Santé Arménie",
     type: "Soutien",
     startDate: "2022-01-01",
@@ -345,7 +345,7 @@ export const projets = [
     image: empathia,
     domain: ['Santé', "Social", "Éducation"],
     externalLink: "https://www.santearmenie.org/"
-  }
+}
 ];
 
 export const actualites = [
