@@ -23,7 +23,7 @@ const Footer = () => {
                             <li>ACTEURS</li>
                         </Link>
                         <Link to="/projets">
-                            <li>PROJETS</li>
+                            <li>INITIATIVES</li>
                         </Link>
                         <Link to="/confidentialite">
                             <li>POLITIQUE DE CONFIDENTIALITÉ</li>
@@ -34,7 +34,11 @@ const Footer = () => {
                 <div>
                     <p className='font-medium text-xl mb-5'>RESTER EN CONTACT</p>
                     <ul className='flex flex-col gap-1 text-gray-600'>
-                        <li>secretariat@soutien-artsakh.eu</li>
+                        <li>
+                            <a href="mailto:secretariat@soutien-artsakh.eu" className="text-blue-500 hover:underline">
+                                secretariat@soutien-artsakh.eu
+                            </a>
+                        </li>
                     </ul>
                 </div>
 

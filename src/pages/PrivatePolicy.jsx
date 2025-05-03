@@ -31,7 +31,9 @@ const PrivatePolicy = () => {
         Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter :
       </p>
       <ul className="list-disc list-inside mb-4">
-        <li>Par email : secretariat@soutien-artsakh.eu</li>
+        <li>
+          Par email : <a href="mailto:secretariat@soutien-artsakh.eu" className="text-blue-500 underline">secretariat@soutien-artsakh.eu</a>
+        </li>
         <li>Par téléphone : +123456789</li>
       </ul>
     </div>

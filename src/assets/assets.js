@@ -335,7 +335,7 @@ export const regions = [
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
@@ -346,7 +346,7 @@ export const regions = [
     refugees: 5.496,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
@@ -357,7 +357,7 @@ export const regions = [
     refugees: 2.383,
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
@@ -367,7 +367,7 @@ export const regions = [
     name: 'Aragatsotn',
     refugees: 4.014,
     associations: [
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
@@ -377,7 +377,7 @@ export const regions = [
     name: 'Kotayk',
     refugees: 20.331,
     associations: [
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
@@ -388,7 +388,7 @@ export const regions = [
     refugees: 10.416,
     associations: [
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
@@ -399,7 +399,7 @@ export const regions = [
     refugees: 14.743,
     associations: [
       { name: 'Santé Arménie', domain: ["Formation/Emploi", "Santé"], },
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
@@ -411,7 +411,7 @@ export const regions = [
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
@@ -421,7 +421,7 @@ export const regions = [
     name: 'Vayots Dzor',
     refugees: 1.274,
     associations: [
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],
@@ -433,7 +433,7 @@ export const regions = [
     associations: [
       { name: 'Chene', domain: ["Logement", "Agriculture", "Education", "Social"], },
       { name: 'Croix Bleue des Arméniens de France', domain: ["Logement", "Social", "Santé"], },
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
       { name: 'Santé Arménie', domain: ["Formation/Emploi", "Santé"], },
@@ -444,7 +444,7 @@ export const regions = [
     name: 'Erevan',
     refugees: 46.512,
     associations: [
-      { name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },
+      /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
     ],

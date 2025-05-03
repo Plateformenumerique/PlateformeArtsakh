@@ -64,10 +64,12 @@ const Navbar = () => {
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
                
+               {/*
                 <NavLink to='/messagerie' className='flex flex-col items-center gap-1'>
                     <p>MESSAGERIE</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
+                */}
 
                 <NavLink to='/cartographie' className='flex flex-col items-center gap-1'>
                     <p>CARTOGRAPHIE</p>
@@ -95,7 +97,7 @@ const Navbar = () => {
                     <NavLink className='py-2 pl-6 border' to='/acteurs'>ACTEURS</NavLink>
                     <NavLink className='py-2 pl-6 border' to='/projets'>PARTENARIATS</NavLink>
                     <NavLink className='py-2 pl-6 border' to='/actualites'>RÉALISATIONS</NavLink>
-                    <NavLink className='py-2 pl-6 border' to='/messagerie'>MESSAGERIE</NavLink>
+                    {/*<NavLink className='py-2 pl-6 border' to='/messagerie'>MESSAGERIE</NavLink>*/}
                     <NavLink className='py-2 pl-6 border' to='/cartographie'>CARTOGRAPHIE</NavLink>
                     <NavLink className='py-2 pl-6 border' to='/donation'>FAIRE UN DON</NavLink>
                 </div>
