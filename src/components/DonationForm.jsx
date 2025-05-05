@@ -15,7 +15,7 @@ const DonationForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
-        window.location.href = 'https://donate.stripe.com/test_fZe16c2qEfdY33GeUU';
+        window.location.href = 'https://donate.stripe.com/fZeeW2cx84VDgtG5kk';
     };
 
     return (
