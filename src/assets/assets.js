@@ -54,6 +54,7 @@ import empathia from './Empathia_2025.png';
 import terreculture from './logo-terre-culture.jpg';
 import hamazkayin from './logo-Hamaskaine.png';
 import cepfa from './logo-cepfa.jpg';
+import haymed from './logo-HayMed.jpg';
 
 export const assets = {
   cart_icon,
@@ -110,7 +111,8 @@ export const assets = {
   empathia,
   terreculture,
   hamazkayin,
-  cepfa
+  cepfa,
+  haymed
 }
 
 export const acteurs = [
@@ -320,6 +322,20 @@ export const acteurs = [
     telephone: "+33 (0)6 61 43 17 65",
     contact: "Zakar Kéchichian"
   },
+  {
+    _id: "16",
+    name: "Haymed",
+    description: "L’association Haymed agit dans les domaines de la formation médicale et chirurgicale, en proposant des enseignements théoriques et pratiques à destination des professionnels de santé. Elle organise également des consultations médicales gratuites pour les réfugiés. En parallèle, Haymed apporte un soutien global aux personnes réfugiées, à travers un accompagnement administratif, une aide matérielle (achat de réfrigérateurs, cuisinières, chauffages, etc.), ainsi qu’un appui financier pour répondre aux besoins essentiels. L’association soutient aussi la création de micro-entreprises par les réfugiés, en leur offrant un accompagnement et un soutien financier dédié.",
+    domain: ["Logement", "Santé", "Agriculture", "Education", "Social"],
+    type: ["Association"],
+    website: "https://www.nouvelhay.com/fr/2024/11/haymed/",
+    logo: haymed,
+    establishedDate: 2009,
+    dirigeant: "Jean-Michel EKHERIAN",
+    email: "jean-michel.ekherian@wanadoo.fr",
+    telephone: "+33 (0)6 83 82 18 22",
+    contact: "Jean-Michel EKHERIAN"
+},
 ];
 
 export const projets = [
@@ -392,6 +408,7 @@ export const regions = [
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
       { name: 'Association éducative et culturelle arménienne Hamaskaïne', domain: ["Éducation", "Culture"], },
+      { name: 'Haymed', domain: ["Logement", "Santé", "Agriculture", "Education", "Social"], },
     ],
   },
   {
@@ -404,6 +421,7 @@ export const regions = [
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
       { name: 'Organisation Terre et Culture', domain: ["Social", "Aide d'urgence"], },
+      { name: 'Haymed', domain: ["Logement", "Santé", "Agriculture", "Education", "Social"], },
     ],
   },
   {
@@ -459,6 +477,7 @@ export const regions = [
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
       { name: 'Association éducative et culturelle arménienne Hamaskaïne', domain: ["Éducation", "Culture"], },
+      { name: 'Haymed', domain: ["Logement", "Santé", "Agriculture", "Education", "Social"], },
     ],
   },
   {
@@ -471,6 +490,7 @@ export const regions = [
       /*{ name: 'Union franco-arménienne', domain: ["Education", "Social", "Culture"], },*/
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
+      { name: 'Haymed', domain: ["Logement", "Santé", "Agriculture", "Education", "Social"], },
     ],
   },
   {
@@ -495,6 +515,7 @@ export const regions = [
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
       { name: 'Santé Arménie', domain: ["Formation/Emploi", "Santé"], },
       { name: 'Organisation Terre et Culture', domain: ["Social", "Aide d'urgence"], },
+      { name: 'Haymed', domain: ["Logement", "Santé", "Agriculture", "Education", "Social"], },
     ],
   },
   {
