@@ -310,10 +310,10 @@ export const acteurs = [
     website: "https://hamaskaine.org/",
     logo: hamazkayin,
     establishedDate: 1928,
-    dirigeant: "Président Kéchichian Zakar, responsable Europe Chahinian Hasmig",
+    dirigeant: "Président Kéchichian Zakar",
     email: "hasmig.chahinian@gmail.com",
     telephone: "+33 (0)6 61 43 17 65",
-    contact: "Président Kéchichian Zakar, responsable Europe Chahinian Hasmig"
+    contact: "Président Kéchichian Zakar"
   },
 ];
 
