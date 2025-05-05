@@ -24,7 +24,17 @@ const App = () => {
   return (
     <PrimeReactProvider>
       <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
-        <ToastContainer />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
         <Navbar />
         <SearchBar />
         <Routes>
