@@ -51,8 +51,9 @@ import LogoUnionfrarm from './LogoUnionfrarm.webp'
 import croix_bleue from './croix_bleue.jpg'
 import interviewFlorencePDF from './interview-florence.pdf';
 import empathia from './Empathia_2025.png';
-import terreculture from './logo-terre-culture.jpg'
-import hamazkayin from './logo-Hamaskaine.png'
+import terreculture from './logo-terre-culture.jpg';
+import hamazkayin from './logo-Hamaskaine.png';
+import cepfa from './logo-cepfa.jpg';
 
 export const assets = {
   cart_icon,
@@ -108,23 +109,27 @@ export const assets = {
   croix_bleue,
   empathia,
   terreculture,
-  hamazkayin
+  hamazkayin,
+  cepfa
 }
 
 export const acteurs = [
   // Type dacteurs "Association" | "Collectivité territoriale" | "Institution"
 
-
-  //**{
-  //    _id: "1",
-  //    name: "Croix-Rouge Française",
-  //    description: "Association humanitaire qui offre des secours d'urgence, actions sociales, santé, et formation aux premiers secours en France.",
-  //    domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"],
-  //    type: ["Institution"],
-  //    establishedDate: 1864,
-  //    website: "https://www.croix-rouge.fr",
-  //    logo: logo_Croix_Rouge_Française
-  //},
+  /*{
+    _id: "1",
+    name: "Fondation Centre d’Enseignement Professionnel Franco-Arménien",
+    description: "Notre établissement est un centre de formation professionnelle créé dans le cadre de la coopération décentralisée entre la ville de Lyon et la ville d’Erévan. Nous formons des cuisiniers, pâtissiers, couturiers, coiffeurs et prothésistes-dentaires et depuis 2020 nous accueillons des artsakhtsiotes et nous assurons des formations diplômantes et continues pour ces bénéficiaires.",
+    domain: ["Education", "Formation/Emploi"],
+    type: ["Institution"],
+    establishedDate: 1945,
+    website: "https://fcepfa.am/fr/",
+    logo: cepfa,
+    dirigeant: "Gohar GRIGORYAN",
+    email: "info@fcepfa.am",
+    telephone: "+3 74 10 57 85 34",
+    contact: "Gohar GRIGORYAN"
+  },*/
   {
     _id: "2",
     name: "Fonds Arménien de France",

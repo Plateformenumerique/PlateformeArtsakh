@@ -129,8 +129,7 @@ const CollectionProject = () => {
         <div className='flex md:flex-row flex-col justify-between text-base sm:text-2xl mb-4'>
           <Title text1='Propositions de ' text2='partenariats des acteurs' />
           <div className='flex gap-4 items-center'>
-            <button className='blue-gradient_bg text-white text-xs px-6 sm:px-10 py-4 rounded-sm'>Soumettre votre proposition de partenariat</button>
-            {/*<button onClick={() => setIsModalOpen(true)} className='blue-gradient_bg text-white text-xs px-10 py-4'>Vous avez un projet ?</button>*/}
+            <button onClick={() => setIsModalOpen(true)} className='blue-gradient_bg text-white text-xs px-6 sm:px-10 py-4 rounded-sm'>Soumettez votre recherche/proposition de partenariat</button>
             {/** Trier par ordre alphabétique */}
             <select onChange={(e) => setSortOrder(e.target.value)} className='border-2 border-gray-300 text-sm px-2 h-12'>
               <option value='asc'>Trier par : A-Z</option>

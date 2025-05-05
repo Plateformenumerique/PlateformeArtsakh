@@ -17,6 +17,7 @@ const InfoRow = ({ label, value, isLink }) => {
 const ActorItem = ({ id, name, description, domain, type, establishedDate, logo, dirigeant, email, contact, website, telephone }) => {
     const isCollectiviteTerritoriale = Array.isArray(type) && type.includes('Collectivité territoriale');
     const isAssociation = Array.isArray(type) && type.includes('Association');
+    const isInstitution = Array.isArray(type) && type.includes('Institution');
 
     return (
         <div>
@@ -36,7 +37,7 @@ const ActorItem = ({ id, name, description, domain, type, establishedDate, logo,
                                     <InfoRow label="Dirigeant(e) " value={dirigeant} />
                                 </>
                             )}
-                            {!isAssociation && (
+                            {!isAssociation && !isInstitution && (
                                 <InfoRow label="Contact " value={contact} />
                             )}
                             <InfoRow label="Email " value={email} />
