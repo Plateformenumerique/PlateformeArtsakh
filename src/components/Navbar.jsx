@@ -41,14 +41,14 @@ const Navbar = () => {
                     </button>
                     {dropdownVisible && (
                         <div className='absolute top-full left-0 mt-2 w-48 bg-white border rounded-lg shadow-lg'>
-                            <NavLink to='/acteurs?type=Association' className='block px-4 py-2 text-gray-700 hover:bg-gray-100' onClick={handleClick}>
-                                Association
+                            <NavLink to='/acteurs?type=Associations' className='block px-4 py-2 text-gray-700 hover:bg-gray-100' onClick={handleClick}>
+                                Associations
                             </NavLink>
-                            <NavLink to='/acteurs?type=Collectivité territoriale' className='block px-4 py-2 text-gray-700 hover:bg-gray-100' onClick={handleClick}>
-                                Collectivité territoriale
+                            <NavLink to='/acteurs?type=Collectivités territoriales' className='block px-4 py-2 text-gray-700 hover:bg-gray-100' onClick={handleClick}>
+                                Collectivités territoriales
                             </NavLink>
-                            <NavLink to='/acteurs?type=Institution' className='block px-4 py-2 text-gray-700 hover:bg-gray-100' onClick={handleClick}>
-                                Institution
+                            <NavLink to='/acteurs?type=Institutions' className='block px-4 py-2 text-gray-700 hover:bg-gray-100' onClick={handleClick}>
+                                Institutions
                             </NavLink>
                         </div>
                     )}

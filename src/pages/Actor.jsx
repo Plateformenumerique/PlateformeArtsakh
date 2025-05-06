@@ -38,14 +38,14 @@ const Actor = () => {
       <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row pt-4">
         {/* Actor Infos */}
         <div className="flex-1">
-          {!Array.isArray(actorData.type) || !actorData.type.includes('Collectivité territoriale') ? (
+          {!Array.isArray(actorData.type) || !actorData.type.includes('Collectivités territoriales') ? (
             <p className="mt-5 text-gray-500 md:w-4/5">
               Domaine d'activité : {Array.isArray(actorData.domain) ? actorData.domain.join(', ') : actorData.domain}
             </p>
           ) : null}
           <p className="mt-5 text-3xl font-medium">
             {actorData.type}
-            {!Array.isArray(actorData.type) || !actorData.type.includes('Collectivité territoriale') ? ` depuis ${actorData.establishedDate}` : ''}
+            {!Array.isArray(actorData.type) || !actorData.type.includes('Collectivités territoriales') ? ` depuis ${actorData.establishedDate}` : ''}
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">
             Dirigeant : {actorData.dirigeant}
@@ -53,7 +53,7 @@ const Actor = () => {
           <p className="mt-5 text-gray-500 md:w-4/5">
             {actorData.description}
           </p>
-          {!Array.isArray(actorData.type) || !actorData.type.includes('Association') ? (
+          {!Array.isArray(actorData.type) || !actorData.type.includes('Associations') ? (
             <p className="mt-5 text-gray-500 md:w-4/5">
               Contact : {actorData.contact}
             </p>
