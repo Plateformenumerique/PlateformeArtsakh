@@ -367,18 +367,18 @@ export const projets = [
     currency: "€",
     image: empathia,
     domain: ['Santé', "Social", "Éducation"],
-    externalLink: "https://www.santearmenie.org/"
+    externalLink: "https://www.santearmenie.org/psychotrauma/"
   },
   {
     _id: "3",
     name: "Demande de dons pour garantir la pérennité et l’amélioration des programmes du Nairi Summer Camp",
     description: "Le Nairi Summer Camp est un camp humanitaire conçu pour offrir aux enfants déplacés de l'Artsakh, âgés de 7 à 13 ans, un cadre sécurisé et bienveillant favorisant leur guérison, leur apprentissage et leur intégration sociale. À travers des activités thérapeutiques et éducatives, ce projet leur permet de retrouver un équilibre émotionnel et de s’épanouir. Depuis sa création, plus de 1 200 enfants ont pu bénéficier de cette initiative. En 2025, quatre sessions sont prévues aux dates suivantes : du 7 au 20 juin, du 25 juillet au 8 août, du 9 au 18 août, du 19 au 28 août",
-    association: "AGBU",
+    association: "UGAB",
     type: "Soutien",
     startDate: "2021-01-01",
     endDate: "2025-12-31",
     budget: "70 $ par jour par participant (700 $ pour 10 jours)",
-    currency: "$",
+    currency: "",
     image: agbuprojet,
     domain: ["Éducation", "Social"],
     externalLink: "https://agbu.org/camp-nairi"
