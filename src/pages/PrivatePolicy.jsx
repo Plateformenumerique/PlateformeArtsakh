@@ -9,12 +9,16 @@ const PrivatePolicy = () => {
       </p>
       <h2 className="text-2xl font-semibold mb-2">Informations que nous collectons</h2>
       <p className="mb-4">
-        Nous collectons différents types d'informations pour diverses raisons afin de vous fournir et d'améliorer notre service.
+        Nous ne collectons aucune donnée personnelle via des cookies ou d'autres technologies de suivi. Notre application ne stocke ni n'utilise de cookies.
       </p>
-      <h3 className="text-xl font-medium mb-2">Types de données collectées</h3>
-      <ul className="list-disc list-inside mb-4">
-        <li>Cookies obligatoires du navigateur</li>
-      </ul>
+      <h2 className="text-2xl font-semibold mb-2">Hébergement</h2>
+      <p className="mb-4">
+        Notre application est hébergée sur <strong>Hostinger</strong>, un fournisseur d'hébergement fiable et sécurisé. Pour plus d'informations sur leurs pratiques de confidentialité, veuillez consulter leur site web.
+      </p>
+      <h2 className="text-2xl font-semibold mb-2">Liens</h2>
+      <p className="mb-4">
+        Tout lien avec le site de <strong>PLATEFORME NUMERIQUE en soutien aux déplacés artsakhiotes</strong> ou utilisant le logo de la plateforme ne pourra se faire qu’après accord écrit de la plateforme. Les sites qui pourraient avoir un lien hypertexte avec ce site ne sont pas sous le contrôle de la plateforme. Par conséquent, la plateforme ne saurait être responsable de leur contenu. Les risques liés à l’utilisation de ces sites n’incombent qu’à leur utilisateur qui doit se conformer à leurs conditions d’utilisation.
+      </p>
       <h2 className="text-2xl font-semibold mb-2">Protection des données</h2>
       <p className="mb-4">
         La sécurité de vos données est importante pour nous, mais n'oubliez pas qu'aucune méthode de transmission sur Internet ou méthode de stockage électronique n'est sécurisée à 100%. Bien que nous nous efforcions d'utiliser des moyens commercialement acceptables pour protéger vos données personnelles, nous ne pouvons garantir leur sécurité absolue.
