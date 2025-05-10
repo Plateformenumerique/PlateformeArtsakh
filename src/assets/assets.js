@@ -56,6 +56,7 @@ import hamazkayin from './logo-Hamaskaine.png';
 import cepfa from './logo-cepfa.jpg';
 import haymed from './logo-HayMed.jpg';
 import agbuprojet from './agbu-projet.jpg';
+import logo_action_sante_femme from './logo-action-sante-femme.png';
 
 export const assets = {
   cart_icon,
@@ -114,7 +115,8 @@ export const assets = {
   hamazkayin,
   cepfa,
   haymed,
-  agbuprojet
+  agbuprojet,
+  logo_action_sante_femme
 }
 
 export const acteurs = [
@@ -123,8 +125,7 @@ export const acteurs = [
   {
     _id: "1",
     name: "Fondation Centre d’Enseignement Professionnel Franco-Arménien",
-    description: "Notre établissement est un centre de formation professionnelle créé dans le cadre de la coopération décentralisée entre la ville de Lyon et la ville d’Erévan. Nous formons des cuisiniers, pâtissiers, couturiers, coiffeurs et prothésistes-dentaires et depuis 2020 nous accueillons des artsakhtsiotes et nous assurons des formations diplômantes et continues pour ces bénéficiaires.",
-    domain: ["Education", "Formation/Emploi"],
+    description: "L'établissement est un centre de formation professionnelle créé dans le cadre de la coopération décentralisée entre la ville de Lyon et la ville d’Erévan. Il forme des cuisiniers, pâtissiers, couturiers, coiffeurs et prothésistes-dentaires et, depuis 2020, accueille des artsakhtsiotes en assurant des formations diplômantes et continues pour ces bénéficiaires.",    domain: ["Education", "Formation/Emploi"],
     type: ["Institutions"],
     establishedDate: 1945,
     website: "https://fcepfa.am/fr/",
@@ -333,11 +334,25 @@ export const acteurs = [
     website: "https://www.nouvelhay.com/fr/2024/11/haymed/",
     logo: haymed,
     establishedDate: 2009,
-    dirigeant: "Jean-Michel EKHERIAN",
+    dirigeant: "Jean-Michel Ekherian",
     email: "jean-michel.ekherian@wanadoo.fr",
     telephone: "+33 (0)6 83 82 18 22",
-    contact: "Jean-Michel EKHERIAN"
-},
+    contact: "Jean-Michel Ekherian"
+  },
+  {
+    _id: "17",
+    name: "Actions Santé Femmes",
+    description: "Actions Santé Femmes intervient dans le domaine de la santé des femmes et mène également des actions de plaidoyer pour défendre leurs droits, notamment le droit à l'accès aux soins, à l’échelle mondiale. L’objet de la structure est d’agir en France et à l’international pour améliorer l’accès des femmes les plus vulnérables aux soins gynécologiques et obstétricaux, à travers des missions de terrain, des actions de formation, d'éducation et de compagnonnage.",
+    domain: ["Santé", "Education", "Formation/Emploi", "Social"],
+    type: ["Associations"],
+    website: "https://www.actions-sante-femmes.org/",
+    logo: logo_action_sante_femme,
+    establishedDate: 2015,
+    dirigeant: "Noëlle Bessieres",
+    email: "actions.sante.femmes@gmail.com",
+    telephone: "+33 (0)6 59 43 29 83",
+    contact: "Noëlle Bessieres"
+  },
 ];
 
 export const projets = [
@@ -425,6 +440,7 @@ export const regions = [
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
       { name: 'Associations éducative et culturelle arménienne Hamaskaïne', domain: ["Éducation", "Culture"], },
       { name: 'Haymed', domain: ["Logement", "Santé", "Agriculture", "Education", "Social"], },
+      { name: 'Actions Santé Femmes', domain: ["Santé", "Education", "Formation/Emploi", "Social"], },
     ],
   },
   {
@@ -532,6 +548,7 @@ export const regions = [
       { name: 'Santé Arménie', domain: ["Formation/Emploi", "Santé"], },
       { name: 'Organisation Terre et Culture', domain: ["Social", "Aide d'urgence"], },
       { name: 'Haymed', domain: ["Logement", "Santé", "Agriculture", "Education", "Social"], },
+      { name: 'Actions Santé Femmes', domain: ["Santé", "Education", "Formation/Emploi", "Social"], },
     ],
   },
   {
