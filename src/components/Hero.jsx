@@ -9,7 +9,7 @@ const Hero = () => {
             <div className='text-[#414141] px-6'>
                 <div className='flex items-center gap-2'>
                     <p className='w-8 md:w-11 h-[2px] bg-[#414141]'></p>
-                    <p className='font-semibold text-2xl blue-gradient_text'>PLATFORME NUMERIQUE</p>
+                    <p className='font-semibold text-2xl blue-gradient_text'>PLATEFORME NUMERIQUE</p>
                 </div>
                 <h1 className='prata-regular text-3xl sm:py-3 lg:text-4xl leading-relaxed'>en soutien aux déplacés artsakhiotes</h1>
 
