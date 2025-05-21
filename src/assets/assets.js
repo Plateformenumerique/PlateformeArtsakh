@@ -57,6 +57,7 @@ import cepfa from './logo-cepfa.jpg';
 import haymed from './logo-HayMed.jpg';
 import agbuprojet from './agbu-projet.jpg';
 import logo_action_sante_femme from './logo-action-sante-femme.png';
+import Logo_Nancy from './nancy-logo.png';
 
 export const assets = {
   cart_icon,
@@ -116,7 +117,8 @@ export const assets = {
   cepfa,
   haymed,
   agbuprojet,
-  logo_action_sante_femme
+  logo_action_sante_femme,
+  Logo_Nancy
 }
 
 export const acteurs = [
@@ -225,7 +227,7 @@ export const acteurs = [
     type: ["Collectivités territoriales"],
     website: "https://www.ville-joeuf.fr/",
     logo: joeuf,
-    dirigeant: "Maria Abiza",
+    dirigeant: "André Corzani",
     email: "cabinet.maire@ville-joeuf.fr",
     telephone: "03 82 22 98 69",
     contact: "Maria Abiza"
@@ -352,6 +354,19 @@ export const acteurs = [
     email: "actions.sante.femmes@gmail.com",
     telephone: "+33 (0)6 59 43 29 83",
     contact: "Noëlle Bessieres"
+  },
+    {
+    _id: "18",
+    name: "Ville de Nancy",
+    description: "La ville de Nancy est une collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
+    domain: [""],
+    type: ["Collectivités territoriales"],
+    website: "https://www.nancy.fr/accueil",
+    logo: Logo_Nancy,
+    dirigeant: "Mathieu Klein",
+    email: "francoise.jeandemange@grandnancy.eu",
+    telephone: "+33 (0)3 83 85 31 92",
+    contact: "Françoise Jeandemange"
   },
 ];
 
