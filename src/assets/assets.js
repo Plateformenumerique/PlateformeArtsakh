@@ -58,6 +58,9 @@ import haymed from './logo-HayMed.jpg';
 import agbuprojet from './agbu-projet.jpg';
 import logo_action_sante_femme from './logo-action-sante-femme.png';
 import Logo_Nancy from './nancy-logo.png';
+import Logo_Valence from './Logo_Valence.svg';
+import Logo_scribe_paris from './logo_scribe_paris.jpg';
+import Logo_miassine from './logo_miassine.png';
 
 export const assets = {
   cart_icon,
@@ -134,7 +137,7 @@ export const acteurs = [
     logo: cepfa,
     dirigeant: "Gohar GRIGORYAN",
     email: "info@fcepfa.am",
-    telephone: "+3 74 10 57 85 34",
+    telephone: "+374 10 57 85 34",
     contact: "Gohar GRIGORYAN"
   },
   {
@@ -146,10 +149,10 @@ export const acteurs = [
     establishedDate: 1993,
     website: "https://fondsarmenien.org/",
     logo: fadf,
-    dirigeant: "Pierre Terzian",
+    dirigeant: "Pierre TERZIAN",
     email: "info@fondsarmenien.org",
     telephone: "01 48 83 51 06",
-    contact: "Pierre Terzian"
+    contact: "Pierre TERZIAN"
   },
   {
     _id: "3",
@@ -160,10 +163,10 @@ export const acteurs = [
     establishedDate: 1948,
     website: "https://ugabfrance.org/fr",
     logo: ugab,
-    dirigeant: "Claude Nadia Gortzounian",
+    dirigeant: "Claude Nadia GORTZOUNIAN",
     email: "administratif@agbu.org",
     telephone: "01 45 20 03 18",
-    contact: "Claude Nadia Gortzounian"
+    contact: "Claude Nadia GORTZOUNIAN"
   },
   {
     _id: "4",
@@ -174,10 +177,10 @@ export const acteurs = [
     establishedDate: 2021,
     website: "https://www.santearmenie.org/",
     logo: Logo_Sante_Armenie,
-    dirigeant: "Arsène Mekinian",
+    dirigeant: "Arsène MEKINIAN",
     email: "contact@santearmenie.org",
     telephone: "01 45 24 72 79",
-    contact: "Arsène Mekinian"
+    contact: "Arsène MEKINIAN"
   },
   {
     _id: "5",
@@ -188,10 +191,10 @@ export const acteurs = [
     establishedDate: 1990,
     website: "https://www.chene-france.org/",
     logo: Logo_CHENE,
-    dirigeant: "Schavarch Torossian",
+    dirigeant: "Schavarch TOROSSIAN",
     email: "contact@chene-france.org",
     telephone: "",
-    contact: "Schavarch Torossian"
+    contact: "Schavarch TOROSSIAN"
   },
   {
     _id: "6",
@@ -201,10 +204,10 @@ export const acteurs = [
     type: ["Collectivités territoriales"],
     website: "https://www.lyon.fr/",
     logo: ville_lyon,
-    dirigeant: "Grégory Doucet",
+    dirigeant: "Grégory DOUCET",
     email: "roxane.beneyton@mairie-lyon.fr",
     telephone: "04 78 63 40 00",
-    contact: "Roxane Beneyton"
+    contact: "Roxane BENEYTON"
   },
   {
     _id: "7",
@@ -214,10 +217,10 @@ export const acteurs = [
     type: ["Collectivités territoriales"],
     website: "https://www.isere.fr/",
     logo: Dep_isere,
-    dirigeant: "Jean-Pierre Barbier",
+    dirigeant: "Jean-Pierre BARBIER",
     email: "suzie.greneche@isere.fr",
     telephone: "04 76 00 38 38",
-    contact: "Suzie Grenèche"
+    contact: "Suzie GRENECHE"
   },
   {
     _id: "8",
@@ -227,10 +230,10 @@ export const acteurs = [
     type: ["Collectivités territoriales"],
     website: "https://www.ville-joeuf.fr/",
     logo: joeuf,
-    dirigeant: "André Corzani",
+    dirigeant: "André CORZANI",
     email: "cabinet.maire@ville-joeuf.fr",
     telephone: "03 82 22 98 69",
-    contact: "Maria Abiza"
+    contact: "Maria ABIZA"
   },
   {
     _id: "9",
@@ -240,10 +243,10 @@ export const acteurs = [
     type: ["Collectivités territoriales"],
     website: "https://www.auvergnerhonealpes.fr/",
     logo: rara_logo,
-    dirigeant: "Fabrice Pannekoucke",
+    dirigeant: "Fabrice PANNEKOUCKE",
     email: "agnes.hernu@auvergnerhonealpes.fr",
     telephone: "04 26 73 40 69",
-    contact: "Agnès Hernu-Duclos"
+    contact: "Agnès HERNU-DUCLOS"
   },
   {
     _id: "10",
@@ -253,10 +256,10 @@ export const acteurs = [
     type: ["Collectivités territoriales"],
     website: "https://www.ville-gardanne.fr/",
     logo: Logo_Gardanne,
-    dirigeant: "Hervé Granier",
+    dirigeant: "Hervé GRANIER",
     email: "arnaud-mazille@ville-gardanne.fr",
     telephone: "04 42 51 79 00",
-    contact: "Arnaud Mazille"
+    contact: "Arnaud MAZILLE"
   },
   {
     _id: "11",
@@ -266,10 +269,10 @@ export const acteurs = [
     type: ["Collectivités territoriales"],
     website: "https://www.saint-etienne.fr",
     logo: stetienne,
-    dirigeant: "Gaël Perdriau",
+    dirigeant: "Gaël PERDRIAU",
     email: "sona.hedhibi@saint-etienne-metropole.fr",
     telephone: "04 77 48 63 65",
-    contact: "Sona Hedhibi"
+    contact: "Sona HEDHIBI"
   },
   /*{
     _id: "12",
@@ -282,7 +285,7 @@ export const acteurs = [
     establishedDate: 2021,
     dirigeant: "Artur Arzoyan",
     email: "contact@unionfrarm.com",
-    telephone: "+33 (0)6 95 14 77 67",
+    telephone: "06 95 14 77 67",
     contact: "Artur Arzoyan"
   },*/
   {
@@ -294,24 +297,24 @@ export const acteurs = [
     website: "https://www.croixbleue-france.com/",
     logo: croix_bleue,
     establishedDate: 1928,
-    dirigeant: "Corinne Sévane Mardirossian",
+    dirigeant: "Corinne Sévane MARDIROSSIAN",
     email: "cbaf@wanadoo.fr",
-    telephone: "+33 (0)1 53 34 18 18",
-    contact: "Corinne Sévane Mardirossian"
+    telephone: "01 53 34 18 18",
+    contact: "Corinne Sévane MARDIROSSIAN"
   },
   {
     _id: "14",
     name: "Organisation Terre et Culture",
     description: "L'Organisation Terre et Culture a pour objectif de valoriser, par la conception, l'élaboration et la réalisaiton de projets précis, le patrimoine culturel arménien et de créer, par la mise en oeuvre d'actions coopératives, les conditions économiques et sociales indispensables à son développement (article 2 des statuts). ",
-    domain: ["Social"],
+    domain: ["Social", "Sauvegarde et valorisation du patrimoine culturel arménien"],
     type: ["Associations"],
     website: "https://www.terreetculture.org",
     logo: terreculture,
     establishedDate: 1978,
-    dirigeant: "Kaprélian Nelly",
+    dirigeant: "Kaprélian NELLY",
     email: "contact@otc-france.org",
-    telephone: "+33 (0)1 48 97 42 58",
-    contact: "Kaprélian Nelly"
+    telephone: "01 48 97 42 58",
+    contact: "Kaprélian NELLY"
   },
   {
     _id: "15",
@@ -322,10 +325,10 @@ export const acteurs = [
     website: "https://hamaskaine.org/",
     logo: hamazkayin,
     establishedDate: 1928,
-    dirigeant: "Zakar Kéchichian",
+    dirigeant: "Zakar KECHICHIAN",
     email: "hasmig.chahinian@gmail.com",
-    telephone: "+33 (0)6 61 43 17 65",
-    contact: "Zakar Kéchichian"
+    telephone: "06 61 43 17 65",
+    contact: "Zakar KECHICHIAN"
   },
   {
     _id: "16",
@@ -336,10 +339,10 @@ export const acteurs = [
     website: "https://www.nouvelhay.com/fr/2024/11/haymed/",
     logo: haymed,
     establishedDate: 2009,
-    dirigeant: "Jean-Michel Ekherian",
+    dirigeant: "Jean-Michel EKHERIAN",
     email: "jean-michel.ekherian@wanadoo.fr",
-    telephone: "+33 (0)6 83 82 18 22",
-    contact: "Jean-Michel Ekherian"
+    telephone: "06 83 82 18 22",
+    contact: "Jean-Michel EKHERIAN"
   },
   {
     _id: "17",
@@ -350,12 +353,12 @@ export const acteurs = [
     website: "https://www.actions-sante-femmes.org/",
     logo: logo_action_sante_femme,
     establishedDate: 2015,
-    dirigeant: "Noëlle Bessieres",
+    dirigeant: "Noëlle BESSIERES",
     email: "actions.sante.femmes@gmail.com",
-    telephone: "+33 (0)6 59 43 29 83",
-    contact: "Noëlle Bessieres"
+    telephone: "06 59 43 29 83",
+    contact: "Noëlle BESSIERES"
   },
-    {
+  {
     _id: "18",
     name: "Ville de Nancy",
     description: "La ville de Nancy est une collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
@@ -363,10 +366,51 @@ export const acteurs = [
     type: ["Collectivités territoriales"],
     website: "https://www.nancy.fr/accueil",
     logo: Logo_Nancy,
-    dirigeant: "Mathieu Klein",
+    dirigeant: "Mathieu KLEIN",
     email: "francoise.jeandemange@grandnancy.eu",
-    telephone: "+33 (0)3 83 85 31 92",
-    contact: "Françoise Jeandemange"
+    telephone: "03 83 85 31 92",
+    contact: "Françoise JEANDEMANGE"
+  },
+  {
+    _id: "19",
+    name: "Ville de Valence",
+    description: "Les actions de la Ville de Valence sont principalement tournées vers sa ville jumelle Idjevan, qu’elle accompagne de différentes manières : échanges linguistiques, soutien à l’obtention de fonds européens sur des thématiques variées (tourisme, culture, éducation, agriculture, transition énergétique), dotations aux écoles, etc. Se recentrer sur Idjevan est essentiel pour la municipalité, car la ville et son agglomération ont accueilli de nombreux réfugiés à la suite de la tragédie. Valence agit également en faveur du Syunik via la région Auvergne-Rhône-Alpes, dont le maire Nicolas Daragon est vice-président. Cette région, sensible par sa position, a aussi accueilli de nombreux réfugiés ; sa stabilité et sa sécurité sont considérées comme des éléments clés pour une Arménie en paix.",
+    domain: [""],
+    type: ["Collectivités territoriales"],
+    website: "https://www.valence.fr/",
+    logo: Logo_Valence,
+    dirigeant: "Nicolas Daragon",
+    email: "georges.rastklan@mairie-valence.fr",
+    telephone: "04 75 79 20 00",
+    contact: "Georges RASTKLAN"
+  },
+  {
+    _id: "20",
+    name: "Scribe Paris",
+    description: "Chaque année, l'association SCRIBE-Paris monte une pièce de théâtre à des fins humanitaires. Les fonds recueillis à l'issue des représentations permettent de financer des bourses d'études pour de jeunes réfugiés d'Artsakh en Arménie. Jusqu'en septembre 2023, l'association soutenait des jeunes de l'Artsakh, avant de concentrer son action sur les jeunes réfugiés d'Artsakh en Arménie, à la suite de l'annexion par l'Azerbaïdjan. Ces circonstances exceptionnelles l'ont également conduite à proposer une aide pour le matériel scolaire et le logement en 2024.",
+    domain: ["Education"],
+    type: ["Associations"],
+    website: "https://www.scribeparis.org/",
+    logo: Logo_scribe_paris,
+    establishedDate: 2002,
+    dirigeant: "Laurine AGAZARIAN",
+    email: "scribeparis@gmail.com",
+    telephone: "",
+    contact: "Laurine AGAZARIAN"
+  },
+  {
+    _id: "21",
+    name: "Miassine fondation",
+    description: "La fondation Miassine (qui signifie « Ensemble » en arménien) a été créée en 2009 en Arménie. Son objectif principal est de promouvoir et de soutenir le développement humain durable du peuple arménien. La mission de Miassine est de s'appuyer sur les ressources locales (naturelles et humaines) pour assurer une croissance inclusive et équitable en Arménie.",
+    domain: ["Education", "Formation/Emploi"],
+    type: ["Associations"],
+    website: "https://miassine.com/",
+    logo: Logo_miassine,
+    establishedDate: 2009,
+    dirigeant: "Astrig Marandjian",
+    email: "satenikhovhannissyan@gmail.com",
+    telephone: "+374 93 821 721",
+    contact: "Astrig Marandjian"
   },
 ];
 
@@ -416,14 +460,14 @@ export const projets = [
 ];
 
 export const actualites = [
-  {
+  /*{
     _id: "1",
     title: "Appel à projets franco-arménien",
     subtitle: "Le ministère de l’Europe et des Affaires étrangères annonce l’ouverture de l’appel à projets Arménie 2025. Les candidatures sont ouvertes jusqu’au 23 mai 2025. Les collectivités peuvent désormais soumettre leurs projets via la plateforme Démarches simplifiées.",
     date: "2023-07-10",
     image: quai_image,
     lien: "https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/action-exterieure-des-collectivites-territoriales/appels-a-projets-2025/appels-a-projets-geographiques/appel-a-projets-franco-armenien/"
-  },
+  },*/
   {
     _id: "2",
     title: "Projet WINGS",
@@ -456,6 +500,7 @@ export const regions = [
       { name: 'Associations éducative et culturelle arménienne Hamaskaïne', domain: ["Éducation", "Culture"], },
       { name: 'Haymed', domain: ["Logement", "Santé", "Agriculture", "Education", "Social"], },
       { name: 'Actions Santé Femmes', domain: ["Santé", "Education", "Formation/Emploi", "Social"], },
+      { name: '"Miassine fondation', domain: ["Education", "Formation/Emploi"], },
     ],
   },
   {
@@ -501,6 +546,7 @@ export const regions = [
       { name: 'Fonds Arménien de France', domain: ["Logement", "Education", "Social", "Formation/Emploi", "Agriculture"], },
       { name: 'UGAB', domain: ["Logement", "Education", "Social", "Santé", "Formation/Emploi"], },
       { name: 'Associations éducative et culturelle arménienne Hamaskaïne', domain: ["Éducation", "Culture"], },
+      { name: '"Miassine fondation', domain: ["Education", "Formation/Emploi"], },
     ],
   },
   {
