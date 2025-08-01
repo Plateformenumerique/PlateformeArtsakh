@@ -121,7 +121,7 @@ const CollectionActor = () => {
               <input className='w-3' type='checkbox' value={'Association'} onChange={toggleType} checked={sortTypeActor.includes('Association')} /> Association
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Collectivités territoriale'} onChange={toggleType} checked={sortTypeActor.includes('Collectivités territoriale')} /> Collectivités territoriale
+              <input className='w-3' type='checkbox' value={'Collectivité territoriale'} onChange={toggleType} checked={sortTypeActor.includes('Collectivité territoriale')} /> Collectivité territoriale
             </p>
             <p className='flex gap-2'>
               <input className='w-3' type='checkbox' value={'Institution'} onChange={toggleType} checked={sortTypeActor.includes('Institution')} /> Institution

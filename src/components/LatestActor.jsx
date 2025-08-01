@@ -12,7 +12,7 @@ const LatestActor = () => {
 
     // Sort types in desired order
     const sortedTypes = uniqueTypes.sort((a, b) => {
-        const order = ["Association", "Collectivités territoriale", "Institution"];
+        const order = ["Association", "Collectivité territoriale", "Institution"];
         return order.indexOf(a) - order.indexOf(b);
     });
 

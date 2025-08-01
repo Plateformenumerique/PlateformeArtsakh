@@ -44,8 +44,8 @@ const Navbar = () => {
                             <NavLink to='/acteurs?type=Association' className='block px-4 py-2 text-gray-700 hover:bg-gray-100' onClick={handleClick}>
                                 Association
                             </NavLink>
-                            <NavLink to='/acteurs?type=Collectivités territoriale' className='block px-4 py-2 text-gray-700 hover:bg-gray-100' onClick={handleClick}>
-                                Collectivités territoriale
+                            <NavLink to='/acteurs?type=Collectivité territoriale' className='block px-4 py-2 text-gray-700 hover:bg-gray-100' onClick={handleClick}>
+                                Collectivité territoriale
                             </NavLink>
                             <NavLink to='/acteurs?type=Institution' className='block px-4 py-2 text-gray-700 hover:bg-gray-100' onClick={handleClick}>
                                 Institution
