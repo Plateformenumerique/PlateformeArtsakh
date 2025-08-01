@@ -61,6 +61,8 @@ import Logo_Nancy from './nancy-logo.png';
 import Logo_Valence from './Logo_Valence.svg';
 import Logo_scribe_paris from './logo_scribe_paris.jpg';
 import Logo_miassine from './logo_miassine.png';
+import Logo_Strasbourg from './logo-vectoriel-ville-de-strasbourg.jpg';
+import Logo_Region_Paca from './logo-region-paca.jpg';
 
 export const assets = {
   cart_icon,
@@ -379,7 +381,7 @@ export const acteurs = [
     type: ["Collectivités territoriales"],
     website: "https://www.valence.fr/",
     logo: Logo_Valence,
-    dirigeant: "Nicolas Daragon",
+    dirigeant: "Nicolas DARAGON",
     email: "georges.rastklan@mairie-valence.fr",
     telephone: "04 75 79 20 00",
     contact: "Georges RASTKLAN"
@@ -407,10 +409,36 @@ export const acteurs = [
     website: "https://miassine.com/",
     logo: Logo_miassine,
     establishedDate: 2009,
-    dirigeant: "Astrig Marandjian",
+    dirigeant: "Astrig MARANDJIAN",
     email: "satenikhovhannissyan@gmail.com",
     telephone: "+374 93 821 721",
-    contact: "Astrig Marandjian"
+    contact: "Astrig MARANDJIAN"
+  },
+  {
+    _id: "22",
+    name: "Ville de Strasbourg",
+    description: "La ville de Strasbourg est une collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
+    domain: [""],
+    type: ["Collectivités territoriales"],
+    website: "https://www.strasbourg.eu/",
+    logo: Logo_Strasbourg,
+    dirigeant: "Jeanne BARSEGHIAN",
+    email: "jeanne.barseghian@strasbourg.eu",
+    telephone: "03 68 98 74 23",
+    contact: "Jeanne BARSEGHIAN"
+  },
+  {
+    _id: "23",
+    name: "Région Paca",
+    description: "La région Provence-Alpes-Côte d'Azur est une collectivité territoriale qui soutient des projets de développement et de solidarité internationale.",
+    domain: [""],
+    type: ["Collectivités territoriales"],
+    website: "https://www.maregionsud.fr/",
+    logo: Logo_Region_Paca,
+    dirigeant: "Georges-François LECLERC",
+    email: "abruna@maregionsud.fr",
+    telephone: "04 91 57 57 57",
+    contact: "Aurore BRUNA"
   },
 ];
 
