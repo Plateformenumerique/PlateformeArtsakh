@@ -38,7 +38,6 @@ const PrivatePolicy = () => {
         <li>
           Par email : <a href="mailto:secretariat@soutien-artsakh.eu" className="text-blue-500 underline">secretariat@soutien-artsakh.eu</a>
         </li>
-        <li>Par téléphone : +123456789</li>
       </ul>
     </div>
   );

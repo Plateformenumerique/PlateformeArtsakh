@@ -17,7 +17,7 @@ const ProjectItem = ({ id, name, description, association, type, startDate, endD
                             <h2 className='text-lg font-semibold uppercase'>{name}</h2>
                         </div>
                         <div className='flex flex-col'>
-                            {association && <p className='text-sm text-gray-500 mt-2 font-semibold'>Associations : {association}</p>}
+                            {association && <p className='text-sm text-gray-500 mt-2 font-semibold'>Association : {association}</p>}
                             {domain && <p className='text-sm text-gray-500'>Domaine de la mission : <span className='font-bold'>{domain.join(', ')}</span></p>}
                             <p className='text-sm text-gray-500 mt-2'>{description}</p>
                             {(startDate || endDate) && (

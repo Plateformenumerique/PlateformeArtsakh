@@ -25,7 +25,7 @@ const Cartography = () => {
                   Information des actions menées dans cette région
                 </h2>
                 <p className="text-base mb-2">Région : {selectedRegion.name}</p>
-                <p className="text-base mt-4">Associations :</p>
+                <p className="text-base mt-4">Association :</p>
                 <ul className="list-disc ml-6">
                   {selectedRegion.associations.map((association, index) => (
                     <li key={index} className="text-base">
