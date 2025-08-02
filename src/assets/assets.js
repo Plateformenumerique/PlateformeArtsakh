@@ -313,10 +313,10 @@ export const acteurs = [
     website: "https://www.terreetculture.org",
     logo: terreculture,
     establishedDate: 1978,
-    dirigeant: "Kaprélian NELLY",
+    dirigeant: "Nelly KAPRELIAN",
     email: "contact@otc-france.org",
     telephone: "01 48 97 42 58",
-    contact: "Kaprélian NELLY"
+    contact: "Nelly KAPRELIAN"
   },
   {
     _id: "15",
