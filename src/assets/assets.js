@@ -63,6 +63,9 @@ import Logo_scribe_paris from './logo_scribe_paris.jpg';
 import Logo_miassine from './logo_miassine.png';
 import Logo_Strasbourg from './logo-vectoriel-ville-de-strasbourg.jpg';
 import Logo_Region_Paca from './logo-region-paca.jpg';
+import ruche_artsakh from './ruche-artsakh.png';
+import le_français_amusant from './le-francais-amusant.jpg';
+import programme_aile_our_montains from './programme-aile-our-mountains.jpg';
 
 export const assets = {
   cart_icon,
@@ -443,7 +446,7 @@ export const acteurs = [
 ];
 
 export const projets = [
-  {
+  /*{
     _id: "1",
     name: "RECHERCHE DE PARTENAIRE POUR UN PROGRAMME DE LANGUE FRANÇAISE POUR LES ÉTUDIANTS D'ARTSAKH",
     description: "Le programme de langue française vise à fournir des cours complets de langue française aux étudiants de l'Artsakh, comblant ainsi les lacunes de leur programme. Nous recherchons activement des partenaires pour soutenir ce programme, que ce soit par des contributions financières, des ressources pédagogiques ou des collaborations éducatives.",
@@ -456,7 +459,7 @@ export const projets = [
     image: formation_watm,
     domain: ["Formation/Emploi"],
     externalLink: "https://ourmountains.am/project/french-language-program-for-artsakh-students/"
-  },
+  },*/
   {
     _id: "2",
     name: "Empathia – Besoins : soutien financier, logistique et matériel pour les déplacés d’Artsakh",
@@ -471,7 +474,7 @@ export const projets = [
     domain: ['Santé', "Social", "Éducation"],
     externalLink: "https://www.santearmenie.org/psychotrauma/"
   },
-  {
+  /*{
     _id: "3",
     name: "Demande de dons pour garantir la pérennité et l’amélioration des programmes du Nairi Summer Camp",
     description: "Le Nairi Summer Camp est un camp humanitaire conçu pour offrir aux enfants déplacés de l'Artsakh, âgés de 7 à 13 ans, un cadre sécurisé et bienveillant favorisant leur guérison, leur apprentissage et leur intégration sociale. À travers des activités thérapeutiques et éducatives, ce projet leur permet de retrouver un équilibre émotionnel et de s’épanouir. Depuis sa création, plus de 1 200 enfants ont pu bénéficier de cette initiative. En 2025, quatre sessions sont prévues aux dates suivantes : du 7 au 20 juin, du 25 juillet au 8 août, du 9 au 18 août, du 19 au 28 août",
@@ -484,7 +487,35 @@ export const projets = [
     image: agbuprojet,
     domain: ["Éducation", "Social"],
     externalLink: "https://agbu.org/camp-nairi"
-  }
+  },*/
+  {
+    _id: "4",
+    name: "Programme de réhabilitation “Ailes” pour les enfants déplacés de force du Haut-Karabakh et leurs parents",
+    description: "«Ailes» est un programme de réhabilitation de trois mois destiné aux enfants de 4 à 18 ans et à leurs parents, déplacés de force du Haut-Karabakh à la suite des événements catastrophiques de septembre 2023. L’objectif du programme est de restaurer les forces physiques, psychologiques et intellectuelles des enfants et des adolescents, ainsi que de soutenir la réhabilitation psychologique des parents et leur compréhension approfondie des besoins de leurs enfants, tout en favorisant la création de liens dans la nouvelle communauté et leur adaptation. La particularité principale du programme réside dans son approche globale de la réhabilitation, qui combine trois éléments principaux : psychologique, physique et développemental. L’activation et l’harmonisation simultanées de ces trois composantes interconnectées assurent l’efficacité et le succès du programme.",
+    association: "We are our mountains",
+    type: "Urgence",
+    startDate: "2023-11-01",
+    endDate: "2026-12-31",
+    budget: '600 000',
+    currency: "$",
+    image: programme_aile_our_montains,
+    domain: ["Formation/Emploi", "Santé", "Social"],
+    externalLink: "https://ourmountains.am/fr/project/wings-rehabilitation-program-for-children-displaced-from-artsakh/"
+  },
+  {
+    _id: "5",
+    name: "Nouveau marché à Tatev",
+    description: "Établissement d’un marché local pour les produits agricoles, les souvenirs et l’artisanat dans la municipalité de Tatev. Le projet vise à favoriser le développement de la communauté de Tatev en créant de nouvelles opportunités économiques pour les résidents. Le marché, situé près du téléphérique « Ailes de Tatev », offrira 20 à 25 stands gratuits la première année aux membres de la communauté et aux déplacés d’Artsakh. Il fonctionnera comme une entreprise sociale, avec tous les bénéfices réinvestis dans le développement local. Le projet inclut des formations pour les vendeurs, la promotion de l’artisanat, l’organisation d’événements culturels et l’intégration sociale des déplacés. Partenaires : Mairie de Tatev, téléphérique « Ailes de Tatev ».",
+    association: "We are our mountains",
+    type: "Développement",
+    startDate: "2024-10-01",
+    endDate: "2025-05-31",
+    budget: "155 474",
+    currency: "$",
+    image: TATEV_market,
+    domain: ["Agriculture", "Social"],
+    externalLink: "https://ourmountains.am/fr/project/new-market-in-tatev/"
+  },
 ];
 
 export const actualites = [
@@ -504,14 +535,30 @@ export const actualites = [
     video: Weareourmountains,
     lien: "#"
   },
-  {
+  /*{
     _id: "3",
     title: "Interview de Florence Provendier, coordinatrice des coopérations franco-arméniennes du ministère des Affaires Étrangères et de l'Europe",
     subtitle: "Dans cette interview accordée au Fonds Arménien, réalisée par Achod Papasian et parue dans le Courrier du Fonds Arménien de France n°118 – ©Mars 2025, Florence Provendier nous éclaire sur cette démarche qui prend corps à travers l’appel à projets « Arménie » et les prochaines assises de la coopération décentralisée à Goris, dans le Syunik. La coopération décentralisée s’impose aujourd’hui comme un levier central dans la dynamique de renforcement des relations franco-arméniennes. Portée par la feuille de route économique signée en 2021, cette stratégie vise à mobiliser l’ensemble des acteurs publics, associatifs et économiques autour de projets concrets.",
     date: "2025-04-08",
-    image: florence, // Remplacez par une image appropriée si nécessaire
+    image: florence,
     lien: interviewFlorencePDF
-  }
+  }*/,
+  {
+    _id: "4",
+    title: "Projet des 200 ruches pour les déplacés d’Artsakh",
+    subtitle: "Dans les colonnes du journal du Fonds arménien (pages 16 et 17), le projet des 200 ruches vise à soutenir les déplacés d’Artsakh à travers l’installation de ruches et la formation à l’apiculture. Ce programme permet aux familles déplacées de bénéficier d’une activité génératrice de revenus, tout en favorisant leur intégration et leur autonomie dans les régions d’accueil.",
+    date: "2025-07-29",
+    image: ruche_artsakh,
+    lien: "https://www.calameo.com/read/002754140545b91abd5fd"
+  },
+  {
+    _id: "5",
+    title: "Le français, c’est amusant !",
+    subtitle: "En juillet, un cours d’été intitulé « Le français, c’est amusant ! » a réuni 45 élèves artsakhiotes à Erevan. Organisé par l’Association de soutien à l’Artsakh avec l’ONG 'Nous sommes nos montagnes', ce programme caritatif prolongeait un premier cycle de cours donnés en 2024. Pendant trois semaines, les enfants ont appris le français de manière ludique à travers jeux, chansons, ateliers et activités collectives. Le programme gratuit comprenait aussi des repas quotidiens et des excursions éducatives. Les élèves ont ainsi découvert des sites culturels majeurs, comme l’observatoire de Byurakan et le monastère de Saghmosavank.",
+    date: "2024-07-20",
+    image: le_français_amusant,
+    lien: "#"
+  },
 ];
 
 export const regions = [
