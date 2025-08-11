@@ -48,6 +48,14 @@ const Actuality = () => {
           {/*<p className="mt-5 text-gray-500 md:w-4/5">
             Date: {actualityData.date}
           </p>*/}
+          
+          {actualityData.sources && (
+            <div className="mt-5 md:w-4/5">
+              <span className="text-sm text-gray-600 font-medium">Sources: </span>
+              <span className="text-sm text-gray-500">{actualityData.sources}</span>
+            </div>
+          )}
+          
           <hr className="mt-8 sm:w-4/5" />
         </div>
       </div>

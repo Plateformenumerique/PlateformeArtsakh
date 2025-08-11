@@ -66,6 +66,7 @@ import Logo_Region_Paca from './logo-region-paca.jpg';
 import ruche_artsakh from './ruche-artsakh.png';
 import le_français_amusant from './le-francais-amusant.jpg';
 import programme_aile_our_montains from './programme-aile-our-mountains.jpg';
+import courrier_du_fonds_armeniens from './Courrier_119-200_ruches.pdf';
 
 export const assets = {
   cart_icon,
@@ -549,7 +550,8 @@ export const actualites = [
     subtitle: "Dans les colonnes du journal du Fonds arménien (pages 16 et 17), le projet des 200 ruches vise à soutenir les déplacés d’Artsakh à travers l’installation de ruches et la formation à l’apiculture. Ce programme permet aux familles déplacées de bénéficier d’une activité génératrice de revenus, tout en favorisant leur intégration et leur autonomie dans les régions d’accueil.",
     date: "2025-07-29",
     image: ruche_artsakh,
-    lien: "https://www.calameo.com/read/002754140545b91abd5fd"
+    lien: courrier_du_fonds_armeniens,
+    sources: "© Courrier du Fonds Arménien de France n°119 - Rédaction Jean Villemin - Auteur et dessinateur, Jean Villemin a accompagné la mission d’Apiflordev et du Fonds Arménien de France en tant que bénévole d’Armenian Volunteer Corps."
   },
   {
     _id: "5",

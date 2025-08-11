@@ -46,6 +46,7 @@ const CollectionActualite = () => {
                             image={item.image} 
                             video={item.video}
                             lien={item.lien}
+                            sources={item.sources ? [item.sources] : []}
                         />
                     ))
                 }
